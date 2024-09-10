@@ -1,0 +1,33 @@
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto; /* Keeps the aspect ratio */
+    display: block; /* Removes inline spacing issues */
+}   
+.carousel {
+    position: relative;
+    width: 100%;
+    }
+
+    .carousel img {
+    width: 100%;
+    height: auto;
+    }
+
+    .carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 100px;
+    }
+
+    .carousel-text h2 {
+    font-size: 100px;
+    margin: 0;
+    }
+    .carousel-text p {
+    font-size: 25px;
+    margin-top: 10px;
+    }
