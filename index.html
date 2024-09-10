@@ -41,6 +41,105 @@
 
     <link rel="stylesheet" href="assets/css/style_1.css">
 
+<Style>
+  /* General styles for the carousel caption */
+.carousel-caption {
+    position: absolute;
+    color: white;
+    z-index: 10;
+    text-align: left;
+    padding: 20px;
+    width: auto;
+    max-width: 40%;
+}
+
+/* Larger screen styles (laptops/desktops) */
+@media (min-width: 992px) {
+    .carousel-caption {
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+        text-align: left;
+    }
+
+    .carousel-caption h2 {
+        font-size: 2.9rem;
+        font-weight: bold;
+    }
+
+    .carousel-caption p {
+        font-size: 1.8rem;
+    }
+
+    .carousel-item img {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) and (min-width: 576px) {
+    .carousel-caption {
+        top: 30%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .carousel-caption h2 {
+        font-size: 2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+
+    .carousel-item img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transform: scale(1.1); /* Zoom slightly */
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 576px) {
+    .carousel-caption {
+        top: 50%; /* Vertically center the text */
+        left: 32%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 0;
+        width: auto;
+        max-width: none;
+       
+    }
+
+    .carousel-caption h2 {
+        margin-top: 25%;
+        text-align: left;
+        font-size: 0.9rem;
+    }
+
+    .carousel-caption p {
+        margin-top: 2%;
+        text-align: left;
+        font-size: 0.6em;
+        text-wrap: wrap;
+    }
+
+    
+}
+
+
+
+</Style>
+
+    
+
 </head>
 
 <body>
@@ -298,83 +397,35 @@
             <li><a href="https://www.facebook.com/" class="text-white text-decoration-none">Facebook</a></li>
             <li><a href="https://www.instagram.com/" class="text-white text-decoration-none">Instagram</a></li>
         </ul>
-
+    
         <!-- Carousel Inner -->
         <div class="carousel-inner">
             <!-- Slide 1 -->
             <div class="carousel-item active">
                 <img src="assets/images/img/Banners Home Page (1)/1.png" class="d-block w-100" alt="Slide 1">
-                <div class="carousel-text">
+                <div class="carousel-caption caption-left">
                     <h2>Welcome To VichaarLab</h2>
-                    <p>Empowering Schools, Streamlining Education – Unlock the Future <br> with Our <b>School ERP
-                            Solution!</b></p>
+                    <p><em>Empowering Schools, Streamlining Education – Unlock the Future with Our <b>School ERP Solution!</b></p></em>
                 </div>
             </div>
             <!-- Slide 2 -->
             <div class="carousel-item">
                 <img src="assets/images/img/Banners Home Page (1)/2.png" class="d-block w-100" alt="Slide 2">
-                <div class="carousel-text" style="color: black;">
+                <div class="carousel-caption caption-left" style="color: black;">
                     <h2>Welcome To VichaarLab</h2>
-                    <p>Building Success from the Ground Up – Simplify <br>Your Projects with Our <b>Construction ERP
-                            Solution!</b></p>
+                    <p><em>Building Success from the Ground Up – <br>Simplify Your Projects with Our <br><b>Construction ERP Solution!</b></p></em>
                 </div>
             </div>
             <!-- Slide 3 -->
             <div class="carousel-item">
                 <img src="assets/images/img/Banners Home Page (1)/3.png" class="d-block w-100" alt="Slide 3">
-                <div class="carousel-text">
+                <div class="carousel-caption caption-left">
                     <h2>Welcome To VichaarLab</h2>
-                    <p>Transforming Leads into Legacy – Elevate Your Business <br> with Our <b>Real Estate CRM
-                            Solution!</b></p>
-                </div>
-            </div>
-            <!-- Slide 4 -->
-            <div class="carousel-item">
-                <img src="assets/images/img/Banners Home Page (1)/4.png" class="d-block w-100" alt="Slide 4">
-                <div class="carousel-text">
-                    <h2><b>Welcome To VichaarLab</b></h2>
-                    <p>
-                        Empowering People,
-                        Driving Performance –
-                        Revolutionize <br>Workforce Management with
-                        Our <b>HRMS Solution!</b></p>
-                </div>
-            </div>
-            <!-- Slide 5 -->
-            <div class="carousel-item">
-                <img src="assets/images/img/Banners Home Page (1)/5.png" class="d-block w-100" alt="Slide 5">
-                <div class="carousel-text" style="color: black;">
-                    <h2><b>Welcome To VichaarLab</b></h2>
-                    <p>
-                        Expand,
-                        Engage, Excel – Unlock the Power
-                        of Online Business <br> with Our <b>eCommerce
-                            Solution!</b></p>
-                </div>
-            </div>
-            <!-- Slide 6 -->
-            <div class="carousel-item">
-                <img src="assets/images/img/Banners Home Page (1)/6.png" class="d-block w-100" alt="Slide 6">
-                <div class="carousel-text" style="color: black;">
-                    <h2><b>Welcome To VichaarLab</b></h2>
-                    <p>
-                        Connecting the Future – Innovate,
-                        Automate, and Transform <br>with <b>Our
-                            IoT Solution!</b></p>
-                </div>
-            </div>
-            <!-- Slide 7 -->
-            <div class="carousel-item">
-                <img src="assets/images/img/Banners Home Page (1)/7.png" class="d-block w-100" alt="Slide 7">
-                <div class="carousel-text">
-                    <h2><b>Welcome To VichaarLab</b></h2>
-                    <p>
-                        Intelligence Redefined – Accelerate
-                        Innovation with <br>Our <b>AI & ML Solutions!</b></p>
+                    <p><em>Transforming Leads into Legacy – <br>Elevate Your Business with Our  <b>Real Estate CRM Solution!</b></em></p>
                 </div>
             </div>
         </div>
-
+    
         <!-- Controls -->
         <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -384,22 +435,6 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-
-        <!-- Content Section -->
-        <!-- <div class="container position-relative">
-        <div class="row align-items-center h-100">
-            <div class="col-lg-7">
-                <div class="text-white">
-                    <div class="d-flex gap-3">
-                        <a href="product.html" class="btn btn-primary btn-lg">Discover More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-5 d-none d-lg-block position-relative">
-                <img src="assets/images/bg/banner1-vector.png" class="img-fluid" alt="image">
-            </div>
-        </div>
-    </div> -->
     </div>
 
     <!-- =============== banner1-area end=============== -->
