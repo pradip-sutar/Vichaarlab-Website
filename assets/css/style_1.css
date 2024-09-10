@@ -1,33 +1,114 @@
-
+/* Base styles for large screens (desktop) */
 .carousel-item img {
     max-width: 100%;
     height: auto; /* Keeps the aspect ratio */
     display: block; /* Removes inline spacing issues */
-}   
+}
+
 .carousel {
     position: relative;
     width: 100%;
-    }
+}
 
-    .carousel img {
+.carousel img {
     width: 100%;
     height: auto;
-    }
+}
 
-    .carousel-text {
+.carousel-text {
     position: absolute;
     top: 50%;
     left: 10%;
     transform: translateY(-50%);
     color: white;
     font-size: 100px;
+    text-align: left; /* Ensures text alignment */
+}
+
+.carousel-text h2 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.carousel-text p {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+/* Media queries for responsiveness */
+
+/* For large tablets and small laptops (1024px and below) */
+@media (max-width: 1024px) {
+    .carousel-text {
+        font-size: 70px;
+        left: 5%; /* Adjust position for smaller screens */
+        text-align: center; /* Center text on smaller screens */
     }
 
     .carousel-text h2 {
-    font-size: 100px;
-    margin: 0;
+        font-size: 70px;
     }
+
     .carousel-text p {
-    font-size: 25px;
-    margin-top: 10px;
+        font-size: 20px;
     }
+}
+
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+    .carousel-text {
+        font-size: 50px;
+        left: 5%;
+        text-align: center;
+    }
+
+    .carousel-text h2 {
+        font-size: 50px;
+    }
+
+    .carousel-text p {
+        font-size: 18px;
+    }
+}
+
+/* For mobile phones (576px and below) */
+@media (max-width: 576px) {
+    .carousel-text {
+        font-size: 30px;
+        left: 5%;
+        top: 60%; /* Adjust text positioning */
+        transform: translateY(-50%);
+        text-align: left; /* Center the text */
+    }
+
+    .carousel-text h2 {
+        font-size: 30px;
+    }
+
+    .carousel-text p {
+        font-size: 16px;
+    }
+}
+
+/* For extra small mobile screens (375px and below) */
+@media (max-width: 375px) {
+    .carousel-text {
+        font-size: 25px;
+        left: 5%;
+        top: 60%;
+        text-align: center;
+    }
+
+    .carousel-text h2 {
+        font-size: 25px;
+    }
+
+    .carousel-text p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
