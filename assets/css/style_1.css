@@ -108,7 +108,198 @@
     }
 }
 
+ /* Pop-up container, hidden by default */
+ .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 20px;
+    /* background-color: #fff; */
+    background: rgba(255, 255, 255, 0.529); /* Semi-transparent white background */
+backdrop-filter: blur(10px); /* Frosted glass effect */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    border-radius: 5%;
+}
 
+/* Dark background overlay */
+/* .popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+} */
+.popup-overlay {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
+z-index: 999;
+}
+#contactForm{
+    width: 112%;
+}
+/* Form styling */
+.popup form input, .popup form select, .popup form textarea {
+    width: 87%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    transition: box-shadow 0.3s ease; /* Add transition */
+    /* box-shadow: 0px 0px 8px rgba(0, 0, 255, 0.2); */
+}
+.popup form input:hover, 
+.popup form select:hover, 
+.popup form textarea:hover {
+box-shadow: 0px 0px 8px rgba(0, 0, 255, 0.2);
+}
+
+/* Focus effect for input fields */
+.popup form input:focus, 
+.popup form select:focus, 
+.popup form textarea:focus {
+border-color: #007bff; /* Change border color on focus */
+box-shadow: 0px 0px 8px rgba(0, 0, 255, 0.2); /* Optional box-shadow on focus */
+outline: none; /* Remove default outline */
+}
+
+/* Placeholder styling */
+.popup form input::placeholder, 
+.popup form select::placeholder, 
+.popup form textarea::placeholder {
+color: #999; /* Gray color for placeholder */
+transition: opacity 0.3s ease; /* Smooth transition for placeholder */
+}
+
+/* Placeholder removal on focus */
+.popup form input:focus::placeholder, 
+.popup form select:focus::placeholder, 
+.popup form textarea:focus::placeholder {
+opacity: 0; /* Hide placeholder on focus */
+}
+
+/* Button styling */
+.popup form button {
+    width: 89%;
+    padding: 10px;
+    /* background-color: #007bff; */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.popup form button:hover {
+    /* background-color: #8afc07e4; */
+}
+
+.close-popup {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+}
+
+ /* Flex container for dropdowns */
+ .dropdown-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.marginBt{
+margin-bottom: 16px !important;
+}
+
+.talk{
+font-size: 2.6rem;
+font-weight: bold;
+color: #01008b;
+}
+.dropdown-row select {
+width: 50% !important; 
+display: inline-block;  
+margin-right: 10px;     
+border-radius: 5%;
+}
+
+#servicesF, #productsF {
+width: 50% !important; 
+}
+
+select {
+transition: width 0.3s ease;
+}
+.hidden {
+display: none !important;
+
+}
+
+
+.visible {
+display: inline-block !important; 
+
+}
+
+/* Hide labels as placeholders in select elements are sufficient */
+.conditional-label {
+    display: none;
+}
+.messageBox{
+    margin-top:4px;
+    margin-right: 7px;
+}
+.conditional-field{
+    padding-left: 23px;
+    padding-right: 38px;  
+    border-radius: 4%;
+}
+.exitBtn {
+position: absolute;
+top: 16px;
+right: 23px;
+box-shadow: 0px 0px 20px rgba(242, 15, 15, 0.685);
+background-color: rgb(255, 255, 255);
+border-radius: 50%;
+width: 25px;
+height: 25px;
+border: none;
+color: black;
+font-size: 1.1em;
+cursor: pointer;
+}
+
+.talkBtn {
+background-color: #e6004c; /* Original background color */
+color: white;
+border: none;
+padding: 10px;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover state */
+.talkBtn:hover {
+background-color: #e93772;; /* Change to the desired color on hover */
+
+}
 
 
 

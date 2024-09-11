@@ -38,6 +38,8 @@
 
     <!-- style css -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/style_1.css">
 </head>
 
 <body>
@@ -267,9 +269,130 @@
                 <h6><a href="mailto:info@vichaarlab.com">info@vichaarlab.com</a></h6>
             </div>
         </div>
-            <div class="eg-btn btn--primary header-btn">
-                <a href="contact.html">LET'S TALK</a>
+                    <div class="eg-btn btn--primary header-btn">
+          <a id="openPopupBtn">LET'S TALK</a>
+        </div>
+
+        <!-- Pop-up Overlay -->
+        <div id="popupOverlay" class="popup-overlay"></div>
+
+        <!-- Pop-up Content -->
+        <div id="popup" class="popup">
+          <h2 class="talk">Let's have a talk</h2>
+          <form id="contactForm">
+            <!-- Name -->
+            <!-- <label for="name">Name:</label> -->
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder=" Name"
+              class="marginBt"
+              required
+            />
+
+            <!-- Phone -->
+            <!-- <label for="phone">Phone:</label> -->
+            <input
+              type="number"
+              id="phone"
+              name="phone"
+              placeholder="  Phone  Number"
+              class="marginBt"
+              required
+            />
+
+            <!-- Email -->
+            <!-- <label for="email">Email:</label> -->
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="  Email ID"
+              class="marginBt"
+              required
+            />
+
+            <!-- Company Address -->
+            <!-- <label for="address">Company Address:</label> -->
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder=" Company Address"
+              class="marginBt"
+              required
+            />
+
+            <!-- Location -->
+            <!-- <label for="location">Location:</label> -->
+            <input
+              type="text"
+              id="location"
+              name="location"
+              placeholder="location"
+              class="marginBt"
+              required
+            />
+
+            <!-- Services / Products -->
+            <!-- Services / Products in a single row -->
+            <div class="dropdown-row marginBt">
+              <!-- Services / Products -->
+              <select
+                id="serviceProduct"
+                onchange="toggleDropdown(this)"
+                name="serviceProduct"
+                class="conditional-field"
+                required
+              >
+                <option value="" disabled selected>Services / Products</option>
+                <option value="services">Services</option>
+                <option value="products">Products</option>
+              </select>
+
+              <!-- ServicesF Dropdown (Initially hidden) -->
+              <select
+                id="servicesF"
+                name="services"
+                class="fieldSer conditional-field hidden"
+              >
+                <option value="" disabled selected>Select Service</option>
+                <option value="consulting">Consulting</option>
+                <option value="development">Development</option>
+                <option value="design">Design</option>
+              </select>
+
+              <!-- Products Dropdown (Initially hidden) -->
+              <select
+                id="productsF"
+                name="products"
+                class="conditional-field hidden"
+              >
+                <option value="" disabled selected>Select Product</option>
+                <option value="software">Software</option>
+                <option value="hardware">Hardware</option>
+                <option value="accessories">Accessories</option>
+              </select>
             </div>
+
+            <!-- Message -->
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              class="messageBox"
+              name="message"
+              rows="4"
+              required
+            ></textarea>
+
+            <!-- Submit Button -->
+            <button class="talkBtn" type="submit">Submit</button>
+          </form>
+
+          <!-- Close Button -->
+          <button class="exitBtn" id="exitBtn">×</button>
+        </div>
         </div>
     </header>
 
@@ -882,7 +1005,81 @@
     <script src="assets/js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script>
+        // Get elements
+    const openPopupBtn = document.getElementById('openPopupBtn');
+    const popup = document.getElementById('popup');
+    const popupOverlay = document.getElementById('popupOverlay');
+    const exitBtn = document.getElementById('exitBtn');
+    
+    // const serviceProductSelect = document.getElementById('serviceProduct');
+    // const servicesDropdown = document.getElementById('services');
+    // const productsDropdown = document.getElementById('products');
+    const conditionalFields = document.querySelectorAll('.conditional-field');
+    
+    // Show the pop-up when "LET'S TALK" button is clicked
+    openPopupBtn.addEventListener('click', () => {
+        popup.style.display = 'block';
+        popupOverlay.style.display = 'block';
+    });
+
+    // Close the pop-up when the "Close" button is clicked
+    exitBtn.addEventListener('click', () => {
+        popup.style.display = 'none';
+        popupOverlay.style.display = 'none';
+    });
+
+    // Close the pop-up when clicking outside the pop-up (on overlay)
+    popupOverlay.addEventListener('click', () => {
+        popup.style.display = 'none';
+        popupOverlay.style.display = 'none';
+    });
+
+    
+    // Handle form submission
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Form submitted successfully!');
+        // Here you can add form submission logic (e.g., using AJAX)
+        popup.style.display = 'none';
+        popupOverlay.style.display = 'none';
+    });
+    </script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Perform any form submission logic here (e.g., sending data to the server)
+
+        // Clear the form fields
+        this.reset(); // This will reset all fields to their default values
+    });
+
+        function toggleDropdown(selectElement) {
+    var servicesDropdown = document.getElementById("servicesF");
+    var productsDropdown = document.getElementById("productsF");
+
+    // Hide both dropdowns first
+    servicesDropdown.classList.remove("visible");
+    servicesDropdown.classList.add("hidden");
+
+    productsDropdown.classList.remove("visible");
+    productsDropdown.classList.add("hidden");
+
+    // Show the relevant dropdown
+    if (selectElement.value === "services") {
+        servicesDropdown.classList.remove("hidden");
+        servicesDropdown.classList.add("visible");
+    } else if (selectElement.value === "products") {
+        productsDropdown.classList.remove("hidden");
+        productsDropdown.classList.add("visible");
+    }
+}
+
+    </script>
 
 </body>
 
