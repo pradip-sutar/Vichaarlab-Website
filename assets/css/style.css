@@ -9222,18 +9222,20 @@ ul.blog-details-list li::after {
 }/*# sourceMappingURL=style.css.map */
 
 
-    .whatsapp-icon {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    text-decoration: none;
-    z-index: 1000;
-    margin-bottom: 6%;
-    margin-right: 1%;
-    size: 5%;
-    margin-left: 20px;
-  }
-  .whatsapp-icon:hover i {
-    color: #25D366; /* WhatsApp green color */
-  }
+.whatsapp {
+  font-size: 70px;
+  color: rgb(194, 33, 108);
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 130px;
+  right: 28px;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.whatsapp-icon:hover i {
+  color: #25D366; /* WhatsApp green color on hover */
+}
 
