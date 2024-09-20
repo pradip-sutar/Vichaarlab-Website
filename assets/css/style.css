@@ -9221,3 +9221,22 @@ ul.blog-details-list li::after {
 .commetn-area .comment-list .content .reply .bi {
   margin-left: 5px;
 }/*# sourceMappingURL=style.css.map */
+
+
+.whatsapp {
+  font-size: 70px;
+  color: rgb(194, 33, 108);
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 130px;
+  right: 28px;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.whatsapp-icon:hover i {
+  color: #25D366; /* WhatsApp green color on hover */
+}
+
