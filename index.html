@@ -14,6 +14,7 @@
     <!-- css file link -->
     <link rel="stylesheet" href="../assets/css/all.css">
 
+
     <!-- bootstrap 5 -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
 
@@ -43,7 +44,6 @@
 
     <link rel="stylesheet" href="../assets/css/style_1.css">
 
-    <link rel="stylesheet" href="../assets/css/style_1.css">
 
 <Style>
   /* General styles for the carousel caption */
@@ -137,6 +137,7 @@
 
     
 }
+ /* Custom CSS to fix the button at the bottom */
 
       
 </Style>
@@ -253,6 +254,8 @@
 
     <!-- =============== search-area end  =============== -->
 
+
+
     <!-- ========== header============= -->
 
    <header class="header-area style-1">
@@ -271,33 +274,14 @@
                 </div>
             </div>
             <ul class="menu-list">
-                <!-- <li class="menu-item-has-children">
-                    <a href="#" class="drop-down">Home</a><i class='bi bi-chevron-down dropdown-icon'></i>
-                    <ul class="sub-menu">
-                        <li><a href="index.html" class="page-active">Home 1</a></li>
-                        <li><a href="index2.html">Home 2</a></li>
-                        <li><a href="index3.html">Home 3</a></li>
-                        <li><a href="index4.html">Home 4</a></li>
-                        <li><a href="index5.html">Home 5</a></li>
-                    </ul>
-                </li> -->
+               
                 <li class="menu-item-has-children">
                     <a href="index.html" class="drop-down">Company</a><i class='bi bi-chevron-down dropdown-icon'></i>
                     <ul class="sub-menu">
                         <li><a href="about.html">About</a></li>
-                        <!-- <li><a href="team.html">Team</a></li> -->
+                       
                         <li><a href="faq.html">FAQ</a></li>
-                        <!-- <li><a href="job-list.html">Job List</a></li> -->
-                        <!--  <li><a href="#">Career</a></li> -->
-                        <!-- <li><a href="error.html">Submenu</a><i class='bi bi-chevron-right dropdown-icon'></i>
-                            <ul class="sub-menu">
-                                <li><a href="about.html">Child 1</a></li>
-                                <li><a href="team.html">Child 2</a></li>
-                                <li><a href="faq.html">Child 3</a></li>
-                                <li><a href="error.html">Child 4</a>
-                                </li>
-                            </ul>
-                        </li> -->
+                       
                     </ul>
                 </li>
                 <li class="menu-item-has-children">
@@ -328,15 +312,7 @@
                         <li><a href="products/camera-analytics.html">Camera Analytics</a></li>
                     </ul>
                 </li>
-                <!-- <li class="menu-item-has-children">
-                    <a href="blog-grid.html">Blog</a><i class='bi bi-chevron-down dropdown-icon'></i>
-                    <ul class="sub-menu">
-                        <li><a href="blog-grid.html">Blog Grid</a></li>
-                        <li><a href="blog-standard.html">Blog Standard</a></li>
-                        <li><a href="blog-details.html">Blog details</a></li>
-                    </ul>
-                </li> -->
-
+              
                 <li><a href="contact.html">Contact us</a></li>
             </ul>
             <!-- mobile-search-area -->
@@ -349,6 +325,7 @@
                 </form>
             </div>
         </div>
+        
         <div class="nav-right d-flex align-items-center gap-5">
             <div class="mobile-menu-btn d-lg-none d-block">
                 <h5 class="text-white mb-0">MENU</h5>
@@ -361,31 +338,13 @@
                     <i class="bi bi-list"></i>
                 </div>
             </div>
-            <!-- <li><a href="blog-grid.html">Our Blog</a></li>
-                 <div class="hotline d-xxl-flex d-none">
-                <div class="hotline-icon">
-                    <svg width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_1225_6)">
-                            <path
-                                d="M2.88867 3.31366C1.52734 3.7121 0.451563 4.8078 0.0996094 6.15585C0.0199219 6.45468 0 6.97265 0 8.53319L0.00664063 10.5254L7.37109 16.0039C11.4352 19.0254 14.948 21.5887 15.2004 21.7215C16.3027 22.2926 17.684 22.2926 18.7996 21.7215C19.0719 21.582 22.359 19.1781 26.6289 16.0039L33.9934 10.5254L34 8.53983C34 6.3285 33.9734 6.10936 33.5551 5.28593C33.2363 4.64843 32.5391 3.95116 31.9016 3.63241C30.9453 3.15429 32.134 3.18749 16.9602 3.19413C4.13711 3.19413 3.26055 3.20741 2.88867 3.31366ZM30.5801 6.0164C31.1977 6.34843 31.2973 6.61405 31.3305 7.96874L31.357 9.06444L24.4773 14.1777C19.291 18.0359 17.5312 19.3109 17.3055 19.3773C17.0531 19.4504 16.9469 19.4504 16.7012 19.3773C16.4754 19.3109 14.6891 18.0226 9.52266 14.1777L2.64297 9.06444L2.66953 7.96874C2.68945 7.07226 2.71602 6.83319 2.81563 6.64061C3.04141 6.20897 3.31367 6.00311 3.78516 5.90351C3.91133 5.87694 9.93437 5.86366 17.166 5.8703L30.3145 5.87694L30.5801 6.0164Z" />
-                            <path
-                                d="M0.000124167 20.5926C0.000124167 28.1894 -0.0197977 27.7844 0.445046 28.7141C0.757155 29.3316 1.45442 30.0355 2.09192 30.3609C3.03489 30.8457 1.85286 30.8125 17.0001 30.8125C32.1275 30.8125 30.9454 30.8457 31.9017 30.3676C32.5392 30.0488 33.2365 29.3516 33.5552 28.7141C34.0267 27.7844 34.0001 28.1961 33.9868 20.5926L33.9669 13.7461L32.672 14.7023L31.3771 15.6652L31.3439 21.3961C31.3107 26.8348 31.304 27.1402 31.1845 27.3594C31.0118 27.6848 30.8857 27.8176 30.5802 27.9836L30.3146 28.123H17.0001H3.68567L3.42005 27.9836C3.11458 27.8176 2.98841 27.6848 2.81575 27.3594C2.69622 27.1402 2.68958 26.848 2.66966 21.4027L2.64973 15.6785L1.41458 14.7621C0.730593 14.2574 0.139577 13.8191 0.0864523 13.7926C0.0134054 13.7461 0.000124167 14.9082 0.000124167 20.5926Z" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_1225_6">
-                                <rect width="34" height="34" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </div>
-                <div class="hotline-info">
-                    <span>Messge Us</span>
-                    <h6><a href="mailto:info@vichaarlab.com">info@vichaarlab.com</a></h6>
-                </div>
-            </div> -->             
-            <!-- <li><a href="blog-grid.html">Latest News</a></li> -->
+          
             <div class="eg-btn btn--primary header-btn">
-                <a id="openPopupBtn">LET'S TALK</a>
+                <a id="openPopupBtn">
+                    <span class="text">LET'S TALK</span>
+                    <i class='bx bx-conversation'></i>
+                    
+                </a>
               </div>
               
               <!-- Pop-up Overlay -->
@@ -397,10 +356,8 @@
                 <div class="flex flex-col md:flex-row p-8 bg-background">
                   <!-- Left Side (SVG and text) -->
                   <div class="flex-1 mb-8 md:mb-0 pad-2">
-                    <h1 class="text-3xl font-bold text-foreground" style="margin-right: 200px;">Let’s have a Talk</h1>
-                    <!-- <p class="text-muted-foreground mt-2">
-                      Get a <a href="mailto:start@lilosocial.com" class="text-primary underline">start@lilosocial.com</a>
-                    </p> -->
+                    <h1 class="text-3xl font-bold text-foreground secLeft" style="margin-right: 200px;">Let’s have a Talk</h1>
+                   
                     <img aria-hidden="true" alt="Illustration of a person working at a desk" 
                          src="../assets/images/img/Vichaarlab banner/icon.svg" class="mt-9 w-[250px] mx-auto" />
                   </div>
@@ -433,52 +390,48 @@
                     <!-- Services / Products Selection -->
                     <div class="dropdown-row marginBt">
                         <!-- Services / Products -->
-                        <label for="serviceProduct">Services / Products</label>
+                        <label class= "serviceProduct" for="serviceProduct">Services / Products</label>
                         <select id="serviceProduct" onchange="toggleDropdown(this)" name="serviceProduct" class="conditional-field" required>
                             <option value="" disabled selected>Services / Products</option>
                             <option value="services">Services</option>
                             <option value="products">Products</option>
                         </select>
+
+                        <div class="dropdown-row marginBt checke">
+                            <!-- Services Dropdown (Initially hidden) -->
+                            <select id="servicesF" name="services" class="fieldSer conditional-field hidden">
+                                <option value="" disabled selected>Select Service</option>
+                                <option value="consulting">Web Developement</option>
+                                <option value="development">Custom Software Development</option>
+                                <option value="design">Mobile Application</option>
+                                <option value="design">IoT</option>
+                                <option value="design">AI/ML</option>
+                                <option value="design">ERP Solutions</option>
+                                <option value="design">CRM Solutions</option>
+                                <option value="design">E-Commerce</option>
+    
+                            </select>
+                    
+                            <!-- Products Dropdown (Initially hidden) -->
+                            <select id="productsF" name="products" class="conditional-field hidden">
+                                <option value="" disabled selected>Select Product</option>
+                                <option value="software">Real-Estate CRM</option>
+                                <option value="hardware">Construction Management</option>
+                                <option value="accessories">School ERP</option>
+                                <option value="accessories">E-Commerce</option>
+                                <option value="accessories">HRMS</option>
+                                <option value="accessories">Telematic Solutions</option>
+                                <option value="accessories">Camera Analytics</option>
+    
+    
+    
+    
+                            </select>
+                        </div>
                     </div>
                 
                     <!-- Conditional Dropdowns -->
-                    <div class="dropdown-row marginBt">
-                        <!-- Services Dropdown (Initially hidden) -->
-                        <select id="servicesF" name="services" class="fieldSer conditional-field hidden">
-                            <option value="" disabled selected>Select Service</option>
-                            <option value="consulting">Web Developement</option>
-                            <option value="development">Custom Software Development</option>
-                            <option value="design">Mobile Application</option>
-                            <option value="design">IoT</option>
-                            <option value="design">AI/ML</option>
-                            <option value="design">ERP Solutions</option>
-                            <option value="design">CRM Solutions</option>
-                            <option value="design">E-Commerce</option>
-                            <!-- <option value="design">Bussiness Consulting</option> -->
-
-
-
-
-
-
-                        </select>
-                
-                        <!-- Products Dropdown (Initially hidden) -->
-                        <select id="productsF" name="products" class="conditional-field hidden">
-                            <option value="" disabled selected>Select Product</option>
-                            <option value="software">Real-Estate CRM</option>
-                            <option value="hardware">Construction Management</option>
-                            <option value="accessories">School ERP</option>
-                            <option value="accessories">E-Commerce</option>
-                            <option value="accessories">HRMS</option>
-                            <option value="accessories">Telematic Solutions</option>
-                            <option value="accessories">Camera Analytics</option>
-
-
-
-
-                        </select>
-                    </div>
+                    
                 
                     <!-- Message Box -->
                     <div class="input-row messageBox">
@@ -497,9 +450,12 @@
               
                 <!-- Close Button -->
                 <button class="exitBtn text-gray-600 absolute top-4 right-4 text-2xl" id="exitBtn">×</button>
-              </div>
+            </div>
               
               
+            
+
+            
         </div>
     </header>
 
@@ -600,6 +556,7 @@
 
     <!-- =============== banner1-area end=============== -->
 
+            
 
     <!-- =============== About-section start  =============== -->
 
@@ -650,7 +607,123 @@
     </div>
 
     <!-- =============== About-section end  =============== -->
+<!-- fixed Index bottom-nav  -->
 
+
+  <div class="bottom-nav">
+    <a href="./index.html" class="active">
+      <i class='bx bxs-home'></i>
+      <span>Home</span>
+    </a>
+    <a href="#" class="active" id="openPopupBtnMobile">
+      <i class='bx bxs-conversation'></i>
+      <span class="text" >Let's Talk</span>
+    </a>
+  </div> 
+  <!-- Pop-up Overlay -->
+  <div id="popupOverlay" class="popup-overlay"></div>
+  
+  <!-- Pop-up Content -->
+  <div id="popup" class="popup">
+    
+    <div class="flex flex-col md:flex-row p-8 bg-background">
+      <!-- Left Side (SVG and text) -->
+      <div class="flex-1 mb-8 md:mb-0 pad-2">
+        <h1 class="text-3xl font-bold text-foreground secLeft" style="margin-right: 200px;">Let’s have a Talk</h1>
+       
+        <img aria-hidden="true" alt="Illustration of a person working at a desk" 
+             src="../assets/images/img/Vichaarlab banner/icon.svg" class="mt-9 w-[250px] mx-auto" />
+      </div>
+  
+      <!-- Right Side (Form) -->
+      <form>
+        <div>
+        <!-- Name, Phone, Email, Address, Location fields -->
+        <div class="input-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-row">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" required>
+        </div>
+        <div class="input-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-row">
+            <label for="address">Company Address</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+        <div class="input-row">
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" required>
+        </div>
+    
+        <!-- Services / Products Selection -->
+        <div class="dropdown-row marginBt">
+            <!-- Services / Products -->
+            <label class= "serviceProduct" for="serviceProduct">Services / Products</label>
+            <select id="serviceProduct" onchange="toggleDropdown(this)" name="serviceProduct" class="conditional-field" required>
+                <option value="" disabled selected>Services / Products</option>
+                <option value="services">Services</option>
+                <option value="products">Products</option>
+            </select>
+
+            <div class="dropdown-row marginBt checke">
+                <!-- Services Dropdown (Initially hidden) -->
+                <select id="servicesF" name="services" class="fieldSer conditional-field hidden">
+                    <option value="" disabled selected>Select Service</option>
+                    <option value="consulting">Web Developement</option>
+                    <option value="development">Custom Software Development</option>
+                    <option value="design">Mobile Application</option>
+                    <option value="design">IoT</option>
+                    <option value="design">AI/ML</option>
+                    <option value="design">ERP Solutions</option>
+                    <option value="design">CRM Solutions</option>
+                    <option value="design">E-Commerce</option>
+
+                </select>
+        
+                <!-- Products Dropdown (Initially hidden) -->
+                <select id="productsF" name="products" class="conditional-field hidden">
+                    <option value="" disabled selected>Select Product</option>
+                    <option value="software">Real-Estate CRM</option>
+                    <option value="hardware">Construction Management</option>
+                    <option value="accessories">School ERP</option>
+                    <option value="accessories">E-Commerce</option>
+                    <option value="accessories">HRMS</option>
+                    <option value="accessories">Telematic Solutions</option>
+                    <option value="accessories">Camera Analytics</option>
+
+
+
+
+                </select>
+            </div>
+        </div>
+    
+        <!-- Conditional Dropdowns -->
+        
+    
+        <!-- Message Box -->
+        <div class="input-row messageBox">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+    
+        <!-- Submit Button -->
+        <div class="input-row">
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+    </form>
+    
+    </div>
+  
+    <!-- Close Button -->
+    <button class="exitBtn text-gray-600 absolute top-4 right-4 text-2xl" id="exitBtn">×</button>
+</div>
     <!-- =============== Service-section start  =============== -->
 
     <div class="service-section pt-80 pb-80">
@@ -1340,93 +1413,7 @@
     </div>
     </div>
 
-    <!-- =============== team-section end  =============== -->
-
-    <!-- =============== Service-section start  =============== -->
-
-    <!-- <div class="blog-section pt-80 pb-80">
-        <img src="../assets/images/bg/water-mark1.png" alt="image" class="img-fluid water-mark1">
-        <img src="../assets/images/bg/water-mark2.png" alt="image" class="img-fluid water-mark2">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="section-title primary1">
-                        <span>-Our News-</span>
-                        <h3>Learn Something From Blog</h3>
-                        <p class="para">Get the most of reduction in your team’s operating costs for the whole product
-                            which creates amazing UI/UX experiences.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row position-relative justify-content-center g-4">
-                <div class="col-lg-4 col-md-6 col-sm-10">
-                    <div class="sigle-blog-1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s">
-                        <div class="blog-image">
-                            <img src="../assets/images/blog/blog11.png" class="img-fluid" alt="image">
-                        </div>
-                        <div class="blog-content hover-border1">
-                            <span>Ui/Ux Design</span>
-                            <h4><a href="blog-details.html">How to Create a Useful & Excellent Optimized Section</a>
-                            </h4>
-                            <div class="blog-meta">
-                                <div class="author-img">
-                                    <img src="../assets/images/blog/blog-author1.png" alt="image">
-                                </div>
-                                <div class="designation">
-                                    <h5>Johan Martin Stw</h5>
-                                    <div class="date">Februay 24, 2022<span>8 min Read</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-10">
-                    <div class="sigle-blog-1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.4s">
-                        <div class="blog-image">
-                            <img src="../assets/images/blog/blog12.png" class="img-fluid" alt="image">
-                        </div>
-                        <div class="blog-content hover-border1">
-                            <span>Web Develpment</span>
-                            <h4><a href="blog-details.html">Overcoming Blockers: How to Build Your Red Tape Toolkit</a>
-                            </h4>
-                            <div class="blog-meta">
-                                <div class="author-img">
-                                    <img src="../assets/images/blog/blog-author2.png" alt="image">
-                                </div>
-                                <div class="designation">
-                                    <h5>Cameron Williamson</h5>
-                                    <div class="date">Februay 28, 2022<span>28 min Read</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-10">
-                    <div class="sigle-blog-1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.6s">
-                        <div class="blog-image">
-                            <img src="../assets/images/blog/blog13.png" class="img-fluid" alt="image">
-                        </div>
-                        <div class="blog-content hover-border1">
-                            <span>Ui/Ux Design</span>
-                            <h4><a href="blog-details.html">A lifestyle you always being the focal point is
-                                    innately.</a></h4>
-                            <div class="blog-meta">
-                                <div class="author-img">
-                                    <img src="../assets/images/blog/blog-author3.png" alt="image">
-                                </div>
-                                <div class="designation">
-                                    <h5>Sara Watson</h5>
-                                    <div class="date">March 24, 2022<span>18 min Read</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- =============== Service-section end  =============== -->
+    
 
     <!-- =============== Sponsor-section start  =============== -->
 
@@ -1514,6 +1501,12 @@
     </div>
 
     <!-- =============== Sponsor-section end  =============== -->
+
+<!-- Modal -->
+
+
+
+
 
     <!-- =============== Footer-action-section start =============== -->
 
@@ -1640,47 +1633,71 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
+<!-- To All Content -->
     <script>
+      document.addEventListener('DOMContentLoaded', function() {
         // Get elements
-    const openPopupBtn = document.getElementById('openPopupBtn');
-    const popup = document.getElementById('popup');
-    const popupOverlay = document.getElementById('popupOverlay');
-    const exitBtn = document.getElementById('exitBtn');
-    
-    // const serviceProductSelect = document.getElementById('serviceProduct');
-    // const servicesDropdown = document.getElementById('services');
-    // const productsDropdown = document.getElementById('products');
-    const conditionalFields = document.querySelectorAll('.conditional-field');
-    
-    // Show the pop-up when "LET'S TALK" button is clicked
-    openPopupBtn.addEventListener('click', () => {
-        popup.style.display = 'block';
-        popupOverlay.style.display = 'block';
-    });
+        const openPopupBtn = document.getElementById('openPopupBtn');
+        const openPopupBtnMobile = document.getElementById('openPopupBtnMobile');
+        const popup = document.getElementById('popup');
+        const popupOverlay = document.getElementById('popupOverlay');
+        const exitBtn = document.getElementById('exitBtn');
 
-    // Close the pop-up when the "Close" button is clicked
-    exitBtn.addEventListener('click', () => {
-        popup.style.display = 'none';
-        popupOverlay.style.display = 'none';
-    });
+        // Function to open the pop-up
+        function openPopup() {
+            popup.style.display = 'block';
+            popupOverlay.style.display = 'block';
+        }
 
-    // Close the pop-up when clicking outside the pop-up (on overlay)
-    popupOverlay.addEventListener('click', () => {
-        popup.style.display = 'none';
-        popupOverlay.style.display = 'none';
-    });
+        // Function to close the pop-up
+        function closePopup() {
+            popup.style.display = 'none';
+            popupOverlay.style.display = 'none';
+        }
 
-    
-    // Handle form submission
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        alert('Form submitted successfully!');
-        // Here you can add form submission logic (e.g., using AJAX)
-        popup.style.display = 'none';
-        popupOverlay.style.display = 'none';
+        // Show the pop-up when "LET'S TALK" button is clicked (desktop)
+        if (openPopupBtn) {
+            openPopupBtn.addEventListener('click', (event) => {
+                event.preventDefault();  // Prevent the default link behavior
+                openPopup();
+            });
+        }
+
+        // Show the pop-up when "LET'S TALK" button is clicked (mobile)
+        if (openPopupBtnMobile) {
+            openPopupBtnMobile.addEventListener('click', (event) => {
+                event.preventDefault();  // Prevent the default link behavior
+                openPopup();
+            });
+        }
+
+        // Close the pop-up when the "Close" button is clicked
+        if (exitBtn) {
+            exitBtn.addEventListener('click', () => {
+                closePopup();
+            });
+        }
+
+        // Close the pop-up when clicking outside the pop-up (on overlay)
+        if (popupOverlay) {
+            popupOverlay.addEventListener('click', () => {
+                closePopup();
+            });
+        }
+
+        // Handle form submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(event) {
+                event.preventDefault();  // Prevent the default form submission
+                alert('Form submitted successfully!');
+                // Add your form submission logic here (e.g., using AJAX)
+                closePopup();  // Close the pop-up after submission
+            });
+        }
     });
     </script>
+    <!--  -->
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent the default form submission
@@ -1713,6 +1730,7 @@
 }
 
     </script>
+
 
 </body>
 

@@ -113,7 +113,8 @@
     }
 }
 
- /* Pop-up container, hidden by default */
+
+
  /* Popup container styling */
  .popup {
     display: none;
@@ -121,12 +122,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%; /* Responsive width */
-    max-width: 1000px; /* Limit maximum width for larger screens */
-    max-height: 90vh; /* Ensure the popup doesn't exceed the viewport height */
+    width: 100%; 
+    max-width: 1136px; 
+    max-height: 93vh; 
    
-    background: rgba(255, 255, 255, 0.85); /* Slightly opaque white background */
-    backdrop-filter: blur(10px); /* Frosted glass effect */
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px); 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     z-index: 1000;
     border-radius: 15px;
@@ -154,9 +155,14 @@
     justify-content: space-between;
 }
 
+.marginBt .serviceProduct{
+    margin-top: 12px;
+    font-size: 15px;
+}
+
 @media(min-width: 768px) {
     .popup .flex {
-        flex-direction: row; /* Side by side layout for larger screens */
+        flex-direction: row; 
     }
 }
 
@@ -238,16 +244,17 @@
 .popup form button {
     width: 100%;
     padding: 12px;
-    background-color: #f97316; /* Orange button */
+    background-color: #f97316; 
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-size: 17px;
 }
 
 .popup form button:hover {
-    background-color: #ea580c; /* Darker orange on hover */
+    background-color: #ea580c;
 }
 
 /* Close button styling */
@@ -288,7 +295,9 @@ border-radius: 5%;
 }
 
 #servicesF, #productsF {
-width: 50% !important; 
+
+width: 99% !important;
+    height: 40px;
 }
 
 select {
@@ -316,7 +325,17 @@ display: inline-block !important;
 .conditional-field{
     padding-left: 23px;
     padding-right: 38px;  
-    border-radius: 4%;
+    border-radius: 9px;
+}
+
+.conditional-field:hover{
+    box-shadow: 0px 0px 8px rgba(0, 0, 255, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.checke:hover{
+   
+    transition: box-shadow 0.3s ease;
 }
 .exitBtn {
 position: absolute;
@@ -334,21 +353,970 @@ cursor: pointer;
 }
 
 .talkBtn {
-background-color: #e6004c; /* Original background color */
+background-color: #e6004c;
 color: white;
 border: none;
 padding: 10px;
 border-radius: 4px;
 cursor: pointer;
-transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+transition: background-color 0.3s ease, box-shadow 0.3s ease; 
 }
 
-/* Hover state */
 .talkBtn:hover {
-background-color: #e93772;; /* Change to the desired color on hover */
+background-color: #e93772;; 
+}
+
+.header-btn .text { 
+    display: inline; /* Show the text by default */
+}
+
+.header-btn i {
+    display: none; /* Hide the icon by default */
+}
+
+.bottom-nav span{
+    display: none
+}
+.bottom-nav i{
+    display: none
+}
+
+@media(max-width: 488px) {
+
+    /* .index-btn{
+    
+        position: fixed;
+    bottom: 20px; 
+    right: 130px;  
+    z-index: 1000; 
+    font-size: 15px;
+    padding: 7px 10px 7px 10px;
+}
+.index-btn i {
+    font-size: 20px; 
+}
+.header-btn .text {
+    display: none; 
+}
+
+.header-btn i {
+    display: inline-block; 
+    font-size: 24px; 
+} */
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 245, 245, 0.618);
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10009;
+  }
+
+  .bottom-nav a {
+    text-align: center;
+    flex-grow: 1;
+    color: #444;
+    font-size: 14px;
+  }
+
+  /* .bottom-nav #openPopupBtnMobile .text {
+    display: none !important; 
+} */
+
+  .bottom-nav a .bx {
+    display: block !important;
+    font-size: 24px !important;
+}
+
+  .bottom-nav a.active {
+    color: #ff1f1f;
+  }
+  
+
+    /* .header-btn{
+        position: fixed;
+    bottom: 20px; 
+    right: 20px;  
+    z-index: 1000; 
+    }
+    header.style-1 .header-btn {
+        display: block !important; 
+        visibility: visible !important;
+    }
+
+    header.style-2 .header-btn {
+        display: block !important; 
+        visibility: visible !important;
+      }
+
+      header.style-4 .header-btn {
+        display: block; 
+        visibility: visible !important;
+      }
+
+      header.style-4.style-5 .header-btn {
+        display: block !important; 
+        visibility: visible !important;
+      } */
+    .popup .flex {
+        flex-direction: row; 
+    }
+
+    .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%; 
+        max-width: 600px; 
+        max-height: 100vh; 
+       
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(10px); 
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    .secLeft{
+        margin-right: 10px !important;
+    }
+
+    .popup form {
+        /* flex: 1; */
+        background-color: white;
+        padding: 8px 10px 6px 10px;
+        border-radius: 15px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        max-height: 90vh; 
+        font-size: 11px;
+    }
+
+    .popup form input,
+.popup form select,
+.popup form textarea {
+    width: 100%; /* Full width for form elements */
+    padding:2px;
+    margin-bottom: 3px;
+    border: 1px solid #8a8888;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.marginBt .serviceProduct{
+    font-size: 10px;
+    line-height: 9px;
+    width: 100%;
+    margin-top: 9px;
+}
+.conditional-field {
+    display: block; /* Full width */
+    padding-left: 1px;
+    padding-right: 1px;
+    border-radius: 9px;
+    line-height: 18px;
+    width: 100% !important; /* Full width inside parent */
+    height: 20px;
+    box-sizing: border-box; /* Ensures padding is included in width */
+    
+}
+
+
+
+.dropdown-row {
+    width: 100%; /* Ensure the parent row is full width */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    
+}
+
+.marginBt {
+    margin-bottom: 1px; /* Adds spacing between rows */
+}
+
+.checke {
+    width: 100%; /* Ensures full width for child elements */
+    height: 2px;
+}
+.messageBox{
+margin-top:15px;
+}
+
+.messageBox #message{
+    height: 30px;
+}
+.input-row button{
+    height: 30px;
+    line-height: 9px;
+}
+
+}
+
+@media (min-width: 489px) and (max-width: 768px) {
+    .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(255, 245, 245, 0.618);
+        border-top: 1px solid #ddd;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 10009;
+      }
+    
+      .bottom-nav a {
+        text-align: center;
+        flex-grow: 1;
+        color: #444;
+        font-size: 14px;
+      }
+    
+      /* .bottom-nav #openPopupBtnMobile .text {
+        display: none !important; 
+    } */
+    
+      .bottom-nav a .bx {
+        display: block !important;
+        font-size: 24px !important;
+    }
+    
+      .bottom-nav a.active {
+        color: #ff1f1f;
+      }
+    /* .index-btn{
+    
+        position: fixed;
+    bottom: 20px; 
+    right: 140px;  
+    z-index: 1000; 
+    font-size: 15px;
+    padding: 7px 10px 7px 10px;
+}
+    .header-btn{
+        position: fixed;
+    bottom: 20px; 
+    right: 20px;  
+    z-index: 1000; 
+    }
+    header.style-1 .header-btn {
+        display: block !important; 
+        visibility: visible !important;
+    }
+
+    header.style-2 .header-btn {
+        display: block !important; 
+        visibility: visible !important;
+      }
+
+      header.style-4 .header-btn {
+        display: block; 
+        visibility: visible !important;
+      }
+
+      header.style-4.style-5 .header-btn {
+        display: block !important; 
+        visibility: visible !important;
+      } */
+    .popup .flex {
+        flex-direction: row;
+    }
+    .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%; 
+        max-width: 600px; 
+        max-height: 100vh; 
+       
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(10px); 
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    .secLeft{
+        margin-right: 10px !important;
+    }
+
+    .popup form {
+        /* flex: 1; */
+        background-color: white;
+        padding: 8px 10px 6px 10px;
+        border-radius: 15px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        max-height: 90vh; 
+        font-size: 11px;
+    }
+
+    .popup form input,
+.popup form select,
+.popup form textarea {
+    width: 100%; /* Full width for form elements */
+    padding:2px;
+    margin-bottom: 3px;
+    border: 1px solid #8a8888;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.marginBt .serviceProduct{
+    font-size: 10px;
+    line-height: 9px;
+    width: 100%;
+    margin-top: 9px;
+}
+.conditional-field {
+    display: block; /* Full width */
+    padding-left: 1px;
+    padding-right: 1px;
+    border-radius: 9px;
+    line-height: 18px;
+    width: 100% !important; /* Full width inside parent */
+    height: 20px;
+    box-sizing: border-box; /* Ensures padding is included in width */
+    
+}
+
+
+
+.dropdown-row {
+    width: 100%; /* Ensure the parent row is full width */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    
+}
+
+.marginBt {
+    margin-bottom: 1px; /* Adds spacing between rows */
+}
+
+.checke {
+    width: 100%; /* Ensures full width for child elements */
+    height: 2px;
+}
+.messageBox{
+margin-top:15px;
+}
+
+.messageBox #message{
+    height: 30px;
+}
+.input-row button{
+    height: 30px;
+    line-height: 9px;
+}
 
 }
 
 
 
-  
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* .index-btn{
+    
+        position: fixed;
+    bottom: 20px; 
+    right: 150px;  
+    z-index: 1000; 
+    font-size: 15px;
+    padding: 10px 14px 7px 10px;
+}
+    .header-btn{
+        position: fixed;
+    bottom: 20px; 
+    right: 20px;  
+    z-index: 1000; 
+    }
+    header.style-1 .header-btn {
+        display: block !important; 
+        visibility: visible !important;
+    }
+
+    header.style-2 .header-btn {
+        display: block !important; 
+        visibility: visible !important;
+      }
+
+      header.style-4 .header-btn {
+        display: block; 
+        visibility: visible !important;
+      }
+
+      header.style-4.style-5 .header-btn {
+        display: block !important; 
+        visibility: visible !important;
+      } */
+    .popup .flex {
+        flex-direction: row;
+    }
+      .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%; 
+        max-width: 700px; 
+        max-height: 110vh; 
+       
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(10px); 
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    .secLeft{
+        margin-right: 70px !important;
+    }
+
+    .popup form {
+        /* flex: 1; */
+        background-color: white;
+        padding: 8px 10px 6px 10px;
+        border-radius: 15px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        max-height: 120vh; 
+        font-size: 12px;
+    }
+
+    .popup form input,
+.popup form select,
+.popup form textarea {
+    width: 100%; /* Full width for form elements */
+    padding:4px;
+    margin-bottom: 4px;
+    border: 1px solid #8a8888;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.marginBt .serviceProduct{
+    font-size: 13px;
+    line-height: 9px;
+    width: 100%;
+    margin-top: 10px;
+}
+.conditional-field {
+    display: block; /* Full width */
+    padding-left: 1px;
+    padding-right: 1px;
+    border-radius: 9px;
+    line-height: 25px;
+    width: 100% !important; /* Full width inside parent */
+    height: 30px;
+    box-sizing: border-box; /* Ensures padding is included in width */
+    
+}
+
+
+
+.dropdown-row {
+    width: 100%; /* Ensure the parent row is full width */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    
+}
+
+.marginBt {
+    margin-bottom: 5px; /* Adds spacing between rows */
+}
+
+.checke {
+    width: 100%; /* Ensures full width for child elements */
+    height: 2px;
+}
+.messageBox{
+margin-top:25px;
+}
+
+.messageBox #message{
+    height: 70px;
+}
+.input-row button{
+    height: 40px;
+    line-height: 9px;
+}
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    
+    /* .header-btn{
+        position: fixed;
+    bottom: 20px; 
+    right: 20px;  
+    z-index: 1000; 
+    }
+    header.style-1 .header-btn {
+        display: block !important; 
+        visibility: visible !important;
+    }
+
+    header.style-2 .header-btn {
+        display: block !important; 
+        visibility: visible !important;
+      }
+
+      header.style-4 .header-btn {
+        display: block; 
+        visibility: visible !important;
+      }
+
+      header.style-4.style-5 .header-btn {
+        display: block !important; 
+        visibility: visible !important;
+      } */
+    .popup .flex {
+        flex-direction: row;
+    }
+    .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%; 
+        max-width: 1136px; 
+        max-height: 93vh; 
+       
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(10px); 
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        border-radius: 15px;
+        padding: 20px;
+    }
+    
+    
+    /* Dark background overlay */
+    .popup-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
+        z-index: 999;
+    }
+    
+    /* Flexbox for popup content */
+    .popup .flex {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: space-between;
+    }
+    
+    .marginBt .serviceProduct{
+        margin-top: 12px;
+        font-size: 15px;
+    }
+    
+    @media(min-width: 768px) {
+        .popup .flex {
+            flex-direction: row; 
+        }
+    }
+    
+    /* Left Side - SVG and text */
+    .popup .left-section {
+        flex: 1;
+        text-align: center; /* Center align text */
+    }
+    
+    .popup .left-section h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    .popup .left-section p {
+        font-size: 1rem;
+        color: #666;
+    }
+    
+    .popup .left-section img {
+        margin-top: 20px;
+        max-width: 100%;
+    }
+    
+    /* Right Side - Form styling */
+    .popup form {
+        flex: 1;
+        background-color: white;
+        padding: 8px 10px 6px 10px;
+        border-radius: 15px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        max-height: 90vh; 
+        font-size: 11px;
+    }
+    
+    /* Input, Select, and Textarea styling */
+    .popup form input,
+    .popup form select,
+    .popup form textarea {
+        width: 100%; /* Full width for form elements */
+        padding:10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        transition: box-shadow 0.3s ease;
+    }
+    
+    .popup form input:hover,
+    .popup form select:hover,
+    .popup form textarea:hover {
+        box-shadow: 0px 0px 8px rgba(0, 0, 255, 0.2);
+    }
+    
+    /* Focus effect for input fields */
+    .popup form input:focus,
+    .popup form select:focus,
+    .popup form textarea:focus {
+        border-color: #007bff;
+        box-shadow: 0px 0px 8px rgba(0, 0, 255, 0.2);
+        outline: none;
+    }
+    
+    /* Placeholder styling */
+    .popup form input::placeholder,
+    .popup form select::placeholder,
+    .popup form textarea::placeholder {
+        color: #999;
+        transition: opacity 0.3s ease;
+    }
+    
+    /* Placeholder removal on focus */
+    .popup form input:focus::placeholder,
+    .popup form select:focus::placeholder,
+    .popup form textarea:focus::placeholder {
+        opacity: 0;
+    }
+    
+    /* Button styling */
+    .popup form button {
+        width: 100%;
+        padding: 12px;
+        background-color: #f97316; 
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-size: 17px;
+    }
+    
+    .popup form button:hover {
+        background-color: #ea580c;
+    }
+    
+    /* Close button styling */
+    .close-popup {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    /* Flex container for dropdowns */
+    .dropdown-row {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    
+    /* Custom margin class */
+    .marginBt {
+        margin-bottom: 9px !important;
+    }
+    
+    .talk{
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: #01008b;
+    }
+    .dropdown-row select {
+    width: 30% !important; 
+    display: flex;  
+    margin-right: 10px;     
+    border-radius: 5%;
+    }
+    
+    #servicesF, #productsF {
+    
+    width: 99% !important;
+        height: 40px;
+    }
+    
+    select {
+    transition: width 0.3s ease;
+    }
+    .hidden {
+    display: none !important;
+    
+    }
+    
+    
+    .visible {
+    display: inline-block !important; 
+    
+    }
+    
+    /* Hide labels as placeholders in select elements are sufficient */
+    .conditional-label {
+        display: none;
+    }
+    .messageBox{
+        margin-top:2px;
+        margin-right: 7px;
+    }
+    .messageBox #message{
+        height: 70px;
+    }
+    .conditional-field{
+        padding-left: 23px;
+        padding-right: 38px;  
+        border-radius: 9px;
+    }
+    
+    .conditional-field:hover{
+        box-shadow: 0px 0px 8px rgba(0, 0, 255, 0.2);
+        transition: box-shadow 0.3s ease;
+    }
+    
+    .checke:hover{
+       
+        transition: box-shadow 0.3s ease;
+    }
+    .exitBtn {
+    position: absolute;
+    top: 16px;
+    right: 23px;
+    box-shadow: 0px 0px 20px rgba(242, 15, 15, 0.685);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    border: none;
+    color: black;
+    font-size: 1.1em;
+    cursor: pointer;
+    }
+    
+    .talkBtn {
+    background-color: #e6004c; /* Original background color */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+    }
+    
+    /* Hover state */
+    .talkBtn:hover {
+    background-color: #e93772;; 
+    }
+}
+
+/* preloader */
+
+.egns-preloader .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-border {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    max-width: 200px; /* Ensures the logo and circle are constrained */
+    margin: 0 auto;
+}
+
+.circle-border img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: auto;
+    z-index: 10;
+}
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .circle-border {
+        width: 80% !important;
+        height: 150px !important;
+        max-width: 150px !important;
+    }
+    
+    .circle-border img {
+        width: 60px !important;
+    }
+    
+    .circle-border svg {
+        width: 10px !important;
+        height: 10px !important;
+    }
+
+    .circle-border .moving-circle {
+        width: 10px;
+        height: 10px;
+        background: var(--primary-color1);
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        margin: auto;
+        animation: circle 2s linear infinite;
+      }
+      .circle-border .moving-circle:nth-child(2) {
+        width: 10px;
+        height: 10px;
+        background: var(--primary-color1);
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        margin: auto;
+        animation: circle 2.25s linear infinite;
+      }
+      .circle-border .moving-circle:nth-child(3) {
+        width: 10px;
+        height: 10px;
+        background: var(--primary-color1);
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        margin: auto;
+        animation: circle 2.5s linear infinite;
+      }
+
+   
+}
+
+@media (max-width: 480px) {
+    .circle-border {
+        width: 30% !important;
+        height: 40px !important;
+        max-width: 40px !important;
+    }
+    
+    .circle-border img {
+        width: 50px !important;
+    }
+    
+    .circle-border svg {
+        width: 0 !important;
+        height: 0 !important;
+    }
+    .circle-border .moving-circle {
+        width: 10px;
+        height: 10px;
+        background: var(--primary-color1);
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        margin: 5px !important;
+        animation: circle 2s linear infinite;
+      }
+      .circle-border .moving-circle:nth-child(2) {
+        width: 10px;
+        height: 10px;
+        background: var(--primary-color1);
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        margin: auto;
+        animation: circle 2.25s linear infinite;
+      }
+      .circle-border .moving-circle:nth-child(3) {
+        width: 10px;
+        height: 10px;
+        background: var(--primary-color1);
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        margin: auto;
+        animation: circle 2.5s linear infinite;
+      }
+      .circle-border .moving-circle:nth-child(3) {
+        width: 10px;
+        height: 10px;
+        background: var(--primary-color1);
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        margin: auto;
+        animation: circle 2.5s linear infinite;
+      }
+      .circle-border .moving-circle:nth-child(4) {
+        width: 10px;
+        height: 10px;
+        background: var(--primary-color1);
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        margin: auto;
+        animation: circle 2.75s linear infinite;
+      }
+   
+}
+
+
+
