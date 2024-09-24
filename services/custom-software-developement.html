@@ -39,7 +39,10 @@
     <!-- style css -->
     <link rel="stylesheet" href="../assets/css/style.css">
 
-    <link rel="stylesheet" href="../assets/css/style_1.css">
+     <link rel="stylesheet" href="../assets/css/style_1.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
 </head>
 
@@ -275,7 +278,11 @@
             </div> -->             
             <!-- <li><a href="blog-grid.html">Latest News</a></li> -->
             <div class="eg-btn btn--primary header-btn">
-                <a id="openPopupBtn">LET'S TALK</a>
+                <a id="openPopupBtn">
+                    <span class="text">LET'S TALK</span>
+                    <i class='bx bx-conversation'></i>
+                    
+                </a>
               </div>
               
               <!-- Pop-up Overlay -->
@@ -287,10 +294,8 @@
                 <div class="flex flex-col md:flex-row p-8 bg-background">
                   <!-- Left Side (SVG and text) -->
                   <div class="flex-1 mb-8 md:mb-0 pad-2">
-                    <h1 class="text-3xl font-bold text-foreground" style="margin-right: 300px;">Let’s have a Talk</h1>
-                    <!-- <p class="text-muted-foreground mt-2">
-                      Get a <a href="mailto:start@lilosocial.com" class="text-primary underline">start@lilosocial.com</a>
-                    </p> -->
+                    <h1 class="text-3xl font-bold text-foreground secLeft" style="margin-right: 200px;">Let’s have a Talk</h1>
+                   
                     <img aria-hidden="true" alt="Illustration of a person working at a desk" 
                          src="../assets/images/img/Vichaarlab banner/icon.svg" class="mt-9 w-[250px] mx-auto" />
                   </div>
@@ -323,52 +328,48 @@
                     <!-- Services / Products Selection -->
                     <div class="dropdown-row marginBt">
                         <!-- Services / Products -->
-                        <label for="serviceProduct">Services / Products</label>
+                        <label class= "serviceProduct" for="serviceProduct">Services / Products</label>
                         <select id="serviceProduct" onchange="toggleDropdown(this)" name="serviceProduct" class="conditional-field" required>
                             <option value="" disabled selected>Services / Products</option>
                             <option value="services">Services</option>
                             <option value="products">Products</option>
                         </select>
+
+                        <div class="dropdown-row marginBt checke">
+                            
+                            <select id="servicesF" name="services" class="fieldSer conditional-field hidden">
+                                <option value="" disabled selected>Select Service</option>
+                                <option value="consulting">Web Developement</option>
+                                <option value="development">Custom Software Development</option>
+                                <option value="design">Mobile Application</option>
+                                <option value="design">IoT</option>
+                                <option value="design">AI/ML</option>
+                                <option value="design">ERP Solutions</option>
+                                <option value="design">CRM Solutions</option>
+                                <option value="design">E-Commerce</option>
+    
+                            </select>
+                    
+                          
+                            <select id="productsF" name="products" class="conditional-field hidden">
+                                <option value="" disabled selected>Select Product</option>
+                                <option value="software">Real-Estate CRM</option>
+                                <option value="hardware">Construction Management</option>
+                                <option value="accessories">School ERP</option>
+                                <option value="accessories">E-Commerce</option>
+                                <option value="accessories">HRMS</option>
+                                <option value="accessories">Telematic Solutions</option>
+                                <option value="accessories">Camera Analytics</option>
+    
+    
+    
+    
+                            </select>
+                        </div>
                     </div>
                 
-                    <!-- Conditional Dropdowns -->
-                    <div class="dropdown-row marginBt">
-                        <!-- Services Dropdown (Initially hidden) -->
-                        <select id="servicesF" name="services" class="fieldSer conditional-field hidden">
-                            <option value="" disabled selected>Select Service</option>
-                            <option value="consulting">Web Developement</option>
-                            <option value="development">Custom Software Development</option>
-                            <option value="design">Mobile Application</option>
-                            <option value="design">IoT</option>
-                            <option value="design">AI/ML</option>
-                            <option value="design">ERP Solutions</option>
-                            <option value="design">CRM Solutions</option>
-                            <option value="design">E-Commerce</option>
-                            <!-- <option value="design">Bussiness Consulting</option> -->
-
-
-
-
-
-
-                        </select>
-                
-                        <!-- Products Dropdown (Initially hidden) -->
-                        <select id="productsF" name="products" class="conditional-field hidden">
-                            <option value="" disabled selected>Select Product</option>
-                            <option value="software">Real-Estate CRM</option>
-                            <option value="hardware">Construction Management</option>
-                            <option value="accessories">School ERP</option>
-                            <option value="accessories">E-Commerce</option>
-                            <option value="accessories">HRMS</option>
-                            <option value="accessories">Telematic Solutions</option>
-                            <option value="accessories">Camera Analytics</option>
-
-
-
-
-                        </select>
-                    </div>
+                 
+                    
                 
                     <!-- Message Box -->
                     <div class="input-row messageBox">
@@ -376,7 +377,7 @@
                         <textarea id="message" name="message" rows="4"></textarea>
                     </div>
                 
-                    <!-- Submit Button -->
+                
                     <div class="input-row">
                         <button type="submit">Submit</button>
                     </div>
@@ -385,9 +386,9 @@
                 
                 </div>
               
-                <!-- Close Button -->
+             
                 <button class="exitBtn text-gray-600 absolute top-4 right-4 text-2xl" id="exitBtn">×</button>
-              </div>
+            </div>
               
               
         </div>
@@ -722,7 +723,129 @@ style="background-image: url(../assets/images/img/Inner_Page_Banner/2.png);
 
     <!-- =============== Footer-action-section start =============== -->
 
-     <footer>
+     <!-- fixed Index bottom-nav  -->
+
+
+<div class="bottom-nav">
+    <a href="./index.html" class="active">
+      <i class='bx bxs-home'></i>
+      <span class="nav-text"><b>Home</b></span>
+    </a>
+    <a href="#" class="active" id="openPopupBtnMobile">
+      <i class='bx bxs-conversation'></i>
+      <span class="text" ><b>Let's Talk</b></span>
+    </a>
+  </div> 
+  <!-- Pop-up Overlay -->
+  <div id="popupOverlay" class="popup-overlay"></div>
+  
+  <!-- Pop-up Content -->
+  <div id="popup" class="popup">
+    
+    <div class="flex flex-col md:flex-row p-8 bg-background">
+      <!-- Left Side (SVG and text) -->
+      <div class="flex-1 mb-8 md:mb-0 pad-2">
+        <h1 class="text-3xl font-bold text-foreground secLeft" style="margin-right: 200px;">Let’s have a Talk</h1>
+       
+        <img aria-hidden="true" alt="Illustration of a person working at a desk" 
+             src="../assets/images/img/Vichaarlab banner/icon.svg" class="mt-9 w-[250px] mx-auto" />
+      </div>
+  
+      <!-- Right Side (Form) -->
+      <form>
+        <div>
+        <!-- Name, Phone, Email, Address, Location fields -->
+        <div class="input-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-row">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" required>
+        </div>
+        <div class="input-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-row">
+            <label for="address">Company Address</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+        <div class="input-row">
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" required>
+        </div>
+    
+        <!-- Services / Products Selection -->
+        <div class="dropdown-row marginBt">
+            <!-- Services / Products -->
+            <label class= "serviceProduct" for="serviceProduct">Services / Products</label>
+            <select id="serviceProduct" onchange="toggleDropdown(this)" name="serviceProduct" class="conditional-field" required>
+                <option value="" disabled selected>Services / Products</option>
+                <option value="services">Services</option>
+                <option value="products">Products</option>
+            </select>
+
+            <div class="dropdown-row marginBt checke">
+                <!-- Services Dropdown (Initially hidden) -->
+                <select id="servicesF" name="services" class="fieldSer conditional-field hidden">
+                    <option value="" disabled selected>Select Service</option>
+                    <option value="consulting">Web Developement</option>
+                    <option value="development">Custom Software Development</option>
+                    <option value="design">Mobile Application</option>
+                    <option value="design">IoT</option>
+                    <option value="design">AI/ML</option>
+                    <option value="design">ERP Solutions</option>
+                    <option value="design">CRM Solutions</option>
+                    <option value="design">E-Commerce</option>
+
+                </select>
+        
+                <!-- Products Dropdown (Initially hidden) -->
+                <select id="productsF" name="products" class="conditional-field hidden">
+                    <option value="" disabled selected>Select Product</option>
+                    <option value="software">Real-Estate CRM</option>
+                    <option value="hardware">Construction Management</option>
+                    <option value="accessories">School ERP</option>
+                    <option value="accessories">E-Commerce</option>
+                    <option value="accessories">HRMS</option>
+                    <option value="accessories">Telematic Solutions</option>
+                    <option value="accessories">Camera Analytics</option>
+
+
+
+
+                </select>
+            </div>
+        </div>
+    
+        <!-- Conditional Dropdowns -->
+        
+    
+        <!-- Message Box -->
+        <div class="input-row messageBox">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+    
+        <!-- Submit Button -->
+        <div class="input-row">
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+    </form>
+    
+    </div>
+  
+    <!-- Close Button -->
+    <button class="exitBtn text-gray-600 absolute top-4 right-4 text-2xl" id="exitBtn">×</button>
+</div>
+
+
+
+    <!-- =============== Footer-action-section start =============== -->
+
+    <footer>
         <div class="footer-top"
             style="background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url(../assets/images/img/footer.jpg);">
             <div class="container">
@@ -921,12 +1044,107 @@ style="background-image: url(../assets/images/img/Inner_Page_Banner/2.png);
 }
 
     </script>
+<!-- To All Content -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Get elements
+        const openPopupBtn = document.getElementById('openPopupBtn');
+        const openPopupBtnMobile = document.getElementById('openPopupBtnMobile');
+        const popup = document.getElementById('popup');
+        const popupOverlay = document.getElementById('popupOverlay');
+        const exitBtn = document.getElementById('exitBtn');
+
+        // Function to open the pop-up
+        function openPopup() {
+            popup.style.display = 'block';
+            popupOverlay.style.display = 'block';
+        }
+
+        // Function to close the pop-up
+        function closePopup() {
+            popup.style.display = 'none';
+            popupOverlay.style.display = 'none';
+        }
+
+        // Show the pop-up when "LET'S TALK" button is clicked (desktop)
+        if (openPopupBtn) {
+            openPopupBtn.addEventListener('click', (event) => {
+                event.preventDefault();  // Prevent the default link behavior
+                openPopup();
+            });
+        }
+
+        // Show the pop-up when "LET'S TALK" button is clicked (mobile)
+        if (openPopupBtnMobile) {
+            openPopupBtnMobile.addEventListener('click', (event) => {
+                event.preventDefault();  // Prevent the default link behavior
+                openPopup();
+            });
+        }
+
+        // Close the pop-up when the "Close" button is clicked
+        if (exitBtn) {
+            exitBtn.addEventListener('click', () => {
+                closePopup();
+            });
+        }
+
+        // Close the pop-up when clicking outside the pop-up (on overlay)
+        if (popupOverlay) {
+            popupOverlay.addEventListener('click', () => {
+                closePopup();
+            });
+        }
+
+        // Handle form submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(event) {
+                event.preventDefault(); 
+                alert('Form submitted successfully!');
+                // Add your form submission logic here 
+                closePopup();  // Close the pop-up after submission
+            });
+        }
+    });
+    </script>
+    <!--  -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        this.reset(); 
+    });
+
+        function toggleDropdown(selectElement) {
+    var servicesDropdown = document.getElementById("servicesF");
+    var productsDropdown = document.getElementById("productsF");
+
+    // Hide both dropdowns first
+    servicesDropdown.classList.remove("visible");
+    servicesDropdown.classList.add("hidden");
+
+    productsDropdown.classList.remove("visible");
+    productsDropdown.classList.add("hidden");
+
+    // Show the relevant dropdown
+    if (selectElement.value === "services") {
+        servicesDropdown.classList.remove("hidden");
+        servicesDropdown.classList.add("visible");
+    } else if (selectElement.value === "products") {
+        productsDropdown.classList.remove("hidden");
+        productsDropdown.classList.add("visible");
+    }
+}
+
+    </script>
+
 
 <script src="//code.tidio.co/0fd4mjdf6u3sknrxhyrvwmnqj0lzs88l.js" async></script>
 
 <a href="https://web.whatsapp.com/send?phone=9090972227" target="_blank" class="whatsapp-icon">
-    <i class="fa-brands fa-square-whatsapp" style="color: #ed333b; font-size: 60px;"></i>
+    <i class="fa-brands fa-square-whatsapp"></i>
   </a>
+
 </body>
 
 </html>

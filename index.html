@@ -42,10 +42,12 @@
     <!-- style css -->
     <link rel="stylesheet" href="../assets/css/style.css">
 
-    <link rel="stylesheet" href="../assets/css/style_1.css">
+     <link rel="stylesheet" href="../assets/css/style_1.css">
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
 
 
 
@@ -402,7 +404,7 @@
                         </select>
 
                         <div class="dropdown-row marginBt checke">
-                            <!-- Services Dropdown (Initially hidden) -->
+                            
                             <select id="servicesF" name="services" class="fieldSer conditional-field hidden">
                                 <option value="" disabled selected>Select Service</option>
                                 <option value="consulting">Web Developement</option>
@@ -416,7 +418,7 @@
     
                             </select>
                     
-                            <!-- Products Dropdown (Initially hidden) -->
+                          
                             <select id="productsF" name="products" class="conditional-field hidden">
                                 <option value="" disabled selected>Select Product</option>
                                 <option value="software">Real-Estate CRM</option>
@@ -434,7 +436,7 @@
                         </div>
                     </div>
                 
-                    <!-- Conditional Dropdowns -->
+                 
                     
                 
                     <!-- Message Box -->
@@ -443,7 +445,7 @@
                         <textarea id="message" name="message" rows="4"></textarea>
                     </div>
                 
-                    <!-- Submit Button -->
+                
                     <div class="input-row">
                         <button type="submit">Submit</button>
                     </div>
@@ -452,14 +454,10 @@
                 
                 </div>
               
-                <!-- Close Button -->
+             
                 <button class="exitBtn text-gray-600 absolute top-4 right-4 text-2xl" id="exitBtn">×</button>
             </div>
-              
-              
-            
-
-            
+             
         </div>
     </header>
 
@@ -611,123 +609,7 @@
     </div>
 
     <!-- =============== About-section end  =============== -->
-<!-- fixed Index bottom-nav  -->
 
-
-  <div class="bottom-nav">
-    <a href="./index.html" class="active">
-      <i class='bx bxs-home'></i>
-      <span>Home</span>
-    </a>
-    <a href="#" class="active" id="openPopupBtnMobile">
-      <i class='bx bxs-conversation'></i>
-      <span class="text" >Let's Talk</span>
-    </a>
-  </div> 
-  <!-- Pop-up Overlay -->
-  <div id="popupOverlay" class="popup-overlay"></div>
-  
-  <!-- Pop-up Content -->
-  <div id="popup" class="popup">
-    
-    <div class="flex flex-col md:flex-row p-8 bg-background">
-      <!-- Left Side (SVG and text) -->
-      <div class="flex-1 mb-8 md:mb-0 pad-2">
-        <h1 class="text-3xl font-bold text-foreground secLeft" style="margin-right: 200px;">Let’s have a Talk</h1>
-       
-        <img aria-hidden="true" alt="Illustration of a person working at a desk" 
-             src="../assets/images/img/Vichaarlab banner/icon.svg" class="mt-9 w-[250px] mx-auto" />
-      </div>
-  
-      <!-- Right Side (Form) -->
-      <form>
-        <div>
-        <!-- Name, Phone, Email, Address, Location fields -->
-        <div class="input-row">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        <div class="input-row">
-            <label for="phone">Phone</label>
-            <input type="text" id="phone" name="phone" required>
-        </div>
-        <div class="input-row">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="input-row">
-            <label for="address">Company Address</label>
-            <input type="text" id="address" name="address" required>
-        </div>
-        <div class="input-row">
-            <label for="location">Location</label>
-            <input type="text" id="location" name="location" required>
-        </div>
-    
-        <!-- Services / Products Selection -->
-        <div class="dropdown-row marginBt">
-            <!-- Services / Products -->
-            <label class= "serviceProduct" for="serviceProduct">Services / Products</label>
-            <select id="serviceProduct" onchange="toggleDropdown(this)" name="serviceProduct" class="conditional-field" required>
-                <option value="" disabled selected>Services / Products</option>
-                <option value="services">Services</option>
-                <option value="products">Products</option>
-            </select>
-
-            <div class="dropdown-row marginBt checke">
-                <!-- Services Dropdown (Initially hidden) -->
-                <select id="servicesF" name="services" class="fieldSer conditional-field hidden">
-                    <option value="" disabled selected>Select Service</option>
-                    <option value="consulting">Web Developement</option>
-                    <option value="development">Custom Software Development</option>
-                    <option value="design">Mobile Application</option>
-                    <option value="design">IoT</option>
-                    <option value="design">AI/ML</option>
-                    <option value="design">ERP Solutions</option>
-                    <option value="design">CRM Solutions</option>
-                    <option value="design">E-Commerce</option>
-
-                </select>
-        
-                <!-- Products Dropdown (Initially hidden) -->
-                <select id="productsF" name="products" class="conditional-field hidden">
-                    <option value="" disabled selected>Select Product</option>
-                    <option value="software">Real-Estate CRM</option>
-                    <option value="hardware">Construction Management</option>
-                    <option value="accessories">School ERP</option>
-                    <option value="accessories">E-Commerce</option>
-                    <option value="accessories">HRMS</option>
-                    <option value="accessories">Telematic Solutions</option>
-                    <option value="accessories">Camera Analytics</option>
-
-
-
-
-                </select>
-            </div>
-        </div>
-    
-        <!-- Conditional Dropdowns -->
-        
-    
-        <!-- Message Box -->
-        <div class="input-row messageBox">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4"></textarea>
-        </div>
-    
-        <!-- Submit Button -->
-        <div class="input-row">
-            <button type="submit">Submit</button>
-        </div>
-    </div>
-    </form>
-    
-    </div>
-  
-    <!-- Close Button -->
-    <button class="exitBtn text-gray-600 absolute top-4 right-4 text-2xl" id="exitBtn">×</button>
-</div>
     <!-- =============== Service-section start  =============== -->
 
     <div class="service-section pt-80 pb-80">
@@ -1508,9 +1390,123 @@
 
 <!-- Modal -->
 
+<!-- fixed Index bottom-nav  -->
+
+
+<div class="bottom-nav">
+    <a href="./index.html" class="active">
+      <i class='bx bxs-home'></i>
+      <span class="nav-text"><b>Home</b></span>
+    </a>
+    <a href="#" class="active" id="openPopupBtnMobile">
+      <i class='bx bxs-conversation'></i>
+      <span class="text" ><b>Let's Talk</b></span>
+    </a>
+  </div> 
+  <!-- Pop-up Overlay -->
+  <div id="popupOverlay" class="popup-overlay"></div>
+  
+  <!-- Pop-up Content -->
+  <div id="popup" class="popup">
+    
+    <div class="flex flex-col md:flex-row p-8 bg-background">
+      <!-- Left Side (SVG and text) -->
+      <div class="flex-1 mb-8 md:mb-0 pad-2">
+        <h1 class="text-3xl font-bold text-foreground secLeft" style="margin-right: 200px;">Let’s have a Talk</h1>
+       
+        <img aria-hidden="true" alt="Illustration of a person working at a desk" 
+             src="../assets/images/img/Vichaarlab banner/icon.svg" class="mt-9 w-[250px] mx-auto" />
+      </div>
+  
+      <!-- Right Side (Form) -->
+      <form>
+        <div>
+        <!-- Name, Phone, Email, Address, Location fields -->
+        <div class="input-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-row">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" required>
+        </div>
+        <div class="input-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-row">
+            <label for="address">Company Address</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+        <div class="input-row">
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" required>
+        </div>
+    
+        <!-- Services / Products Selection -->
+        <div class="dropdown-row marginBt">
+            <!-- Services / Products -->
+            <label class= "serviceProduct" for="serviceProduct">Services / Products</label>
+            <select id="serviceProduct" onchange="toggleDropdown(this)" name="serviceProduct" class="conditional-field" required>
+                <option value="" disabled selected>Services / Products</option>
+                <option value="services">Services</option>
+                <option value="products">Products</option>
+            </select>
+
+            <div class="dropdown-row marginBt checke">
+                <!-- Services Dropdown (Initially hidden) -->
+                <select id="servicesF" name="services" class="fieldSer conditional-field hidden">
+                    <option value="" disabled selected>Select Service</option>
+                    <option value="consulting">Web Developement</option>
+                    <option value="development">Custom Software Development</option>
+                    <option value="design">Mobile Application</option>
+                    <option value="design">IoT</option>
+                    <option value="design">AI/ML</option>
+                    <option value="design">ERP Solutions</option>
+                    <option value="design">CRM Solutions</option>
+                    <option value="design">E-Commerce</option>
+
+                </select>
+        
+                <!-- Products Dropdown (Initially hidden) -->
+                <select id="productsF" name="products" class="conditional-field hidden">
+                    <option value="" disabled selected>Select Product</option>
+                    <option value="software">Real-Estate CRM</option>
+                    <option value="hardware">Construction Management</option>
+                    <option value="accessories">School ERP</option>
+                    <option value="accessories">E-Commerce</option>
+                    <option value="accessories">HRMS</option>
+                    <option value="accessories">Telematic Solutions</option>
+                    <option value="accessories">Camera Analytics</option>
 
 
 
+
+                </select>
+            </div>
+        </div>
+    
+        <!-- Conditional Dropdowns -->
+        
+    
+        <!-- Message Box -->
+        <div class="input-row messageBox">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+    
+        <!-- Submit Button -->
+        <div class="input-row">
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+    </form>
+    
+    </div>
+  
+    <!-- Close Button -->
+    <button class="exitBtn text-gray-600 absolute top-4 right-4 text-2xl" id="exitBtn">×</button>
+</div>
 
     <!-- =============== Footer-action-section start =============== -->
 
@@ -1693,9 +1689,9 @@
         const contactForm = document.getElementById('contactForm');
         if (contactForm) {
             contactForm.addEventListener('submit', function(event) {
-                event.preventDefault();  // Prevent the default form submission
+                event.preventDefault(); 
                 alert('Form submitted successfully!');
-                // Add your form submission logic here (e.g., using AJAX)
+                // Add your form submission logic here 
                 closePopup();  // Close the pop-up after submission
             });
         }
@@ -1704,12 +1700,8 @@
     <!--  -->
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
-
-        // Perform any form submission logic here (e.g., sending data to the server)
-
-        // Clear the form fields
-        this.reset(); // This will reset all fields to their default values
+        event.preventDefault(); 
+        this.reset(); 
     });
 
         function toggleDropdown(selectElement) {
@@ -1735,15 +1727,15 @@
 
     </script>
 
-<<<<<<< HEAD
-=======
+
+
+
 <script src="//code.tidio.co/0fd4mjdf6u3sknrxhyrvwmnqj0lzs88l.js" async></script>
 
 
 <a href="https://web.whatsapp.com/send?phone=9090972227" target="_blank" class="whatsapp-icon">
-    <i class="fa-brands fa-square-whatsapp whatsapp"></i>
-</a>
->>>>>>> 0d0ba994ae169a9839dec8c8216fe83ae91198c4
+    <i class="fa-brands fa-square-whatsapp"></i>
+  </a>
 
 </body>
 

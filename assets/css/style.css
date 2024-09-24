@@ -9224,19 +9224,72 @@ ul.blog-details-list li::after {
 
 
 .whatsapp {
-  font-size: 70px;
+  /* font-size: 70px; */
   color: rgb(194, 33, 108);
+  
 }
 
 .whatsapp-icon {
+  font-size: 60px;
   position: fixed;
   bottom: 130px;
   right: 28px;
   z-index: 1000;
   text-decoration: none;
+  color: rgb(202 33 96);
 }
 
 .whatsapp-icon:hover i {
   color: #25D366; /* WhatsApp green color on hover */
 }
 
+@media (max-width: 488px) {
+  .whatsapp {
+   
+    color: rgb(194, 33, 108);
+  }
+  .whatsapp-icon {
+    font-size: 44px !important;
+    position: fixed;
+    bottom: 107px;
+    right: 24px;
+    z-index: 1000;
+    text-decoration: none;
+    color: rgb(202 33 96);
+
+  }
+  }
+  @media (min-width: 489px) and (max-width: 768px){
+    .whatsapp {
+      color: rgb(194, 33, 108);
+    }
+    .whatsapp-icon {
+      font-size: 55px !important;
+      color: rgb(202 33 96);
+      position: fixed;
+      bottom: 107px;
+      right: 19px;
+      z-index: 1000;
+      text-decoration: none;
+    }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .whatsapp {
+    
+      color: rgb(194, 33, 108);
+    }
+    .whatsapp-icon {
+      font-size: 53px !important;
+      color: rgb(202 33 96);
+      position: fixed;
+      bottom: 100px;
+      right: 19px;
+      z-index: 1000;
+      text-decoration: none;
+    }
+  }
+
+
+  .chat{
+    color: #000;
+  }
