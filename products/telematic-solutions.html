@@ -1311,11 +1311,32 @@
 
 <script src="//code.tidio.co/nnmrdrnhlrwl1arbjdtie7nwdwbfn48x.js" async></script>
 
-<script src="//code.tidio.co/nnmrdrnhlrwl1arbjdtie7nwdwbfn48x.js" async></script>
-
-<a href="https://web.whatsapp.com/send?phone=9090972227" target="_blank" class="whatsapp-icon">
+<a href="#" id="whatsapp-link" target="_blank" class="whatsapp-icon">
     <i class="fa-brands fa-square-whatsapp"></i>
-  </a>
+</a>
+
+<script>
+    // Get the WhatsApp link element
+    const whatsappLink = document.getElementById('whatsapp-link');
+    
+    // The phone number you want to send the user to
+    const phoneNumber = "9090972227";
+    
+    // Function to detect if the user is on a mobile device
+    function isMobile() {
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        return /android|iPhone|iPad|iPod|Windows Phone/i.test(userAgent);
+    }
+    
+    // Set the href based on the device type
+    if (isMobile()) {
+        // On mobile, use the WhatsApp app link
+        whatsappLink.href = `whatsapp://send?phone=${phoneNumber}`;
+    } else {
+        // On desktop, use the WhatsApp Web link
+        whatsappLink.href = `https://web.whatsapp.com/send?phone=${phoneNumber}`;
+    }
+</script>
 
 </body>
 
