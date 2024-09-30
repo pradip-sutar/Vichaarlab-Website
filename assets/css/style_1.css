@@ -380,7 +380,12 @@ background-color: #e93772;;
 .bottom-nav i{
     display: none
 }
-
+.nav-text{
+    display: none;
+}
+.text{
+    display: none;
+}
 @media(max-width: 488px) {
 
    
@@ -685,6 +690,12 @@ margin-top:15px;
 
 
 @media (min-width: 769px) and (max-width: 1024px) {
+    .nav-text{
+        display: none;
+    }
+    .text{
+        display: none;
+    }
     /* .index-btn{
     
         position: fixed;
@@ -814,7 +825,13 @@ margin-top:25px;
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
-    
+
+    .nav-text{
+        display: none;
+    }
+    .text{
+        display: none;
+    }
     /* .header-btn{
         position: fixed;
     bottom: 20px; 
