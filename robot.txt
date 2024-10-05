@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+
+Sitemap: https://www.vichaarlab.com/sitemap.xml
+
+
