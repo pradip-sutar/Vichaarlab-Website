@@ -343,13 +343,14 @@
             </ul>
           </li>
           <li class="menu-item-has-children">
-                    <a href="blog-grid.html">Blog</a><i class='bi bi-chevron-down dropdown-icon'></i>
-                    <ul class="sub-menu">
-                        <!-- <li><a href="blog-grid.html">Blog Grid</a></li> -->
-                        <li><a href="blog-standard.html">Blog Standard</a></li>
-                        <li><a href="blog-details.html">Blog details</a></li>
-                    </ul>
-                </li>
+            <a href="blog-grid.html">Blog</a
+            ><i class="bi bi-chevron-down dropdown-icon"></i>
+            <ul class="sub-menu">
+              <!-- <li><a href="blog-grid.html">Blog Grid</a></li> -->
+              <li><a href="blog-standard.html">Blog Standard</a></li>
+              <li><a href="blog-details.html">Blog details</a></li>
+            </ul>
+          </li>
 
           <li><a href="contact.html">Contact us</a></li>
         </ul>
@@ -454,21 +455,36 @@
                   <label for="location">Location</label>
                   <input type="text" id="location" name="location" required />
                 </div>
-          
+
                 <!-- Services / Products Selection -->
                 <div class="dropdown-row marginBt">
-                  <label class="serviceProduct" for="serviceProduct">Services / Products</label>
-                  <select id="serviceProduct" name="serviceProduct" onchange="toggleDropdown(this)" required>
-                    <option value="" disabled selected>Services / Products</option>
+                  <label class="serviceProduct" for="serviceProduct"
+                    >Services / Products</label
+                  >
+                  <select
+                    id="serviceProduct"
+                    name="serviceProduct"
+                    onchange="toggleDropdown(this)"
+                    required
+                  >
+                    <option value="" disabled selected>
+                      Services / Products
+                    </option>
                     <option value="services">Services</option>
                     <option value="products">Products</option>
                   </select>
-                
+
                   <!-- Services Dropdown -->
-                  <select id="servicesF" name="services" class="conditional-field hidden">
+                  <select
+                    id="servicesF"
+                    name="services"
+                    class="conditional-field hidden"
+                  >
                     <option value="" disabled selected>Select Service</option>
                     <option value="web_development">Web Development</option>
-                    <option value="custom_software">Custom Software Development</option>
+                    <option value="custom_software">
+                      Custom Software Development
+                    </option>
                     <option value="mobile_app">Mobile Application</option>
                     <option value="iot">IoT</option>
                     <option value="ai_ml">AI/ML</option>
@@ -476,12 +492,18 @@
                     <option value="crm_solutions">CRM Solutions</option>
                     <option value="e_commerce">E-Commerce</option>
                   </select>
-                
+
                   <!-- Products Dropdown -->
-                  <select id="productsF" name="products" class="conditional-field hidden">
+                  <select
+                    id="productsF"
+                    name="products"
+                    class="conditional-field hidden"
+                  >
                     <option value="" disabled selected>Select Product</option>
                     <option value="real_estate_crm">Real-Estate CRM</option>
-                    <option value="construction_management">Construction Management</option>
+                    <option value="construction_management">
+                      Construction Management
+                    </option>
                     <option value="school_erp">School ERP</option>
                     <option value="e_commerce_platform">E-Commerce</option>
                     <option value="hrms">HRMS</option>
@@ -494,7 +516,7 @@
                   <label for="message">Message</label>
                   <textarea id="message" name="message" rows="4"></textarea>
                 </div>
-          
+
                 <div class="input-row">
                   <button type="submit">Submit</button>
                 </div>
@@ -707,31 +729,55 @@
               <div class="row g-4">
                 <div class="col-lg-6">
                   <div class="form-inner">
-                    <input type="text" name="name" placeholder="Your Name: *" required>
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Your Name: *"
+                      required
+                    />
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-inner">
-                    <input type="email" name="email" placeholder="Your E-mail:" required>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Your E-mail:"
+                      required
+                    />
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-inner">
-                    <input type="text" name="phone" placeholder="Phone Number:">
+                    <input
+                      type="number"
+                      name="phone"
+                      placeholder="Phone Number:"
+                      required
+                    />
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-inner">
-                    <input type="text" name="subject" placeholder="Subject:">
+                    <input type="text" name="subject" placeholder="Subject:" />
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="form-inner">
-                    <textarea name="message" cols="30" rows="6" placeholder="Write A Question"></textarea>
+                    <textarea
+                      name="message"
+                      cols="30"
+                      rows="6"
+                      placeholder="Write A Question"
+                    ></textarea>
                   </div>
                 </div>
                 <div class="col-lg-12 text-center">
-                  <input type="submit" value="Send Now" class="eg-btn btn--submit">
+                  <input
+                    type="submit"
+                    value="Send Now"
+                    class="eg-btn btn--submit"
+                  />
                 </div>
               </div>
             </form>
@@ -1129,13 +1175,12 @@
       //         },
       //         sender_email: document.getElementById('email').value,
       //         subject: document.getElementById("subject").value,
-             
+
       //       };
       //       console.log(formData.body)
       //       console.log(formData.subject);
       //       console.log('Form Data:', JSON.stringify(formData));
 
-          
       //       const apiUrl = "http://192.168.29.17:8004/api/send-email/";
 
       //       // Send the data to the backend using fetch
@@ -1252,13 +1297,12 @@
         //       },
         //       sender_email: document.getElementById('email').value,
         //       subject: document.getElementById("subject").value,
-             
+
         //     };
         //     console.log(formData.body.value)
         //     console.log(formData.subject);
         //     console.log('Form Data:', JSON.stringify(formData));
 
-          
         //     const apiUrl = "http://192.168.29.17:8004/api/send-email/";
 
         //     // Send the data to the backend using fetch
@@ -1352,52 +1396,55 @@
       }
     </script>
 
-<script>
-  document.getElementById('contactForm').addEventListener('submit', async function (event) {
-    event.preventDefault(); // Prevent form from submitting the default way
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", async function (event) {
+          event.preventDefault(); // Prevent form from submitting the default way
 
-    // Gather form data
-    const formData = new FormData(this);
+          // Gather form data
+          const formData = new FormData(this);
 
-    // Create object with desired structure
-    const data = {
-      body: {
-        name: formData.get('name'),
-        phone: formData.get('phone'),
-        message: formData.get('message')
-      },
-      sender_email: formData.get('email'),
-      subject: formData.get('subject')
-    };
-  console.log(data)
-    try {
-      // Send form data to backend via fetch API
-      const response = await fetch('http://192.168.46.175:8000/api/send-email/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data) // Convert the JavaScript object to a JSON string
-      });
+          // Create object with desired structure
+          const data = {
+            body: {
+              name: formData.get("name"),
+              phone: formData.get("phone"),
+              message: formData.get("message"),
+            },
+            sender_email: formData.get("email"),
+            subject: formData.get("subject"),
+          };
+          console.log(data);
+          try {
+            // Send form data to backend via fetch API
+            const response = await fetch(
+              "https://clientinfobackend.vichaarlab.in/api/send-email/",
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+              }
+            );
 
-      // Handle response
-      if (response.ok) {
-        const result = await response.json();
-        alert('Form submitted successfully!');
-        console.log(result);
-      } else {
-        alert('Error submitting the form. Please try again.');
-      }
-    } catch (error) {
-      console.error('Error:', error);
-      alert('Error submitting the form. Please try again.');
-    }
-  });
-</script>
+            // Handle response
+            if (response.ok) {
+              const result = await response.json();
+              alert("Form submitted successfully!");
+              console.log(result);
+            } else {
+              alert("Error submitting the form. Please try again.");
+            }
+          } catch (error) {
+            console.error("Error:", error);
+            alert("Error submitting the form. Please try again.");
+          }
+        });
+    </script>
 
-
-
-   <!-- <script>
+    <!-- <script>
     // Function to toggle dropdowns
     function toggleDropdown(selectElement) {
     const serviceDropdown = document.getElementById('servicesF');
@@ -1460,6 +1507,5 @@
       }
     });
   </script> -->
-
   </body>
 </html>
