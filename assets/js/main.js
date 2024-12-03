@@ -560,3 +560,49 @@ $('.popup-youtube').magnificPopup({
 });
 
 }(jQuery));
+
+document
+.getElementById("contactForm")
+.addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent the default form submission
+  const name= document.getElementById("subject")
+  console.log(name.value)
+  // Collect the form data
+  const formData = {
+    body: {
+      name: document.getElementById("name").value,
+      phone: document.getElementById("phone").value,
+      message: document.getElementById("message").value,
+    },
+    sender_email: document.getElementById('email').value,
+    subject: document.getElementById("subject").value,
+   
+  };
+  console.log(formData.body)
+  console.log(formData.subject);
+  console.log('Form Data:', JSON.stringify(formData));
+
+
+  const apiUrl = "http://192.168.29.17:8004/api/send-email/";
+
+  // Send the data to the backend using fetch
+  fetch(apiUrl, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(formData),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      if (data.success) {
+        alert("Message sent successfully");
+      } else {
+        alert("Failed to send message");
+      }
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      alert("An error occurred while sending the message");
+    });
+});
