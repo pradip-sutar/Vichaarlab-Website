@@ -10,6 +10,8 @@
 
     <link rel="icon" href="../assets/images/icons/vichaarlab_favicon.png" type="image/png" sizes="100x100">
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <link rel="stylesheet" href="../assets/css/animate.css">
     <!-- css file link -->
     <link rel="stylesheet" href="../assets/css/all.css">
@@ -192,7 +194,7 @@
         <div class="menu-toggle-wrap bg-white">
             <div class="sidebar-top-area d-flex justify-content-between align-items-center">
                 <div class="sidebar-logo px-4 py-3 rounded">
-                    <a href="index.html"><img src="../assets/images/img/Logo_0n_Header/2.png"
+                    <a href="/"><img src="../assets/images/img/Logo_0n_Header/2.png"
                             style="width: 250px; height: 60px;" alt="image"></a>
                 </div>
                 <div class="cross-icon">
@@ -286,7 +288,7 @@
             <ul class="menu-list">
                
                 <li class="menu-item-has-children">
-                    <a href="index.html" class="drop-down">Company</a><i class='bi bi-chevron-down dropdown-icon'></i>
+                    <a href="/" class="drop-down">Company</a><i class='bi bi-chevron-down dropdown-icon'></i>
                     <ul class="sub-menu">
                         <li><a href="about.html">About</a></li>
                        
@@ -295,7 +297,7 @@
                     </ul>
                 </li>
                 <li class="menu-item-has-children">
-                    <a href="services/service.html" class="drop-down">Services</a><i
+                    <a href="service.html" class="drop-down">Services</a><i
                         class='bi bi-chevron-down dropdown-icon'></i>
                     <ul class="sub-menu">
                         <li><a href="services/web-development-services.html">Web Development</a></li>
@@ -310,7 +312,7 @@
                     </ul>
                 </li>
                 <li class="menu-item-has-children">
-                    <a href="products/product.html" class="drop-down">Products</a><i
+                    <a href="product.html" class="drop-down">Products</a><i
                         class='bi bi-chevron-down dropdown-icon'></i>
                     <ul class="sub-menu">
                         <li><a href="products/real-estate-crm.html">Real-Estate CRM</a></li>
@@ -323,14 +325,14 @@
                     </ul>
                 </li>
 
-                <li class="menu-item-has-children">
-                    <a href="blog-grid.html">Blog</a><i class='bi bi-chevron-down dropdown-icon'></i>
+                <!-- <li class="menu-item-has-children">
+                    <a href="#">Blog</a><i class='bi bi-chevron-down dropdown-icon'></i>
                     <ul class="sub-menu">
-                        <!-- <li><a href="blog-grid.html">Blog Grid</a></li> -->
+                        <li><a href="#">Blog Grid</a></li>
                         <li><a href="blog-standard.html">Blog Standard</a></li>
                         <li><a href="blog-details.html">Blog details</a></li>
                     </ul>
-                </li>
+                </li> -->
               
                 <li><a href="contact.html">Contact us</a></li>
             </ul>
@@ -382,7 +384,7 @@
                   </div>
               
                   <!-- Right Side (Form) -->
-                  <form>
+                  <form id="contactForm">
                     <div>
                     <!-- Name, Phone, Email, Address, Location fields -->
                     <div class="input-row">
@@ -508,66 +510,62 @@
             <div class="carousel-item active">
                 <img src="../assets/images/img/Vichaarlab banner/1.png" class="d-block w-100" alt="School ERP Solution">
                 <div class="carousel-caption caption-left">
-                    <h2>Welcome To VichaarLab</h2>
-                    <p><em>Empowering Schools, Streamlining Education – Unlock the Future with Our <b>School ERP Solution!</b></p></em>
+                    <h1>School ERP System</h1>
+                    <p style="font-size: 16px;">Make school operations easier with our complete ERP solution, designed for smooth management of classes, attendance, fees, and more.
+                    </p>
                 </div>
             </div>
             <!-- Slide 2 -->
             <div class="carousel-item">
                 <img src="../assets/images/img/Vichaarlab banner/2.png" class="d-block w-100" alt="Construction ERP Solution">
                 <div class="carousel-caption caption-left" style="color: black;">
-                    <h2>Welcome To VichaarLab</h2>
-                    <p><em>Building Success from the Ground Up – <br>Simplify Your Projects with Our <br><b>Construction ERP Solution!</b></p></em>
+                    <h1>Construction ERP Solution</h1>
+                    <p style="font-size: 16px;">Make your construction project work better with an ERP solution made for planning, managing resources, and working together smoothly.
+                    </p>
                 </div>
             </div>
             <!-- Slide 3 -->
             <div class="carousel-item">
                 <img src="../assets/images/img/Vichaarlab banner/3.jpeg" class="d-block w-100" alt="CRM Solution">
                 <div class="carousel-caption caption-left">
-                    <h2>Welcome To VichaarLab</h2>
-                    <p><em>Transforming Leads into Legacy – <br>Elevate Your Business with Our  <br><b>Real Estate CRM Solution!</b></em></p>
+                    <h1>Real Estate CRM Solution</h1>
+                    <p style="font-size: 16px;">Achieve success in real estate with a CRM solution that makes managing leads, customer relationships, and property sales easier.
+                    </p>
                 </div>
             </div>
             <!-- slide-4 -->
             <div class="carousel-item">
                 <img src="../assets/images/img/Vichaarlab banner/4.png" class="d-block w-100" alt="HRMS Solution">
                 <div class="carousel-caption caption-left" style="color: black;">
-                    <h2>Welcome To VichaarLab</h2>
-                    <p><em>Empowering People,
-                        Driving Performance –
-                        Revolutionize Workforce Management with
-                        Our <br><b> HRMS Solution!</b></em></p>
+                    <h1>HRMS Solution</h1>
+                    <p style="font-size: 16px;">Revolutionize HR management with our HRMS solution for payroll, attendance, employee engagement, and compliance.
+                        <br></p>
                 </div>
             </div>
             <!-- slide-5 -->
             <div class="carousel-item">
                 <img src="../assets/images/img/Vichaarlab banner/5.jpeg" class="d-block w-100" alt="E-commerce Solution">
                 <div class="carousel-caption caption-left" style="color: black;">
-                    <h2>Welcome To VichaarLab</h2>
-                    <p><em>Expand,
-                        Engage, Excel – Unlock the Power
-                        of Online Business with Our <b>E-Commerce
-                            Solution!</b></em></p>
+                    <h1>E-Commerce Solution</h1>
+                    <p style="font-size: 16px;">Launch and grow your online store with a feature-rich e-commerce platform designed for seamless shopping experiences.</p>
                 </div>
             </div>
             <!-- slide-6 -->
             <div class="carousel-item">
                 <img src="../assets/images/img/Vichaarlab banner/6.png" class="d-block w-100" alt=" IoT Solution">
                 <div class="carousel-caption caption-left" style="color: black;">
-                    <h2>Welcome To VichaarLab</h2>
-                    <p><em>Connecting the Future – Innovate,
-                        Automate, and Transform with Our
-                        <b>IoT Solution!!</b></em></p>
+                    <h1>IoT Solution</h1>
+                    <p style="font-size: 16px;">Connect and automate your devices with our innovative IoT solutions for smarter, data-driven operations.
+                    </p>
                 </div>
             </div>
             <!-- slide-7 -->
             <div class="carousel-item">
                 <img src="../assets/images/img/Vichaarlab banner/7.png" class="d-block w-100" alt="AI & ML Solutions">
                 <div class="carousel-caption caption-left" style="color: black;">
-                    <h2>Welcome To VichaarLab</h2>
-                    <p><em>Intelligence Redefined – Accelerate
-                        Innovation with Our 
-                        <b>AI & ML Solutions!</b></em></p>
+                    <h1>AI and ML solutions</h1>
+                    <p style="font-size: 16px;">Make your business better with improved AI and machine learning methods for smarter choices and automaticity. 
+                       </p>
                 </div>
             </div>
         </div>
@@ -660,7 +658,7 @@
                         <div class="swiper-slide">
                             <div class="service-item1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s">
                                 <div class="service-img">
-                                    <a href="web-development-services.html" class="service-details-btn"><img
+                                    <a href="services/web-development-services.html" class="service-details-btn"><img
                                             src="../assets/images/icons/arrow.svg" alt="image"></a>
                                     <img alt="image" src="../assets/images/img/service_images/1.png">
                                     <div class="overlay"></div>
@@ -669,7 +667,7 @@
                                     <div class="service-icon">
                                         <img src="../assets/images/icons/webdev.svg" alt="image">
                                     </div>
-                                    <h4><a href="web-development-services.html">Website Devolopment
+                                    <h4><a href="services/web-development-services.html">Website Devolopment
                                         </a></h4>
                                     <p class="para">Crafting stunning, user-friendly websites that drive engagement and growth. Let us turn your vision into a digital experience that stands out.</p>
                                 </div>
@@ -721,16 +719,16 @@
                                     <div class="service-icon">
                                         <img src="../assets/images/icons/webdev.svg" alt="image">
                                     </div>
-                                    <h4><a href="E-commerce_service.html">E-Commerce
+                                    <h4><a href="services/E-commerce_service.html">E-Commerce
                                         </a></h4>
-                                    <p class="para">Launch and grow your online store with a feature-rich e-commerce platform designed for seamless shopping experiences.</p>
+                                    <p class="para">A scalable, secure, and user-friendly e-commerce platform offering seamless product management, payments, and personalized customer experiences.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="service-item1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.8s">
                                 <div class="service-img">
-                                    <a href="erp-solutions.html" class="service-details-btn"><img
+                                    <a href="services/erp-solutions.html" class="service-details-btn"><img
                                             src="../assets/images/icons/arrow.svg" alt="image"></a>
                                     <img alt="image" src="../assets/images/img/service_images/5.png">
                                     <div class="overlay"></div>
@@ -739,16 +737,16 @@
                                     <div class="service-icon">
                                         <img src="../assets/images/icons/webdev.svg" alt="image">
                                     </div>
-                                    <h4><a href="erp-solutions.html">ERP Solutions
+                                    <h4><a href="services/erp-solutions.html">ERP Solutions
                                         </a></h4>
-                                    <p class="para">Streamline your operations with our robust ERP solutions. Optimize efficiency, integrate processes, and drive growth with tailored, scalable software.</p>
+                                    <p class="para">Enhance customer relationships with our CRM solutions. Centralize data, boost engagement, and drive sales growth with tools tailored to your business needs.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="service-item1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.8s">
                                 <div class="service-img">
-                                    <a href="erp-solutions.html" class="service-details-btn"><img
+                                    <a href="services/erp-solutions.html" class="service-details-btn"><img
                                             src="../assets/images/icons/arrow.svg" alt="image"></a>
                                     <img alt="image" src="../assets/images/img/service_images/6.png">
                                     <div class="overlay"></div>
@@ -757,7 +755,7 @@
                                     <div class="service-icon">
                                         <img src="../assets/images/icons/webdev.svg" alt="image">
                                     </div>
-                                    <h4><a href="erp-solutions.html">CRM Solutions
+                                    <h4><a href="services/erp-solutions.html">CRM Solutions
                                         </a></h4>
                                     <p class="para">Achieve success in real estate with a CRM solution that makes managing leads, customer relationships, and property sales easier.</p>
                                 </div>
@@ -766,7 +764,7 @@
                         <div class="swiper-slide">
                             <div class="service-item1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.8s">
                                 <div class="service-img">
-                                    <a href="ai-ml-solutions.html" class="service-details-btn"><img
+                                    <a href="services/ai-ml-solutions.html" class="service-details-btn"><img
                                             src="../assets/images/icons/arrow.svg" alt="image"></a>
                                     <img alt="image" src="../assets/images/img/service_images/7.png">
                                     <div class="overlay"></div>
@@ -775,16 +773,16 @@
                                     <div class="service-icon">
                                         <img src="../assets/images/icons/webdev.svg" alt="image">
                                     </div>
-                                    <h4><a href="ai-ml-solutions.html">AI & ML Solutions
+                                    <h4><a href="services/ai-ml-solutions.html">AI & ML Solutions
                                         </a></h4>
-                                    <p class="para">Make your business better with improved AI and machine learning methods for smarter choices and automaticity.</p>
+                                    <p class="para">Unlock insights and drive innovation with our AI & ML solutions. Harness advanced technology to optimize processes and make data-driven decisions with ease.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="service-item1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.8s">
                                 <div class="service-img">
-                                    <a href="iot-services.html" class="service-details-btn"><img
+                                    <a href="services/iot-services.html" class="service-details-btn"><img
                                             src="../assets/images/icons/arrow.svg" alt="image"></a>
                                     <img alt="image" src="../assets/images/img/service_images/8.png">
                                     <div class="overlay"></div>
@@ -793,9 +791,9 @@
                                     <div class="service-icon">
                                         <img src="../assets/images/icons/webdev.svg" alt="image">
                                     </div>
-                                    <h4><a href="iot-services.html">IoT Solutions
+                                    <h4><a href="services/iot-services.html">IoT Solutions
                                         </a></h4>
-                                    <p class="para">Connect and automate your devices with our innovative IoT solutions for smarter, data-driven operations.</p>
+                                    <p class="para">Connect and automate with our IoT solutions. Enhance efficiency, gain real-time insights, and transform operations through smart, interconnected devices.</p>
                                 </div>
                                 
                             </div>
@@ -803,7 +801,7 @@
                         <div class="swiper-slide">
                             <div class="service-item1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.8s">
                                 <div class="service-img">
-                                    <a href="iot-services.html" class="service-details-btn"><img
+                                    <a href="services/iot-services.html" class="service-details-btn"><img
                                             src="../assets/images/icons/arrow.svg" alt="image"></a>
                                     <img alt="image" src="../assets/images/img/service_images/8.png">
                                     <div class="overlay"></div>
@@ -812,7 +810,7 @@
                                     <div class="service-icon">
                                         <img src="../assets/images/icons/webdev.svg" alt="image">
                                     </div>
-                                    <h4><a href="iot-services.html">HRMS Solutions
+                                    <h4><a href="services/iot-services.html">HRMS Solutions
                                         </a></h4>
                                     <p class="para">Revolutionize HR management with our HRMS solution for payroll, attendance, employee engagement, and compliance.</p>
                                 </div>
@@ -874,9 +872,9 @@
                                 </div>
                                 <div class="portfolio-content">
                                     <span>School ERP</span>
-                                    <h4><a href="school-erp.html">Streamlined School Management, Simplified Success.
+                                    <h4><a href="products/school-erp.html">Streamlined School Management, Simplified Success.
                                         </a></h4>
-                                    <a href="school-erp.html" class="text-btn">Read More<svg width="18" height="10"
+                                    <a href="products/school-erp.html" class="text-btn">Read More<svg width="18" height="10"
                                             viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M11.1818 1.38021V5V8.61979C11.1818 8.78083 11.3624 8.87583 11.4951 8.7846L17 5L11.4951 1.2154C11.3624 1.12417 11.1818 1.21917 11.1818 1.38021Z" />
@@ -894,9 +892,9 @@
                                 </div>
                                 <div class="portfolio-content">
                                     <span>Construction ERP</span>
-                                    <h4><a href="erp-solutions.html">Optimize Projects with Comprehensive Construction
+                                    <h4><a href="products/erp-solutions.html">Optimize Projects with Comprehensive Construction
                                             ERP.</a></h4>
-                                    <a href="erp-solutions.html" class="text-btn">Read More<svg width="18" height="10"
+                                    <a href="products/erp-solutions.html" class="text-btn">Read More<svg width="18" height="10"
                                             viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M11.1818 1.38021V5V8.61979C11.1818 8.78083 11.3624 8.87583 11.4951 8.7846L17 5L11.4951 1.2154C11.3624 1.12417 11.1818 1.21917 11.1818 1.38021Z" />
@@ -915,8 +913,8 @@
                                 <div class="portfolio-content">
                                     <span>HRM Solution:
                                     </span>
-                                    <h4><a href="hrms.html">Streamline Workforce Management with HRMS.</a></h4>
-                                    <a href="hrms.html" class="text-btn">Read More<svg width="18" height="10"
+                                    <h4><a href="products/hrms.html">Streamline Workforce Management with HRMS.</a></h4>
+                                    <a href="products/hrms.html" class="text-btn">Read More<svg width="18" height="10"
                                             viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M11.1818 1.38021V5V8.61979C11.1818 8.78083 11.3624 8.87583 11.4951 8.7846L17 5L11.4951 1.2154C11.3624 1.12417 11.1818 1.21917 11.1818 1.38021Z" />
@@ -956,8 +954,8 @@
                                 <div class="portfolio-content">
                                     <span>E-Commerce Solution
                                     </span>
-                                    <h4><a href="E-commerce_service.html">Boost Sales with Advanced e-Commerce.</a></h4>
-                                    <a href="E-commerce_service.html" class="text-btn">Read More<svg width="18"
+                                    <h4><a href="products/e-commerce.html">Boost Sales with Advanced e-Commerce.</a></h4>
+                                    <a href="products/e-commerce.html" class="text-btn">Read More<svg width="18"
                                             height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M11.1818 1.38021V5V8.61979C11.1818 8.78083 11.3624 8.87583 11.4951 8.7846L17 5L11.4951 1.2154C11.3624 1.12417 11.1818 1.21917 11.1818 1.38021Z" />
@@ -975,9 +973,9 @@
                                 </div>
                                 <div class="portfolio-content">
                                     <span>Telematic Solutions</span>
-                                    <h4><a href="telematic-solutions.html">Optimize Operations with Telematic
+                                    <h4><a href="products/telematic-solutions.html">Optimize Operations with Telematic
                                             Solutions.</a></h4>
-                                    <a href="telematic-solutions.html" class="text-btn">Read More<svg width="18"
+                                    <a href="products/telematic-solutions.html" class="text-btn">Read More<svg width="18"
                                             height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M11.1818 1.38021V5V8.61979C11.1818 8.78083 11.3624 8.87583 11.4951 8.7846L17 5L11.4951 1.2154C11.3624 1.12417 11.1818 1.21917 11.1818 1.38021Z" />
@@ -995,8 +993,8 @@
                                 </div>
                                 <div class="portfolio-content">
                                     <span>Camera Analytics</span>
-                                    <h4><a href="camera-analytics.html">Enhance Security with Camera Analytics.</a></h4>
-                                    <a href="camera-analytics.html" class="text-btn">Read More<svg width="18"
+                                    <h4><a href="products/camera-analytics.html">Enhance Security with Camera Analytics.</a></h4>
+                                    <a href="products/camera-analytics.html" class="text-btn">Read More<svg width="18"
                                             height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M11.1818 1.38021V5V8.61979C11.1818 8.78083 11.3624 8.87583 11.4951 8.7846L17 5L11.4951 1.2154C11.3624 1.12417 11.1818 1.21917 11.1818 1.38021Z" />
@@ -1443,7 +1441,7 @@
 
 
 <div class="bottom-nav">
-    <a href="./index.html" class="active">
+    <a href="/" class="active">
       <i class='bx bxs-home'></i>
       <span class="nav-text"><b>Home</b></span>
     </a>
@@ -1468,88 +1466,78 @@
       </div>
   
       <!-- Right Side (Form) -->
-      <form>
+      <form id="contactForm">
         <div>
-        <!-- Name, Phone, Email, Address, Location fields -->
-        <div class="input-row">
+          <!-- Name, Phone, Email, Address, Location fields -->
+          <div class="input-row">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        <div class="input-row">
+            <input type="text" id="name" name="name"  />
+          </div>
+          <div class="input-row">
             <label for="phone">Phone</label>
-            <input type="text" id="phone" name="phone" required>
-        </div>
-        <div class="input-row">
+            <input type="text" id="phone" name="phone"  />
+          </div>
+          <div class="input-row">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="input-row">
+            <input type="email" id="email" name="email"  />
+          </div>
+          <div class="input-row">
             <label for="address">Company Address</label>
-            <input type="text" id="address" name="address" required>
-        </div>
-        <div class="input-row">
+            <input type="text" id="address" name="address"  />
+          </div>
+          <div class="input-row">
             <label for="location">Location</label>
-            <input type="text" id="location" name="location" required>
-        </div>
-    
-        <!-- Services / Products Selection -->
-        <div class="dropdown-row marginBt">
-            <!-- Services / Products -->
-            <label class= "serviceProduct" for="serviceProduct">Services / Products</label>
-            <select id="serviceProduct" onchange="toggleDropdown(this)" name="serviceProduct" class="conditional-field" required>
-                <option value="" disabled selected>Services / Products</option>
-                <option value="services">Services</option>
-                <option value="products">Products</option>
+            <input type="text" id="location" name="location"  />
+          </div>
+      
+          <!-- Services / Products Selection -->
+          <div class="dropdown-row marginBt">
+            <label class="serviceProduct" for="serviceProduct">Services / Products</label>
+            <select id="serviceProduct" name="serviceProduct" class="conditional-field" >
+              <option value="" disabled selected>Services / Products</option>
+              <option value="services">Services</option>
+              <option value="products">Products</option>
             </select>
-
-            <div class="dropdown-row marginBt checke">
-                <!-- Services Dropdown (Initially hidden) -->
-                <select id="servicesF" name="services" class="fieldSer conditional-field hidden">
-                    <option value="" disabled selected>Select Service</option>
-                    <option value="consulting">Web Developement</option>
-                    <option value="development">Custom Software Development</option>
-                    <option value="design">Mobile Application</option>
-                    <option value="design">IoT</option>
-                    <option value="design">AI/ML</option>
-                    <option value="design">ERP Solutions</option>
-                    <option value="design">CRM Solutions</option>
-                    <option value="design">E-Commerce</option>
-
-                </select>
-        
-                <!-- Products Dropdown (Initially hidden) -->
-                <select id="productsF" name="products" class="conditional-field hidden">
-                    <option value="" disabled selected>Select Product</option>
-                    <option value="software">Real-Estate CRM</option>
-                    <option value="hardware">Construction Management</option>
-                    <option value="accessories">School ERP</option>
-                    <option value="accessories">E-Commerce</option>
-                    <option value="accessories">HRMS</option>
-                    <option value="accessories">Telematic Solutions</option>
-                    <option value="accessories">Camera Analytics</option>
-
-
-
-
-                </select>
+      
+            <!-- Conditional Dropdowns -->
+            <div class="dropdown-row marginBt">
+              <select id="servicesF" name="services" class="conditional-field hidden">
+                <option value="" disabled selected>Select Service</option>
+                <option value="web">Web Development</option>
+                <option value="custom">Custom Software Development</option>
+                <option value="mobile">Mobile Application</option>
+                <option value="iot">IoT</option>
+                <option value="ai">AI/ML</option>
+                <option value="erp">ERP Solutions</option>
+                <option value="crm">CRM Solutions</option>
+                <option value="ecommerce">E-Commerce</option>
+              </select>
+      
+              <select id="productsF" name="products" class="conditional-field hidden">
+                <option value="" disabled selected>Select Product</option>
+                <option value="realestate">Real-Estate CRM</option>
+                <option value="construction">Construction Management</option>
+                <option value="school">School ERP</option>
+                <option value="ecommerce">E-Commerce</option>
+                <option value="hrms">HRMS</option>
+                <option value="telematics">Telematic Solutions</option>
+                <option value="analytics">Camera Analytics</option>
+              </select>
             </div>
-        </div>
-    
-        <!-- Conditional Dropdowns -->
-        
-    
-        <!-- Message Box -->
-        <div class="input-row messageBox">
+          </div>
+      
+          <!-- Message Box -->
+          <div class="input-row messageBox">
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="4"></textarea>
-        </div>
-    
-        <!-- Submit Button -->
-        <div class="input-row">
+          </div>
+      
+          <!-- Submit Button -->
+          <div class="input-row">
             <button type="submit">Submit</button>
+          </div>
         </div>
-    </div>
-    </form>
+      </form>
     
     </div>
   
@@ -1566,7 +1554,7 @@
                 <div class="row gy-5">
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-item">
-                            <a href="index.html"><img alt="image" src="../assets/images/img/vichaarlab_logo.png"
+                            <a href="/"><img alt="image" src="../assets/images/img/vichaarlab_logo.png"
                                     style="width: 270px; height: auto;"></a>
                             <p>VichaarLab delivers innovative digital solutions, specializing in web, mobile apps, and
                                 ERP systems to empower your business growth.</p>
@@ -1598,10 +1586,10 @@
                             <h5>Company</h5>
                             <ul class="footer-list">
                                 <li><a href="about.html">About Company</a></li>
-                                <li><a href="services/service.html">Our Services</a></li>
-                                <li><a href="products/product.html">Our Products</a></li>
-                                <!-- <li><a href="blog-grid.html">Our Blog</a></li>
-                                <li><a href="blog-grid.html">Latest News</a></li> -->
+                                <li><a href="service.html">Our Services</a></li>
+                                <li><a href="product.html">Our Products</a></li>
+                                <!-- <li><a href="#">Our Blog</a></li>
+                                <li><a href="#">Latest News</a></li> -->
                                 <li><a href="contact.html">Contact Us</a></li>
                             </ul>
                         </div>
@@ -1634,13 +1622,18 @@
                                 </li>
                             </ul>
                             <ul class="footer-social gap-3">
-                                <li><a href="https://www.facebook.com/profile.php?id=61557903014355"><i
-                                            class='bx bxl-facebook'></i></a></li>
-                                <li><a href="https://twitter.com/vichaarlab"><i class='bx bxl-twitter'></i></a></li>
-                                <li><a href="https://www.instagram.com/vichaarlab?igsh=MXR6cHA1dmpsNW5zdw=="><i
-                                            class='bx bxl-instagram'></i></a></li>
-                                <li><a href="https://www.linkedin.com/company/vichaarlab/mycompany/"><i
-                                            class='bx bxl-linkedin-square'></i></a></li>
+                                <li><a href="https://www.facebook.com/profile.php?id=61557903014355" target="_blank">
+                                    <i class='bx bxl-facebook'></i>
+                                </a></li>
+                                <li><a href="https://twitter.com/vichaarlab" target="_blank">
+                                    <i class='bx bxl-twitter'></i>
+                                </a></li>
+                                <li><a href="https://www.instagram.com/vichaarlab?igsh=MXR6cHA1dmpsNW5zdw==" target="_blank">
+                                    <i class='bx bxl-instagram'></i>
+                                </a></li>
+                                <li><a href="https://www.linkedin.com/company/vichaarlab/mycompany/" target="_blank">
+                                    <i class='bx bxl-linkedin-square'></i>
+                                </a></li>
                             </ul>
                         </div>
                     </div>
@@ -1683,70 +1676,70 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <!-- To All Content -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Get elements
-        const openPopupBtn = document.getElementById('openPopupBtn');
-        const openPopupBtnMobile = document.getElementById('openPopupBtnMobile');
-        const popup = document.getElementById('popup');
-        const popupOverlay = document.getElementById('popupOverlay');
-        const exitBtn = document.getElementById('exitBtn');
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Get elements
+    const openPopupBtn = document.getElementById('openPopupBtn');
+    const openPopupBtnMobile = document.getElementById('openPopupBtnMobile');
+    const popup = document.getElementById('popup');
+    const popupOverlay = document.getElementById('popupOverlay');
+    const exitBtn = document.getElementById('exitBtn');
 
-        // Function to open the pop-up
-        function openPopup() {
-            popup.style.display = 'block';
-            popupOverlay.style.display = 'block';
-        }
+    // Function to open the pop-up
+    function openPopup() {
+        popup.style.display = 'block';
+        popupOverlay.style.display = 'block';
+    }
 
-        // Function to close the pop-up
-        function closePopup() {
-            popup.style.display = 'none';
-            popupOverlay.style.display = 'none';
-        }
+    // Function to close the pop-up
+    function closePopup() {
+        popup.style.display = 'none';
+        popupOverlay.style.display = 'none';
+    }
 
-        // Show the pop-up when "LET'S TALK" button is clicked (desktop)
-        if (openPopupBtn) {
-            openPopupBtn.addEventListener('click', (event) => {
-                event.preventDefault();  // Prevent the default link behavior
-                openPopup();
-            });
-        }
+    // Show the pop-up when "LET'S TALK" button is clicked (desktop)
+    if (openPopupBtn) {
+        openPopupBtn.addEventListener('click', (event) => {
+            event.preventDefault();  // Prevent the default link behavior
+            openPopup();
+        });
+    }
 
-        // Show the pop-up when "LET'S TALK" button is clicked (mobile)
-        if (openPopupBtnMobile) {
-            openPopupBtnMobile.addEventListener('click', (event) => {
-                event.preventDefault();  // Prevent the default link behavior
-                openPopup();
-            });
-        }
+    // Show the pop-up when "LET'S TALK" button is clicked (mobile)
+    if (openPopupBtnMobile) {
+        openPopupBtnMobile.addEventListener('click', (event) => {
+            event.preventDefault();  // Prevent the default link behavior
+            openPopup();
+        });
+    }
 
-        // Close the pop-up when the "Close" button is clicked
-        if (exitBtn) {
-            exitBtn.addEventListener('click', () => {
-                closePopup();
-            });
-        }
+    // Close the pop-up when the "Close" button is clicked
+    if (exitBtn) {
+        exitBtn.addEventListener('click', () => {
+            closePopup();
+        });
+    }
 
-        // Close the pop-up when clicking outside the pop-up (on overlay)
-        if (popupOverlay) {
-            popupOverlay.addEventListener('click', () => {
-                closePopup();
-            });
-        }
+    // Close the pop-up when clicking outside the pop-up (on overlay)
+    if (popupOverlay) {
+        popupOverlay.addEventListener('click', () => {
+            closePopup();
+        });
+    }
 
-        // Handle form submission
-        const contactForm = document.getElementById('contactForm');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(event) {
-                event.preventDefault(); 
-                alert('Form submitted successfully!');
-                // Add your form submission logic here 
-                closePopup();  // Close the pop-up after submission
-            });
-        }
-    });
-    </script>
-    <!--  -->
+    // // Handle form submission
+    // const contactForm = document.getElementById('contactForm');
+    //     if (contactForm) {
+    //         contactForm.addEventListener('submit', function(event) {
+    //             event.preventDefault(); 
+    //             alert('Form submitted successfully!');
+    //             // Add your form submission logic here 
+    //             closePopup();  // Close the pop-up after submission
+    //         });
+    //     }
+});
+</script>
+    <!-- services and product hidden -->
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(event) {
         event.preventDefault(); 
@@ -1787,6 +1780,8 @@
 <a href="#" id="whatsapp-link" target="_blank" class="whatsapp-icon">
     <i class="fa-brands fa-square-whatsapp"></i>
 </a>
+
+<!-- whatsapp icon script -->
 <script>
 // Get the WhatsApp link element
 const whatsappLink = document.getElementById('whatsapp-link');
@@ -1810,7 +1805,135 @@ if (isMobile()) {
 }
 </script>
 
+<!-- validation let's talk button -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the form element
+    const contactForm = document.getElementById("contactForm");
 
+    if (contactForm) {
+        contactForm.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Gather form data
+            const name = document.getElementById("name").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const address = document.getElementById("address").value.trim();
+            const location = document.getElementById("location").value.trim();
+            const serviceProduct = document.getElementById("serviceProduct").value;
+            const services = document.getElementById("servicesF").value;
+            const products = document.getElementById("productsF").value;
+            const message = document.getElementById("message").value.trim();
+
+            console.log('Raw name value:', document.getElementById("name").value);
+
+            // Debugging: Log the name field value to check if it's empty or has unexpected characters
+            console.log('Name field value:', `'${name}'`); // Logs value with extra quotes to check for whitespace or hidden characters
+
+            // Validation logic
+            if (!name) {
+                Swal.fire("Validation Error", "Please enter a valid name", "error");
+                return;
+            }
+
+            if (!/^\d{10}$/.test(phone)) {
+                Swal.fire("Validation Error", "Please enter a valid 10-digit phone number.", "error");
+                return;
+            }
+
+            if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
+                Swal.fire("Validation Error", "Please enter a valid email address.", "error");
+                return;
+            }
+
+            if (!address) {
+                Swal.fire("Validation Error", "Please enter your company address.", "error");
+                return;
+            }
+
+            if (!location) {
+                Swal.fire("Validation Error", "Please enter your location.", "error");
+                return;
+            }
+
+            if (!serviceProduct) {
+                Swal.fire("Validation Error", "Please select Services or Products.", "error");
+                return;
+            }
+
+            if (serviceProduct === "services" && !services) {
+                Swal.fire("Validation Error", "Please select a specific service.", "error");
+                return;
+            }
+
+            if (serviceProduct === "products" && !products) {
+                Swal.fire("Validation Error", "Please select a specific product.", "error");
+                return;
+            }
+
+            if (!message || message.length < 10) {
+                Swal.fire("Validation Error", "Please enter a message with at least 10 characters.", "error");
+                return;
+            }
+
+            // Create the payload for POST request
+            const formData = {
+                name: name,
+                phone: phone,
+                email: email,
+                address: address,
+                location: location,
+                serviceProduct: serviceProduct,
+                services: services,
+                products: products,
+                message: message,
+            };
+
+            // Perform the POST request using Fetch API
+            fetch('http://127.0.0.1:8000/api/lets-talk-send-email/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Handle the response from the server
+                console.log(data);
+                if (data.success) {
+                    Swal.fire({
+                        title: "Success",
+                        text: "Form submitted successfully!",
+                        icon: "success",
+                        confirmButtonText: "Okay",
+                        confirmButtonColor: "#4CAF50", // Custom color for the confirm button
+                    }).then(() => {
+                        // Clear the form after submission
+                        contactForm.reset();
+                    });
+                } else {
+                    Swal.fire("Error", "There was an issue with your submission. Please try again.", "error");
+                }
+            })
+            .catch(error => {
+                // Handle any errors
+                console.error('Error:', error);
+                Swal.fire("Error", "Something went wrong. Please try again later.", "error");
+            });
+        });
+    }
+});
+</script>
+  
+  
+  
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
 
 </body>
 

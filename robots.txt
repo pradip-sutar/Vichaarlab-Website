@@ -1,4 +1,3 @@
-URL path: https://www.vichaarlab.com/robots.txt
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
