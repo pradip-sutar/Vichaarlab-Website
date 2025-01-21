@@ -1239,7 +1239,7 @@
             <div class="container">
                 <div class="row d-flex align-items-center g-3">
                     <div class="col-lg-6 d-flex justify-content-lg-start justify-content-center">
-                        <p>Copyright 2024 <a href="#" class="egns-lab">Vichaarlab</a></p>
+                        <p>Copyright <span id="currentYear"></span> <a href="#" class="egns-lab">Vichaarlab</a></p>
                     </div>
                     <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center align-items-center">
                         <ul class="f-bottom-list d-flex jusify-content-start align-items-center">
@@ -1278,101 +1278,28 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
-     <script>
-        // Get elements
-    const openPopupBtn = document.getElementById('openPopupBtn');
-    const popup = document.getElementById('popup');
-    const popupOverlay = document.getElementById('popupOverlay');
-    const exitBtn = document.getElementById('exitBtn');
-    
-    // const serviceProductSelect = document.getElementById('serviceProduct');
-    // const servicesDropdown = document.getElementById('services');
-    // const productsDropdown = document.getElementById('products');
-    const conditionalFields = document.querySelectorAll('.conditional-field');
-    
-    // Show the pop-up when "LET'S TALK" button is clicked
-    openPopupBtn.addEventListener('click', () => {
-        popup.style.display = 'block';
-        popupOverlay.style.display = 'block';
-    });
-
-    // Close the pop-up when the "Close" button is clicked
-    exitBtn.addEventListener('click', () => {
-        popup.style.display = 'none';
-        popupOverlay.style.display = 'none';
-    });
-
-    // Close the pop-up when clicking outside the pop-up (on overlay)
-    popupOverlay.addEventListener('click', () => {
-        popup.style.display = 'none';
-        popupOverlay.style.display = 'none';
-    });
-
-    
-    // Handle form submission
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        alert('Form submitted successfully!');
-        // Here you can add form submission logic (e.g., using AJAX)
-        popup.style.display = 'none';
-        popupOverlay.style.display = 'none';
-    });
-    </script>
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
-
-        // Perform any form submission logic here (e.g., sending data to the server)
-
-        // Clear the form fields
-        this.reset(); // This will reset all fields to their default values
-    });
-
-        function toggleDropdown(selectElement) {
-    var servicesDropdown = document.getElementById("servicesF");
-    var productsDropdown = document.getElementById("productsF");
-
-    // Hide both dropdowns first
-    servicesDropdown.classList.remove("visible");
-    servicesDropdown.classList.add("hidden");
-
-    productsDropdown.classList.remove("visible");
-    productsDropdown.classList.add("hidden");
-
-    // Show the relevant dropdown
-    if (selectElement.value === "services") {
-        servicesDropdown.classList.remove("hidden");
-        servicesDropdown.classList.add("visible");
-    } else if (selectElement.value === "products") {
-        productsDropdown.classList.remove("hidden");
-        productsDropdown.classList.add("visible");
-    }
-}
-
-    </script>
 <!-- To All Content -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
         // Get elements
         const openPopupBtn = document.getElementById('openPopupBtn');
         const openPopupBtnMobile = document.getElementById('openPopupBtnMobile');
         const popup = document.getElementById('popup');
         const popupOverlay = document.getElementById('popupOverlay');
         const exitBtn = document.getElementById('exitBtn');
-
+    
         // Function to open the pop-up
         function openPopup() {
             popup.style.display = 'block';
             popupOverlay.style.display = 'block';
         }
-
+    
         // Function to close the pop-up
         function closePopup() {
             popup.style.display = 'none';
             popupOverlay.style.display = 'none';
         }
-
+    
         // Show the pop-up when "LET'S TALK" button is clicked (desktop)
         if (openPopupBtn) {
             openPopupBtn.addEventListener('click', (event) => {
@@ -1380,7 +1307,7 @@
                 openPopup();
             });
         }
-
+    
         // Show the pop-up when "LET'S TALK" button is clicked (mobile)
         if (openPopupBtnMobile) {
             openPopupBtnMobile.addEventListener('click', (event) => {
@@ -1388,62 +1315,57 @@
                 openPopup();
             });
         }
-
+    
         // Close the pop-up when the "Close" button is clicked
         if (exitBtn) {
             exitBtn.addEventListener('click', () => {
                 closePopup();
             });
         }
-
+    
         // Close the pop-up when clicking outside the pop-up (on overlay)
         if (popupOverlay) {
             popupOverlay.addEventListener('click', () => {
                 closePopup();
             });
         }
-
-        // Handle form submission
-        const contactForm = document.getElementById('contactForm');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(event) {
-                event.preventDefault(); 
-                alert('Form submitted successfully!');
-                // Add your form submission logic here 
-                closePopup();  // Close the pop-up after submission
-            });
-        }
+    
+        // // Handle form submission
+        // const contactForm = document.getElementById('contactForm');
+        //     if (contactForm) {
+        //         contactForm.addEventListener('submit', function(event) {
+        //             event.preventDefault(); 
+        //             alert('Form submitted successfully!');
+        //             // Add your form submission logic here 
+        //             closePopup();  // Close the pop-up after submission
+        //         });
+        //     }
     });
     </script>
     <!--  -->
     <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault(); 
-        this.reset(); 
-    });
-
         function toggleDropdown(selectElement) {
-    var servicesDropdown = document.getElementById("servicesF");
-    var productsDropdown = document.getElementById("productsF");
-
-    // Hide both dropdowns first
-    servicesDropdown.classList.remove("visible");
-    servicesDropdown.classList.add("hidden");
-
-    productsDropdown.classList.remove("visible");
-    productsDropdown.classList.add("hidden");
-
-    // Show the relevant dropdown
-    if (selectElement.value === "services") {
-        servicesDropdown.classList.remove("hidden");
-        servicesDropdown.classList.add("visible");
-    } else if (selectElement.value === "products") {
-        productsDropdown.classList.remove("hidden");
-        productsDropdown.classList.add("visible");
+        var servicesDropdown = document.getElementById("servicesF");
+        var productsDropdown = document.getElementById("productsF");
+    
+        // Hide both dropdowns first
+        servicesDropdown.classList.remove("visible");
+        servicesDropdown.classList.add("hidden");
+    
+        productsDropdown.classList.remove("visible");
+        productsDropdown.classList.add("hidden");
+    
+        // Show the relevant dropdown
+        if (selectElement.value === "services") {
+            servicesDropdown.classList.remove("hidden");
+            servicesDropdown.classList.add("visible");
+        } else if (selectElement.value === "products") {
+            productsDropdown.classList.remove("hidden");
+            productsDropdown.classList.add("visible");
+        }
     }
-}
-
-    </script>
+    
+</script>
 
 
 <script src="//code.tidio.co/nnmrdrnhlrwl1arbjdtie7nwdwbfn48x.js" async></script>
@@ -1474,6 +1396,142 @@
         whatsappLink.href = `https://web.whatsapp.com/send?phone=${phoneNumber}`;
     }
 </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get the form element
+        const contactForm = document.getElementById("contactForm");
+    
+        if (contactForm) {
+            contactForm.addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent default form submission
+    
+                // Gather form data
+                const name = document.getElementById("name").value.trim();
+                const phone = document.getElementById("phone").value.trim();
+                const email = document.getElementById("email").value.trim();
+                const address = document.getElementById("address").value.trim();
+                const location = document.getElementById("location").value.trim();
+                const serviceProduct = document.getElementById("serviceProduct").value; // Correctly get serviceProduct value
+                const services = serviceProduct === "services" ? document.getElementById("servicesF").value : "";
+                const products = serviceProduct === "products" ? document.getElementById("productsF").value : "";
+                const message = document.getElementById("message").value.trim();
+    
+                // Debugging: Log field values to check for issues
+                console.log('Form data:', {
+                    name, phone, email, address, location, serviceProduct, services, products, message
+                });
+    
+                // Validation logic
+                if (!name) {
+                    Swal.fire("Validation Error", "Please enter a valid name", "error");
+                    return;
+                }
+    
+                if (!/^\d{10}$/.test(phone)) {
+                    Swal.fire("Validation Error", "Please enter a valid 10-digit phone number.", "error");
+                    return;
+                }
+    
+                if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
+                    Swal.fire("Validation Error", "Please enter a valid email address.", "error");
+                    return;
+                }
+    
+                if (!address) {
+                    Swal.fire("Validation Error", "Please enter your company address.", "error");
+                    return;
+                }
+    
+                if (!location) {
+                    Swal.fire("Validation Error", "Please enter your location.", "error");
+                    return;
+                }
+    
+                if (!serviceProduct) {
+                    Swal.fire("Validation Error", "Please select Services or Products.", "error");
+                    return;
+                }
+    
+                if (serviceProduct === "services" && !services) {
+                    Swal.fire("Validation Error", "Please select a specific service.", "error");
+                    return;
+                }
+    
+                if (serviceProduct === "products" && !products) {
+                    Swal.fire("Validation Error", "Please select a specific product.", "error");
+                    return;
+                }
+    
+                if (!message || message.length < 10) {
+                    Swal.fire("Validation Error", "Please enter a message with at least 10 characters.", "error");
+                    return;
+                }
+    
+                // Create the payload for POST request
+                const formData = {
+                    name,
+                    phone,
+                    email,
+                    address,
+                    location,
+                    serviceProduct,
+                    services,
+                    products,
+                    message,
+                };
+    
+                // Perform the POST request using Fetch API
+                fetch('http://127.0.0.1:8000/api/lets-talk-send-email/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            })
+            .then(response => {
+                // Save response.ok and return JSON
+                const isSuccess = response.ok;
+                return response.json().then(data => ({ isSuccess, data }));
+            })
+            .then(({ isSuccess, data }) => {
+                console.log('Server response data:', data);
+
+                if (isSuccess && data.message) { // Check HTTP success and message presence
+                    Swal.fire({
+                        title: "Success",
+                        text: data.message,
+                        icon: "success",
+                        confirmButtonText: "Okay",
+                        confirmButtonColor: "#E5004C",
+                    }).then(() => {
+                        contactForm.reset();
+                    });
+                } else {
+                    Swal.fire("Error", data.message || "Submission failed. Please try again.", "error");
+                }
+            })
+            .catch(error => {
+                console.error('Error during fetch:', error);
+                Swal.fire("Error", "Something went wrong. Please try again later.", "error");
+            });
+        });
+    }
+});
+</script>
+
+    
+    
+
+  
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+  
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
 
 
 </body>

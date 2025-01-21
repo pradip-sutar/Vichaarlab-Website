@@ -51,7 +51,7 @@ Template Name: Spinner - Startup and Digital Agency HTML Template
 @import url("https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap");
 :root {
   /*color Variable*/
-  --primary-color1: rgb(230, 0, 76);
+  --primary-color1: rgb(242, 90, 21);
   --primary-opcaity: rgba(230, 0, 76, 0.1);
   --primary-color2: rgb(0, 202, 235);
   --primary-opcaity2: rgba(0, 202, 235, 0.1);
@@ -1546,10 +1546,10 @@ header.style-1 .main-nav ul li a {
   transition: all 0.5s ease-out 0s;
 }
 header.style-1 .main-nav ul li a:hover {
-  color: #D90A2C;
+  color: #f25a15;
 }
 header.style-1 .main-nav ul li a.active {
-  color: #D90A2C;
+  color: #f25a15;
 }
 header.style-1 .main-nav ul li i {
   width: 30px;
@@ -1666,7 +1666,7 @@ header.style-1 .main-nav ul li.menu-item-has-children > i {
     text-align: left;
     padding-top: 20px;
     display: block;
-    border-bottom: 1px solid #D90A2C;
+    border-bottom: 1px solid #f25a15;
     padding-bottom: 8px;
   }
   header.style-1 .main-nav ul {

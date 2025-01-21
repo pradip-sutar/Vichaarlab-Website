@@ -585,7 +585,7 @@ style="background-image: url(../assets/images/img/Inner_Page_Banner/2.png);
       <!-- Left Side (SVG and text) -->
       <div class="flex-1 mb-8 md:mb-0 pad-2">
         <h1 class="text-3xl font-bold text-foreground secLeft" style="margin-right: 200px;">Let’s have a Talk</h1>
-       
+        
         <img aria-hidden="true" alt="Illustration of a person working at a desk" 
              src="../assets/images/img/Vichaarlab banner/icon.svg" class="mt-9 w-[250px] mx-auto" />
       </div>
@@ -657,7 +657,6 @@ style="background-image: url(../assets/images/img/Inner_Page_Banner/2.png);
                 </select>
             </div>
         </div>
-    
         <!-- Conditional Dropdowns -->
         
     
@@ -780,7 +779,7 @@ style="background-image: url(../assets/images/img/Inner_Page_Banner/2.png);
             <div class="container">
                 <div class="row d-flex align-items-center g-3">
                     <div class="col-lg-6 d-flex justify-content-lg-start justify-content-center">
-                        <p>Copyright 2024 <a href="#" class="egns-lab">Vichaarlab</a></p>
+                        <p>Copyright <span id="currentYear"></span> <a href="#" class="egns-lab">Vichaarlab</a></p>
                     </div>
                     <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center align-items-center">
                         <ul class="f-bottom-list d-flex jusify-content-start align-items-center">
@@ -816,11 +815,11 @@ style="background-image: url(../assets/images/img/Inner_Page_Banner/2.png);
     <script src="../assets/js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
-     <script>
-        // Get elements
+<script>
+    // Get elements
     const openPopupBtn = document.getElementById('openPopupBtn');
     const popup = document.getElementById('popup');
     const popupOverlay = document.getElementById('popupOverlay');
@@ -869,7 +868,7 @@ style="background-image: url(../assets/images/img/Inner_Page_Banner/2.png);
         this.reset(); // This will reset all fields to their default values
     });
 
-        function toggleDropdown(selectElement) {
+    function toggleDropdown(selectElement) {
     var servicesDropdown = document.getElementById("servicesF");
     var productsDropdown = document.getElementById("productsF");
 
@@ -889,8 +888,7 @@ style="background-image: url(../assets/images/img/Inner_Page_Banner/2.png);
         productsDropdown.classList.add("visible");
     }
 }
-
-    </script>
+</script>
 <!-- To All Content -->
     <script>
       document.addEventListener('DOMContentLoaded', function() {
@@ -987,7 +985,6 @@ style="background-image: url(../assets/images/img/Inner_Page_Banner/2.png);
 
 
 <script src="//code.tidio.co/nnmrdrnhlrwl1arbjdtie7nwdwbfn48x.js" async></script>
-<script src="//code.tidio.co/nnmrdrnhlrwl1arbjdtie7nwdwbfn48x.js" async></script>
 
 <a href="#" id="whatsapp-link" target="_blank" class="whatsapp-icon">
     <i class="fa-brands fa-square-whatsapp"></i>
@@ -1016,6 +1013,129 @@ style="background-image: url(../assets/images/img/Inner_Page_Banner/2.png);
     }
 </script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get the form element
+        const contactForm = document.getElementById("contactForm");
+    
+        if (contactForm) {
+            contactForm.addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent default form submission
+    
+                // Gather form data
+                const name = document.getElementById("name").value.trim();
+                const phone = document.getElementById("phone").value.trim();
+                const email = document.getElementById("email").value.trim();
+                const address = document.getElementById("address").value.trim();
+                const location = document.getElementById("location").value.trim();
+                const serviceProduct = document.getElementById("serviceProduct").value; // Correctly get serviceProduct value
+                const services = serviceProduct === "services" ? document.getElementById("servicesF").value : "";
+                const products = serviceProduct === "products" ? document.getElementById("productsF").value : "";
+                const message = document.getElementById("message").value.trim();
+    
+                // Debugging: Log field values to check for issues
+                console.log('Form data:', {
+                    name, phone, email, address, location, serviceProduct, services, products, message
+                });
+    
+                // Validation logic
+                if (!name) {
+                    Swal.fire("Validation Error", "Please enter a valid name", "error");
+                    return;
+                }
+    
+                if (!/^\d{10}$/.test(phone)) {
+                    Swal.fire("Validation Error", "Please enter a valid 10-digit phone number.", "error");
+                    return;
+                }
+    
+                if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
+                    Swal.fire("Validation Error", "Please enter a valid email address.", "error");
+                    return;
+                }
+    
+                if (!address) {
+                    Swal.fire("Validation Error", "Please enter your company address.", "error");
+                    return;
+                }
+    
+                if (!location) {
+                    Swal.fire("Validation Error", "Please enter your location.", "error");
+                    return;
+                }
+    
+                if (!serviceProduct) {
+                    Swal.fire("Validation Error", "Please select Services or Products.", "error");
+                    return;
+                }
+    
+                if (serviceProduct === "services" && !services) {
+                    Swal.fire("Validation Error", "Please select a specific service.", "error");
+                    return;
+                }
+    
+                if (serviceProduct === "products" && !products) {
+                    Swal.fire("Validation Error", "Please select a specific product.", "error");
+                    return;
+                }
+    
+                if (!message || message.length < 10) {
+                    Swal.fire("Validation Error", "Please enter a message with at least 10 characters.", "error");
+                    return;
+                }
+    
+                // Create the payload for POST request
+                const formData = {
+                    name,
+                    phone,
+                    email,
+                    address,
+                    location,
+                    serviceProduct,
+                    services,
+                    products,
+                    message,
+                };
+    
+                // Perform the POST request using Fetch API
+                fetch('http://127.0.0.1:8000/api/lets-talk-send-email/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            })
+            .then(response => {
+                // Save response.ok and return JSON
+                const isSuccess = response.ok;
+                return response.json().then(data => ({ isSuccess, data }));
+            })
+            .then(({ isSuccess, data }) => {
+                console.log('Server response data:', data);
+
+                if (isSuccess && data.message) { // Check HTTP success and message presence
+                    Swal.fire({
+                        title: "Success",
+                        text: data.message,
+                        icon: "success",
+                        confirmButtonText: "Okay",
+                        confirmButtonColor: "#E5004C",
+                    }).then(() => {
+                        contactForm.reset();
+                    });
+                } else {
+                    Swal.fire("Error", data.message || "Submission failed. Please try again.", "error");
+                }
+            })
+            .catch(error => {
+                console.error('Error during fetch:', error);
+                Swal.fire("Error", "Something went wrong. Please try again later.", "error");
+            });
+        });
+    }
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

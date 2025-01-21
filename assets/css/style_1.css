@@ -353,7 +353,7 @@ cursor: pointer;
 }
 
 .talkBtn {
-background-color: #e6004c;
+background-color: #f05915;
 color: white;
 border: none;
 padding: 10px;
@@ -1100,7 +1100,7 @@ margin-top:25px;
     }
     
     .talkBtn {
-    background-color: #e6004c; /* Original background color */
+    background-color: #f05915; /* Original background color */
     color: white;
     border: none;
     padding: 10px;

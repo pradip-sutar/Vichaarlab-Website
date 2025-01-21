@@ -44,10 +44,13 @@
     <!-- style css -->
     <link rel="stylesheet" href="../assets/css/style.css">
 
-     <link rel="stylesheet" href="../assets/css/style_1.css">
+    <link rel="stylesheet" href="../assets/css/style_1.css">
 
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <link rel="canonical" href="https://www.vichaarlab.com/">
 
@@ -1639,7 +1642,7 @@
             <div class="container">
                 <div class="row d-flex align-items-center g-3">
                     <div class="col-lg-6 d-flex justify-content-lg-start justify-content-center">
-                        <p>Copyright 2024 <a href="#" class="egns-lab">Vichaarlab</a></p>
+                        <p>Copyright <span id="currentYear"></span> <a href="#" class="egns-lab">Vichaarlab</a></p>
                     </div>
                     <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center align-items-center">
                         <ul class="f-bottom-list d-flex jusify-content-start align-items-center">
@@ -1796,8 +1799,6 @@ if (isMobile()) {
 </script>
 
 <!-- validation let's talk button -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         // Get the form element
@@ -1813,15 +1814,15 @@ if (isMobile()) {
                 const email = document.getElementById("email").value.trim();
                 const address = document.getElementById("address").value.trim();
                 const location = document.getElementById("location").value.trim();
-                const serviceProduct = document.getElementById("serviceProduct").value;  // Correctly get serviceProduct value
+                const serviceProduct = document.getElementById("serviceProduct").value; // Correctly get serviceProduct value
                 const services = serviceProduct === "services" ? document.getElementById("servicesF").value : "";
                 const products = serviceProduct === "products" ? document.getElementById("productsF").value : "";
                 const message = document.getElementById("message").value.trim();
     
-                // Debugging: Log the name field value to check if it's empty or has unexpected characters
-                console.log('Name field value:', `'${name}'`); 
-                console.log('Services value:', document.getElementById("servicesF").value);
-                console.log('Products value:', document.getElementById("productsF").value);
+                // Debugging: Log field values to check for issues
+                console.log('Form data:', {
+                    name, phone, email, address, location, serviceProduct, services, products, message
+                });
     
                 // Validation logic
                 if (!name) {
@@ -1871,56 +1872,56 @@ if (isMobile()) {
     
                 // Create the payload for POST request
                 const formData = {
-                    name: name,
-                    phone: phone,
-                    email: email,
-                    address: address,
-                    location: location,
-                    serviceProduct: serviceProduct,
-                    services: services,
-                    products: products,
-                    message: message,
+                    name,
+                    phone,
+                    email,
+                    address,
+                    location,
+                    serviceProduct,
+                    services,
+                    products,
+                    message,
                 };
     
                 // Perform the POST request using Fetch API
                 fetch('http://127.0.0.1:8000/api/lets-talk-send-email/', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(formData),
-                })
-                .then(response => {
-                    console.log('Response Status:', response.status); // Log the response status
-                    return response.json(); // Ensure the server returns valid JSON
-                })
-                .then(data => {
-                    console.log('Server response data:', data); // Log the API response
-    
-                    // Check if the response status is 200 and there is a message
-                    if (data.success === true) { // Check if the success is true
-                        Swal.fire({
-                            title: "Success",
-                            text: data.message || "Form submitted successfully!",
-                            icon: "success",
-                            confirmButtonText: "Okay",
-                            confirmButtonColor: "#4CAF50",
-                        }).then(() => {
-                            contactForm.reset(); // Clear the form
-                        });
-                    } else {
-                        Swal.fire("Error", data.message || "Submission failed. Please try again.", "error");
-                    }
-                })
-                .catch(error => {
-                    console.error('Error during fetch:', error);
-                    Swal.fire("Error", "Something went wrong. Please try again later.", "error");
-                });
-    
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            })
+            .then(response => {
+                // Save response.ok and return JSON
+                const isSuccess = response.ok;
+                return response.json().then(data => ({ isSuccess, data }));
+            })
+            .then(({ isSuccess, data }) => {
+                console.log('Server response data:', data);
+
+                if (isSuccess && data.message) { // Check HTTP success and message presence
+                    Swal.fire({
+                        title: "Success",
+                        text: data.message,
+                        icon: "success",
+                        confirmButtonText: "Okay",
+                        confirmButtonColor: "#E5004C",
+                    }).then(() => {
+                        contactForm.reset();
+                    });
+                } else {
+                    Swal.fire("Error", data.message || "Submission failed. Please try again.", "error");
+                }
+            })
+            .catch(error => {
+                console.error('Error during fetch:', error);
+                Swal.fire("Error", "Something went wrong. Please try again later.", "error");
             });
-        }
-    });
-    </script>
+        });
+    }
+});
+</script>
+
     
     
 

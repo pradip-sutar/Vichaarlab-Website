@@ -32,6 +32,9 @@ function myGreeting() {
   wow.init();
 }
 
+// Get the current year and display it
+document.getElementById("currentYear").textContent = new Date().getFullYear();
+
 // sticky header
 
 window.addEventListener('scroll',function(){
