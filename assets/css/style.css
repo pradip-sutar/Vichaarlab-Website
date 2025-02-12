@@ -7040,7 +7040,7 @@ footer .footer-bottom .f-bottom-list li:first-child a {
   padding-right: 15px;
   margin-right: 15px;
 }
-footer .footer-bottom .f-bottom-list li:first-child a::after {
+footer .footer-bottom .f-bottom-list li:first-child  a::after {
   content: "";
   position: absolute;
   right: 0;
