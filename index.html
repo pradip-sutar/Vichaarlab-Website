@@ -238,6 +238,50 @@
         .position-relative {
             height: 85vh;
         }
+        
+    }
+    @media (min-width: 1440px) {
+      .bannerLeftA {
+          margin-left: 30px !important;
+      }
+      .fontSizeBanTitle{
+        font-size: 56px;
+      }
+      .fontSizeBanDesc{
+        font-size: 20px;
+      }
+    }
+    @media (max-width: 1024px) {
+      .bannerLeftA {
+          margin-left: -40px !important;
+      }
+    }
+    @media (max-width: 769px) {
+      .bannerLeftA {
+          margin-left: -64px !important;
+      }
+      .fontSizeBanTitle{
+        font-size: 32px;
+      }
+      .fontSizeBanDesc{
+        font-size: 15px;
+      }
+    }
+    @media (max-width: 576px) {
+      .bannerLeftA {
+          margin-left: -16px !important;
+      }
+      .fontSizeBanTitle{
+        font-size: 32px;
+      }
+    }
+    @media (max-width: 321px) {
+      .bannerLeftA {
+          margin-left: -16px !important;
+      }
+      .fontSizeBanTitle{
+        font-size: 25px;
+      }
     }
 </style>
 
@@ -582,23 +626,23 @@
 
     <!-- ========== banner1-area start============= -->
 
-    <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" >
+    <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="300000" >
         <div class="carousel-inner">
             <!-- Slide 1 -->
             <div class="carousel-item active">
                 <div class="position-relative" style="background-color: #2988bf; min-height: 50vh; overflow: hidden;">
                     <div class="w-100 h-100 position-absolute" style="background-color: #2988bf; z-index: 1;"></div>
                     <div class="row h-100 align-items-center justify-content-center">
-                        <div class="col-12 col-md-6 text-center text-md-start p-5" style="color: white; z-index: 2;">
-                            <h1 style="font-size: 35px;">Mobile App Development Solutions</h1>
-                            <p style="font-size: 17px;">Transform your ideas into engaging mobile applications with our end-to-end mobile app development solutions, ensuring high performance and user satisfaction across platforms.</p>
+                        <div class="col-12 col-md-7 text-center text-md-start text-lg-start p-5 bannerLeftA" style="color: white; z-index: 2; ">
+                            <h1 class="fontSizeBanTitle">Mobile App Development Solutions</h1>
+                            <p class="fontSizeBanDesc">Transform your ideas into engaging mobile applications with our end-to-end  <strong>mobile app development solutions</strong>, ensuring high performance and user satisfaction across platforms.</p>
                             <a href="contact.html" class="btn btn-outline-light mt-3"
                             style="background-color: #f25a15; color: rgb(254, 254, 254); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); border-color: #f25a15; font-size: 18px; border-radius: 10px; cursor:pointer">
                             Contact Us
                             </a>
                          
                         </div>
-                        <div class="col-md-6 d-none d-md-flex justify-content-center align-items-center" style="z-index: 2;">
+                        <div class="col-md-4 d-none d-md-flex justify-content-center align-items-center" style="z-index: 2;">
                             <img src="../assets/images/img/Vichaarlab banner/Mobile App Development Solutions.png" class="img-fluid" style="object-fit: contain; max-height: 100%;" alt="Mobile App Development">
                         </div>
                     </div>
@@ -610,15 +654,15 @@
                 <div class="position-relative" style="background: #2988bf; min-height: 50vh; overflow: hidden;">
                     <div class="w-100 h-100 position-absolute" style="background: #2988bf; z-index: 1;"></div>
                     <div class="row h-100 align-items-center justify-content-center">
-                        <div class="col-12 col-md-6 text-center text-md-start p-5" style="color: white; z-index: 2;">
-                            <h1 style="font-size: 35px;">Construction ERP Solution</h1>
-                            <p style="font-size: 17px;">Manage your entire business operations with our powerful ERP solutions, designed to integrate and automate your core processes for enhanced efficiency and productivity.</p>
+                        <div class="col-12 col-md-7 text-center text-md-start p-5 bannerLeftA" style="color: white; z-index: 2;">
+                            <h1 class="fontSizeBanTitle">Construction ERP Solution</h1>
+                            <p class="fontSizeBanDesc">Manage your entire business operations with our powerful <strong>ERP solutions</strong> , designed to integrate and automate your core processes <br> for enhanced efficiency and productivity.</p>
                             <a href="contact.html" class="btn btn-outline-light mt-3"
                             style="background-color: #f25a15; color: rgb(254, 254, 254); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); border-color: #f25a15; font-size: 18px; border-radius: 10px; cursor:pointer">
                             Contact Us
                             </a>
                         </div>
-                        <div class="col-md-6 d-none d-md-flex justify-content-center align-items-center" style="z-index: 2;">
+                        <div class="col-md-4 d-none d-md-flex justify-content-center align-items-center" style="z-index: 2;">
                             <img src="../assets/images/img/Vichaarlab banner/ERP Solutions.png" class="img-fluid" style="object-fit: contain; max-height: 100%;" alt="Construction ERP Solution">
                         </div>
                     </div>
@@ -630,15 +674,15 @@
                 <div class="position-relative" style="background-color: #2988bf; min-height: 50vh; overflow: hidden;">
                     <div class="w-100 h-100 position-absolute" style="background-color: #2988bf; z-index: 1;"></div>
                     <div class="row h-100 align-items-center justify-content-center">
-                        <div class="col-12 col-md-6 text-center text-md-start p-5" style="color: white; z-index: 2;">
-                            <h1 style="font-size: 35px;">Real Estate CRM Solution</h1>
-                            <p style="font-size: 17px;">Increase your customer relationships with our custom CRM systems, enabling you to manage interactions, track leads, and drive sales growth effectively.</p>
+                        <div class="col-12 col-md-7 text-center text-md-start p-5 bannerLeftA" style="color: white; z-index: 2;">
+                            <h1 class="fontSizeBanTitle">Real Estate CRM Solution</h1>
+                            <p class="fontSizeBanDesc">Increase your customer relationships with our custom <br><strong>CRM systems</strong>, enabling you to manage interactions, track leads, and <br>drive sales growth effectively.</p>
                             <a href="contact.html" class="btn btn-outline-light mt-3"
                             style="background-color: #f25a15; color: rgb(254, 254, 254); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); border-color: #f25a15; font-size: 18px; border-radius: 10px; cursor:pointer">
                             Contact Us
                             </a>
                         </div>
-                        <div class="col-md-6 d-none d-md-flex justify-content-center align-items-center" style="z-index: 2;">
+                        <div class="col-md-4 d-none d-md-flex justify-content-center align-items-center" style="z-index: 2;">
                             <img src="../assets/images/img/Vichaarlab banner/CRM Solutions.png" class="img-fluid" style="object-fit: contain; max-height: 100%; width:88%" alt="Real Estate CRM Solution">
                         </div>
                     </div>
@@ -650,15 +694,15 @@
                 <div class="position-relative" style="background-color: #2988bf; min-height: 50vh; overflow: hidden;">
                     <div class="w-100 h-100 position-absolute" style="background-color: #2988bf; z-index: 1;"></div>
                     <div class="row h-100 align-items-center justify-content-center">
-                        <div class="col-12 col-md-6 text-center text-md-start p-5" style="color: white; z-index: 2;">
-                            <h1 style="font-size: 35px;">E-Commerce Solution</h1>
-                            <p style="font-size: 17px;">Launch and grow your online store with a feature-rich e-commerce platform designed for seamless shopping experiences.</p>
+                        <div class="col-12 col-md-7 text-center text-md-start p-5 bannerLeftA" style="color: white; z-index: 2;">
+                            <h1 class="fontSizeBanTitle">E-Commerce Solution</h1>
+                            <p class="fontSizeBanDesc">Launch and grow your online store with a feature-rich <br> <strong>E-commerce platform</strong>  designed for seamless shopping experiences.</p>
                             <a href="contact.html" class="btn btn-outline-light mt-3"
                             style="background-color: #f25a15; color: rgb(254, 254, 254); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); border-color: #f25a15; font-size: 18px; border-radius: 10px; cursor:pointer">
                             Contact Us
                             </a>
                         </div>
-                        <div class="col-md-6 d-none d-md-flex justify-content-center align-items-center" style="z-index: 2;">
+                        <div class="col-md-4 d-none d-md-flex justify-content-center align-items-center" style="z-index: 2;">
                             <img src="../assets/images/img/Vichaarlab banner/E-Commerce Website Development Solution.png" class="img-fluid" style="object-fit: contain; max-height: 100%;" alt="E-commerce Solution">
                         </div>
                     </div>
@@ -670,15 +714,15 @@
                 <div class="position-relative" style="background-color: #2988bf; min-height: 50vh; overflow: hidden;">
                     <div class="w-100 h-100 position-absolute" style="background-color: #2988bf; z-index: 1;"></div>
                     <div class="row h-100 align-items-center justify-content-center">
-                        <div class="col-12 col-md-6 text-center text-md-start p-5" style="color: white; z-index: 2;">
-                            <h1 style="font-size: 35px;">IoT Solution</h1>
-                            <p style="font-size: 17px;">Connect and automate your devices with our innovative IoT solutions for smarter, data-driven operations.</p>
+                        <div class="col-12 col-md-7 text-center text-md-start p-5 bannerLeftA" style="color: white; z-index: 2;">
+                            <h1 class="fontSizeBanTitle">IoT Solution</h1>
+                            <p class="fontSizeBanDesc">Connect and automate your devices with our innovative <strong>IoT solutions</strong> <br>for smarter, data-driven operations.</p>
                             <a href="contact.html" class="btn btn-outline-light mt-3"
                             style="background-color: #f25a15; color: rgb(254, 254, 254); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); border-color: #f25a15; font-size: 18px; border-radius: 10px; cursor:pointer">
                             Contact Us
                             </a>
                         </div>
-                        <div class="col-md-6 d-none d-md-flex justify-content-center align-items-center" style="z-index: 2;">
+                        <div class="col-md-4 d-none d-md-flex justify-content-center align-items-center" style="z-index: 2;">
                             <img src="../assets/images/img/Vichaarlab banner/IoT Solutions.png" class="img-fluid" style="object-fit: contain; max-height: 100%;" alt="IoT Solution">
                         </div>
                     </div>
@@ -690,15 +734,15 @@
                 <div class="position-relative" style="background-color: #2988bf; min-height: 50vh; overflow: hidden;">
                     <div class="w-100 h-100 position-absolute" style="background-color: #2988bf; z-index: 1;"></div>
                     <div class="row h-100 align-items-center justify-content-center">
-                        <div class="col-12 col-md-6 text-center text-md-start p-5" style="color: white; z-index: 2;">
-                            <h1 style="font-size: 35px;">AI and ML Solutions</h1>
-                            <p style="font-size: 17px;">Make your business better with improved AI and machine learning methods for smarter choices and automaticity.</p>
+                        <div class="col-12 col-md-7 text-center text-md-start p-5 bannerLeftA" style="color: white; z-index: 2;">
+                            <h1 class="fontSizeBanTitle">AI and ML Solutions</h1>
+                            <p class="fontSizeBanDesc">Make your business better with improved <strong>AI and machine learning</strong> <br>methods for smarter choices and automaticity.</p>
                             <a href="contact.html" class="btn btn-outline-light mt-3"
                             style="background-color: #f25a15; color: rgb(254, 254, 254); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); border-color: #f25a15; font-size: 18px; border-radius: 10px; cursor:pointer">
                             Contact Us
                             </a>
                         </div>
-                        <div class="col-md-6 d-none d-md-flex justify-content-center align-items-center" style="z-index: 2;">
+                        <div class="col-md-4 d-none d-md-flex justify-content-center align-items-center" style="z-index: 2;">
                             <img src="../assets/images/img/Vichaarlab banner/AI and ML Solutions.png" class="img-fluid" style="object-fit: contain; max-height: 100%;" alt="AI & ML Solutions">
                         </div>
                     </div>
@@ -710,16 +754,16 @@
                 <div class="position-relative" style="background-color: #2988bf; min-height: 50vh; overflow: hidden;">
                     <div class="w-100 h-100 position-absolute" style="background-color: #2988bf; z-index: 1;"></div>
                     <div class="row h-100 align-items-center justify-content-center">
-                        <div class="col-12 col-md-6 text-center text-md-start p-5" style="color: white; z-index: 2;">
-                            <h1 style="font-size: 35px;">Web Development Solutions
+                        <div class="col-12 col-md-7 text-center text-md-start p-5 bannerLeftA" style="color: white; z-index: 2;">
+                            <h1 class="fontSizeBanTitle">Web Development Solutions
                             </h1>
-                            <p style="font-size: 17px;">Build a strong online presence with our bespoke web development services, delivering responsive and user-friendly websites that align with your business goals.</p>
+                            <p class="fontSizeBanDesc">Build a strong online presence with our bespoke <strong>web development services</strong> , <br>delivering responsive and user-friendly websites that align with your business goals.</p>
                             <a href="contact.html" class="btn btn-outline-light mt-3"
                             style="background-color: #f25a15; color: rgb(254, 254, 254); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); border-color: #f25a15; font-size: 18px; border-radius: 10px; cursor:pointer">
                             Contact Us
                             </a>
                         </div>
-                        <div class="col-md-6 d-none d-md-flex justify-content-center align-items-center" style="z-index: 2;">
+                        <div class="col-md-4 d-none d-md-flex justify-content-center align-items-center" style="z-index: 2;">
                             <img src="../assets/images/img/Vichaarlab banner/Web Development Solutions.png" class="img-fluid" style="object-fit: contain; max-height: 100%;" alt="AI & ML Solutions">
                         </div>
                     </div>
@@ -732,16 +776,16 @@
             <div class="position-relative" style="background-color: #2988bf; min-height: 50vh; overflow: hidden;">
                 <div class="w-100 h-100 position-absolute" style="background-color: #2988bf; z-index: 1;"></div>
                     <div class="row h-100 align-items-center justify-content-center">
-                        <div class="col-12 col-md-6 text-center text-md-start p-5" style="color: white; z-index: 2;">
-                            <h1 style="font-size: 35px;">Point of Sale (POS) System
+                        <div class="col-12 col-md-7 text-center text-md-start p-5 bannerLeftA" style="color: white; z-index: 2;">
+                            <h1 class="fontSizeBanTitle">Point of Sale (POS) System
                             </h1>
-                            <p style="font-size: 17px;">Store and Manage your retail operations with our advanced POS systems, offering seamless sales processing, inventory management, and real-time analytics.</p>
+                            <p class="fontSizeBanDesc">Store and Manage your retail operations with our advanced <strong>POS systems</strong>,<br> offering seamless sales processing, inventory management, and real-time analytics.</p>
                             <a href="contact.html" class="btn btn-outline-light mt-3"
                             style="background-color: #f25a15; color: rgb(254, 254, 254); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); border-color: #f25a15; font-size: 17px; border-radius: 10px; cursor:pointer ">
                             Contact Us
                             </a>
                         </div>
-                        <div class="col-md-6 d-none d-md-flex justify-content-center align-items-center" style="z-index: 2;">
+                        <div class="col-md-4 d-none d-md-flex justify-content-center align-items-center" style="z-index: 2;">
                             <img src="../assets/images/img/Vichaarlab banner/Point of Sale (POS) System.png" class="img-fluid" style="object-fit: contain; max-height: 100%;" alt="AI & ML Solutions">
                         </div>
                     </div>
@@ -791,7 +835,7 @@
                         <a href="about.html" class="eg-btn btn--primary btn--lg">KNOW MORE</a>
                     </div>
                 </div>
-                <div class="col-lg-6 order-lg-2 order-1">
+                <div class="col-lg-6 order-lg-2 order-1 d-none d-lg-block ">
                     <div class="about-images wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.2s">
                         <div class="row g-0">
                             <div class="col-6">
