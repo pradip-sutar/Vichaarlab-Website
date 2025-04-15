@@ -234,27 +234,43 @@
         color: rgb(254, 254, 254) !important;
       }
    
-      @media (max-width: 768px) {
-        .position-relative {
-            height: 85vh;
-        }
-        
-    }
+    
     @media (min-width: 1440px) {
       .bannerLeftA {
           margin-left: 30px !important;
       }
       .fontSizeBanTitle{
-        font-size: 56px;
+        font-size: 75px;
       }
       .fontSizeBanDesc{
-        font-size: 20px;
+        font-size: 23px;
       }
+      .logoHead{
+        margin-left: 31px;
+      }
+      .about-alignment{
+        text-align: left;
+      }
+    }
+    @media (min-width: 1025px) and (max-width: 1439px){
+        .fontSizeBanTitle{
+            font-size: 50px;
+          }
+          .fontSizeBanDesc{
+            font-size: 15px;
+          }
     }
     @media (max-width: 1024px) {
       .bannerLeftA {
           margin-left: -40px !important;
       }
+      .fontSizeBanTitle{
+        font-size: 55px;
+      }
+      .fontSizeBanDesc{
+        font-size: 18px;
+      }
+      
     }
     @media (max-width: 769px) {
       .bannerLeftA {
@@ -266,13 +282,23 @@
       .fontSizeBanDesc{
         font-size: 15px;
       }
+      .bannerHeight {
+        height: 85vh;
     }
+    }
+
+   
+        
+    
     @media (max-width: 576px) {
       .bannerLeftA {
           margin-left: -16px !important;
       }
       .fontSizeBanTitle{
         font-size: 32px;
+      }
+      .about-alignment{
+        text-align: center;
       }
     }
     @media (max-width: 321px) {
@@ -401,7 +427,7 @@
     <!-- ========== header============= -->
 
    <header class="header-area style-1">
-        <div class="header-logo">
+        <div class="header-logo logoHead">
             <a href="/"><img alt="image" src="../assets/images/img/vichaarlab_logo.png"
                     style="width: 200px; height: auto;"></a>
         </div>
@@ -626,11 +652,11 @@
 
     <!-- ========== banner1-area start============= -->
 
-    <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="300000" >
+    <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="50000" >
         <div class="carousel-inner">
             <!-- Slide 1 -->
             <div class="carousel-item active">
-                <div class="position-relative" style="background-color: #2988bf; min-height: 50vh; overflow: hidden;">
+                <div class="position-relative bannerHeight" style="background-color: #2988bf; min-height: 50vh; overflow: hidden;">
                     <div class="w-100 h-100 position-absolute" style="background-color: #2988bf; z-index: 1;"></div>
                     <div class="row h-100 align-items-center justify-content-center">
                         <div class="col-12 col-md-7 text-center text-md-start text-lg-start p-5 bannerLeftA" style="color: white; z-index: 2; ">
@@ -651,7 +677,7 @@
     
             <!-- Slide 2 -->
             <div class="carousel-item">
-                <div class="position-relative" style="background: #2988bf; min-height: 50vh; overflow: hidden;">
+                <div class="position-relative bannerHeight" style="background: #2988bf; min-height: 50vh; overflow: hidden;">
                     <div class="w-100 h-100 position-absolute" style="background: #2988bf; z-index: 1;"></div>
                     <div class="row h-100 align-items-center justify-content-center">
                         <div class="col-12 col-md-7 text-center text-md-start p-5 bannerLeftA" style="color: white; z-index: 2;">
@@ -671,7 +697,7 @@
     
             <!-- Slide 3 -->
             <div class="carousel-item">
-                <div class="position-relative" style="background-color: #2988bf; min-height: 50vh; overflow: hidden;">
+                <div class="position-relative bannerHeight" style="background-color: #2988bf; min-height: 50vh; overflow: hidden;">
                     <div class="w-100 h-100 position-absolute" style="background-color: #2988bf; z-index: 1;"></div>
                     <div class="row h-100 align-items-center justify-content-center">
                         <div class="col-12 col-md-7 text-center text-md-start p-5 bannerLeftA" style="color: white; z-index: 2;">
@@ -691,7 +717,7 @@
     
             <!-- Slide 5 -->
             <div class="carousel-item">
-                <div class="position-relative" style="background-color: #2988bf; min-height: 50vh; overflow: hidden;">
+                <div class="position-relative bannerHeight" style="background-color: #2988bf; min-height: 50vh; overflow: hidden;">
                     <div class="w-100 h-100 position-absolute" style="background-color: #2988bf; z-index: 1;"></div>
                     <div class="row h-100 align-items-center justify-content-center">
                         <div class="col-12 col-md-7 text-center text-md-start p-5 bannerLeftA" style="color: white; z-index: 2;">
@@ -711,7 +737,7 @@
     
             <!-- Slide 6 -->
             <div class="carousel-item">
-                <div class="position-relative" style="background-color: #2988bf; min-height: 50vh; overflow: hidden;">
+                <div class="position-relative bannerHeight" style="background-color: #2988bf; min-height: 50vh; overflow: hidden;">
                     <div class="w-100 h-100 position-absolute" style="background-color: #2988bf; z-index: 1;"></div>
                     <div class="row h-100 align-items-center justify-content-center">
                         <div class="col-12 col-md-7 text-center text-md-start p-5 bannerLeftA" style="color: white; z-index: 2;">
@@ -731,7 +757,7 @@
     
             <!-- Slide 7 -->
             <div class="carousel-item">
-                <div class="position-relative" style="background-color: #2988bf; min-height: 50vh; overflow: hidden;">
+                <div class="position-relative bannerHeight" style="background-color: #2988bf; min-height: 50vh; overflow: hidden;">
                     <div class="w-100 h-100 position-absolute" style="background-color: #2988bf; z-index: 1;"></div>
                     <div class="row h-100 align-items-center justify-content-center">
                         <div class="col-12 col-md-7 text-center text-md-start p-5 bannerLeftA" style="color: white; z-index: 2;">
@@ -751,7 +777,7 @@
        
             <!-- Slide 8-->
             <div class="carousel-item">
-                <div class="position-relative" style="background-color: #2988bf; min-height: 50vh; overflow: hidden;">
+                <div class="position-relative bannerHeight" style="background-color: #2988bf; min-height: 50vh; overflow: hidden;">
                     <div class="w-100 h-100 position-absolute" style="background-color: #2988bf; z-index: 1;"></div>
                     <div class="row h-100 align-items-center justify-content-center">
                         <div class="col-12 col-md-7 text-center text-md-start p-5 bannerLeftA" style="color: white; z-index: 2;">
@@ -773,7 +799,7 @@
 
         <!-- Slide 9 -->
         <div class="carousel-item">
-            <div class="position-relative" style="background-color: #2988bf; min-height: 50vh; overflow: hidden;">
+            <div class="position-relative bannerHeight" style="background-color: #2988bf; min-height: 50vh; overflow: hidden;">
                 <div class="w-100 h-100 position-absolute" style="background-color: #2988bf; z-index: 1;"></div>
                     <div class="row h-100 align-items-center justify-content-center">
                         <div class="col-12 col-md-7 text-center text-md-start p-5 bannerLeftA" style="color: white; z-index: 2;">
@@ -816,7 +842,7 @@
     <div class="about1-section pt-120 pb-120">
         <img src="../assets/images/bg/section-bg1.png" class="img-fluid section-bg1 " alt="image">
         <div class="container">
-            <div class="row g-4">
+            <div class="row g-4 about-alignment">
                 <div class="col-lg-6 order-lg-1 order-2">
                     <div class="about1-content wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.2s">
                         <span>-About Our Company-</span>
