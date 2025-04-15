@@ -277,7 +277,7 @@
           margin-left: -64px !important;
       }
       .fontSizeBanTitle{
-        font-size: 32px;
+        font-size: 40px;
       }
       .fontSizeBanDesc{
         font-size: 15px;
@@ -285,9 +285,20 @@
       .bannerHeight {
         height: 85vh;
     }
+   
     }
 
-   
+    @media (min-width: 500px) and (max-width: 767px){
+        .fontSizeBanTitle{
+            font-size: 37px;
+          }
+          .fontSizeBanDesc{
+            font-size: 20px;
+          }
+          .bannerHeight{
+            height: auto;
+          }
+    }
         
     
     @media (max-width: 576px) {
@@ -295,10 +306,23 @@
           margin-left: -16px !important;
       }
       .fontSizeBanTitle{
-        font-size: 32px;
+        font-size: 40px;
+        margin-bottom: 1rem;
+      }
+      .fontSizeBanDesc{
+        font-size: 15px;
       }
       .about-alignment{
         text-align: center;
+      }
+      .bannerHeight{
+        height: auto;
+      }
+      .paddingTopVich{
+        padding-top:10% !important;
+      }
+      .paddingBottomAbout{
+        padding-bottom: 10% !important;
       }
     }
     @media (max-width: 321px) {
@@ -306,7 +330,14 @@
           margin-left: -16px !important;
       }
       .fontSizeBanTitle{
-        font-size: 25px;
+        font-size: 30px;
+      }
+      .fontSizeBanDesc{
+        font-size: 14px;
+      }
+
+      .bannerHeight{
+        height: auto;
       }
     }
 </style>
@@ -839,7 +870,7 @@
 
     <!-- =============== About-section start  =============== -->
 
-    <div class="about1-section pt-120 pb-120">
+    <div class="about1-section pt-120 pb-120 paddingBottomAbout">
         <img src="../assets/images/bg/section-bg1.png" class="img-fluid section-bg1 " alt="image">
         <div class="container">
             <div class="row g-4 about-alignment">
@@ -889,7 +920,7 @@
 
     <!-- =============== Service-section start  =============== -->
 
-    <div class="service-section pt-80 pb-80">
+    <div class="service-section pt-80 pb-80 paddingTopVich paddingBottomAbout">
         <img src="../assets/images/bg/water-mark1.png" alt="image" class="img-fluid water-mark1">
         <img src="../assets/images/bg/water-mark2.png" alt="image" class="img-fluid water-mark2">
         <div class="container">
@@ -1271,7 +1302,7 @@
 
     <!-- =============== activities-section start  =============== -->
 
-    <div class="activities-section pt-80 pb-80">
+    <div class="activities-section pt-80 pb-80 paddingTopVich paddingBottomAbout">
         <img src="../assets/images/bg/water-mark1.png" alt="image" class="img-fluid water-mark1">
         <img src="../assets/images/bg/water-mark2.png" alt="image" class="img-fluid water-mark2">
         <div class="container">
@@ -1439,7 +1470,7 @@
 
     <!-- =============== testimonial-section start  =============== -->
 
-    <div class="testimonial-section pb-120">
+    <div class="testimonial-section pt-120 pb-120 paddingTopVich paddingBottomAbout">
         <img src="../assets/images/bg/section-bg-bttm.png" class="section-bg-bottom" alt="image">
         <div class="container">
             <div class="row justify-content-center">
@@ -1586,7 +1617,7 @@
 
     <!-- =============== Sponsor-section start  =============== -->
 
-    <div class="sponsor-section pt-80 pb-80">
+    <div class="sponsor-section pt-80 pb-80 paddingTopVich">
         <div class="container">
             <div class="row align-items-center justify-content-lg-start justify-content-center">
                 <div class="col-md-6 text-lg-start text-center">
