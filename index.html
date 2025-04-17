@@ -72,6 +72,10 @@
     max-width: 40%;
 }
 
+.carousel-controls-hidden {
+    display: none !important;
+}
+
 /* Larger screen styles (laptops/desktops) */
 @media (min-width: 992px) {
     .carousel-caption {
@@ -240,10 +244,10 @@
           margin-left: 30px !important;
       }
       .fontSizeBanTitle{
-        font-size: 75px;
+        font-size: 65px;
       }
       .fontSizeBanDesc{
-        font-size: 23px;
+        font-size: 20px;
       }
       .logoHead{
         margin-left: 31px;
@@ -251,6 +255,20 @@
       .about-alignment{
         text-align: left;
       }
+      .carousel-item .ImgWD{
+        max-width: 125% !important;
+        width: 125% !important;
+        margin-right: 120px !important;
+      }
+      .carousel-item .ImgWE{
+        max-width: 140% !important;
+        width: 140% !important;
+        margin-right: 120px !important;
+      }
+      .contactBtnBanner{
+        padding: 13px;
+        font-size: 20px;}
+      
     }
     @media (min-width: 1025px) and (max-width: 1439px){
         .fontSizeBanTitle{
@@ -259,6 +277,17 @@
           .fontSizeBanDesc{
             font-size: 15px;
           }
+          .carousel-item .ImgWD{
+            max-width: 120% !important;
+            width: 120% !important;
+          }
+          .carousel-item .ImgWE{
+            max-width: 135% !important;
+            width: 135% !important;
+          }
+          .contactBtnBanner{
+            padding: 13px;
+            font-size: 20px;}
     }
     @media (max-width: 1024px) {
       .bannerLeftA {
@@ -270,7 +299,17 @@
       .fontSizeBanDesc{
         font-size: 18px;
       }
-      
+      .carousel-item .ImgWD{
+        max-width: 130% !important;
+        width: 130% !important;
+      }
+      .carousel-item .ImgWE{
+        max-width: 135% !important;
+        width: 135% !important;
+      }
+      .contactBtnBanner{
+        padding: 13px;
+        font-size: 20px;}
     }
     @media (max-width: 769px) {
       .bannerLeftA {
@@ -285,6 +324,14 @@
       .bannerHeight {
         height: 85vh;
     }
+    .carousel-item .ImgWD{
+        max-width: 140% !important;
+        width: 140% !important;
+      }
+
+      .contactBtnBanner{
+        padding: 10px;
+        font-size: 15px;}
    
     }
 
@@ -340,6 +387,7 @@
         height: auto;
       }
     }
+    
 </style>
 
 
@@ -458,10 +506,15 @@
     <!-- ========== header============= -->
 
    <header class="header-area style-1">
-        <div class="header-logo logoHead">
-            <a href="/"><img alt="image" src="../assets/images/img/vichaarlab_logo.png"
-                    style="width: 200px; height: auto;"></a>
-        </div>
+    
+    <div class="header-logo logoHead text-center d-md-none" style="margin: 0 auto; display: block;">
+        <a href="/"><img alt="image" src="../assets/images/img/vichaarlab_logo.png"
+                style="width: 200px; height: auto;"></a>
+    </div>
+    <div class="header-logo logoHead d-none d-md-block ">
+        <a href="/"><img alt="image" src="../assets/images/img/vichaarlab_logo.png"
+                style="width: 200px; height: auto;"></a>
+    </div>
         <div class="main-nav">
             <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
                 <div class="mobile-logo-wrap ">
@@ -502,7 +555,7 @@
                     <a href="product.html" class="drop-down">Products</a><i
                         class='bi bi-chevron-down dropdown-icon'></i>
                     <ul class="sub-menu">
-                        <li><a href="products/real-estate-solution.html">Real-Estate CRM</a></li>
+                        <li><a href="products/real-estate-solution.html">Real-Estate Solution</a></li>
                         <li><a href="products/construction-management-erp.html">Construction Management</a></li>
                         <li><a href="products/school-erp.html">School ERP</a></li>
                         <li><a href="products/e-commerce.html">E-Commerce</a></li>
@@ -524,30 +577,31 @@
                 <li><a href="contact.html">Contact us</a></li>
             </ul>
             <!-- mobile-search-area -->
-            <div class="d-lg-none d-block">
+            <!-- <div class="d-lg-none d-block">
                 <form class="mobile-menu-form">
                     <div class="input-with-btn d-flex flex-column">
                         <input type="text" placeholder="Search here...">
                         <button type="submit" class="eg-btn btn--primary btn--sm">Search</button>
                     </div>
                 </form>
-            </div>
+            </div> -->
         </div>
         
-        <div class="nav-right d-flex align-items-center gap-5">
+        <div class="nav-right d-flex align-items-center gap-0">
             <div class="mobile-menu-btn d-lg-none d-block">
-                <h5 class="text-white mb-0">MENU</h5>
+                <i class='bx bx-menu' style="color: white; font-size: 24px; cursor: pointer;"></i>
             </div>
-            <div class="header-icons d-flex align-items-center">
+            <!-- <div class="header-icons d-flex align-items-center">
                 <div class="search-btn">
                     <i class="bi bi-search"></i>
                 </div>
-                <div class="sidebar-btn">
+                <div class="sidebar-btn d-lg-block d-none">
                     <i class="bi bi-list"></i>
                 </div>
-            </div>
+            </div> -->
           
-            <div class="eg-btn btn--primary header-btn">
+            <div class="eg-btn btn--primary header-btn" style="margin-right: 40px"
+            >
                 <a id="openPopupBtn">
                     <span class="text">LET'S TALK</span>
                     <i class='bx bx-conversation'></i>
@@ -623,7 +677,7 @@
                           
                             <select id="productsF" name="products" class="conditional-field hidden">
                                 <option value="" disabled selected>Select Product</option>
-                                <option value="Real-Estate CRM">Real-Estate CRM</option>
+                                <option value="Real-Estate Solution">Real-Estate Solution</option>
                                 <option value="Construction Management">Construction Management</option>
                                 <option value="School ERP">School ERP</option>
                                 <option value="E-Commerce">E-Commerce</option>
@@ -657,7 +711,7 @@
                 </div>
               
              
-                <button class="exitBtn text-gray-600 absolute top-4 right-4 text-2xl" id="exitBtn">×</button>
+                <button class="exitBtn text-gray-600 absolute top-4 right-4 text-2xl" id="exitBtn" style="z-index: 999;">×</button>
             </div>
              
         </div>
@@ -690,17 +744,17 @@
                 <div class="position-relative bannerHeight" style="background-color: #2988bf; min-height: 50vh; overflow: hidden;">
                     <div class="w-100 h-100 position-absolute" style="background-color: #2988bf; z-index: 1;"></div>
                     <div class="row h-100 align-items-center justify-content-center">
-                        <div class="col-12 col-md-7 text-center text-md-start text-lg-start p-5 bannerLeftA" style="color: white; z-index: 2; ">
+                        <div class="col-12 col-md-7 text-center text-md-start text-lg-start p-5 bannerLeftA" style="color: white; z-index: 2;">
                             <h1 class="fontSizeBanTitle">Mobile App Development Solutions</h1>
-                            <p class="fontSizeBanDesc">Transform your ideas into engaging mobile applications with our end-to-end  <strong>mobile app development solutions</strong>, ensuring high performance and user satisfaction across platforms.</p>
-                            <a href="contact.html" class="btn btn-outline-light mt-3"
-                            style="background-color: #f25a15; color: rgb(254, 254, 254); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); border-color: #f25a15; font-size: 18px; border-radius: 10px; cursor:pointer">
+                            <p class="fontSizeBanDesc">Transform your ideas into engaging mobile applications with our <br> end-to-end  <a href="./services/mobile-app-development.html"><strong>mobile app development solutions</strong></a> , ensuring <br> high performance and user satisfaction across platforms.</p>
+                            <a href="contact.html" class="btn btn-outline-light mt-3 contactBtnBanner"
+                            style="background-color: #f25a15; color: rgb(254, 254, 254); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); border-color: #f25a15;  border-radius: 10px; cursor:pointer">
                             Contact Us
                             </a>
                          
                         </div>
-                        <div class="col-md-4 d-none d-md-flex justify-content-center align-items-center" style="z-index: 2;">
-                            <img src="../assets/images/img/Vichaarlab banner/Mobile App Development Solutions.png" class="img-fluid" style="object-fit: contain; max-height: 100%;" alt="Mobile App Development">
+                        <div class="col-md-4 d-none d-md-flex justify-content-center align-items-center " style="z-index: 2;">
+                            <img src="../assets/images/img/Vichaarlab banner/Mobile App Development Solutions.png" class="img-fluid ImgWD" style="object-fit: contain; max-height: 100%;" alt="Mobile App Development">
                         </div>
                     </div>
                 </div>
@@ -713,14 +767,14 @@
                     <div class="row h-100 align-items-center justify-content-center">
                         <div class="col-12 col-md-7 text-center text-md-start p-5 bannerLeftA" style="color: white; z-index: 2;">
                             <h1 class="fontSizeBanTitle">Construction ERP Solution</h1>
-                            <p class="fontSizeBanDesc">Manage your entire business operations with our powerful <strong>ERP solutions</strong> , designed to integrate and automate your core processes <br> for enhanced efficiency and productivity.</p>
-                            <a href="contact.html" class="btn btn-outline-light mt-3"
+                            <p class="fontSizeBanDesc">Manage your entire business operations with our  powerful<br>  <a href="./services/erp-solutions.html"><strong>ERP solutions</strong></a>, designed to integrate and automate your <br>core processes for enhanced efficiency and productivity.</p>
+                            <a href="contact.html" class="btn btn-outline-light mt-3 contactBtnBanner"
                             style="background-color: #f25a15; color: rgb(254, 254, 254); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); border-color: #f25a15; font-size: 18px; border-radius: 10px; cursor:pointer">
                             Contact Us
                             </a>
                         </div>
                         <div class="col-md-4 d-none d-md-flex justify-content-center align-items-center" style="z-index: 2;">
-                            <img src="../assets/images/img/Vichaarlab banner/ERP Solutions.png" class="img-fluid" style="object-fit: contain; max-height: 100%;" alt="Construction ERP Solution">
+                            <img src="../assets/images/img/Vichaarlab banner/ERP Solutions.png" class="img-fluid ImgWD" style="object-fit: contain; max-height: 100%;" alt="Construction ERP Solution">
                         </div>
                     </div>
                 </div>
@@ -733,14 +787,14 @@
                     <div class="row h-100 align-items-center justify-content-center">
                         <div class="col-12 col-md-7 text-center text-md-start p-5 bannerLeftA" style="color: white; z-index: 2;">
                             <h1 class="fontSizeBanTitle">Real Estate CRM Solution</h1>
-                            <p class="fontSizeBanDesc">Increase your customer relationships with our custom <br><strong>CRM systems</strong>, enabling you to manage interactions, track leads, and <br>drive sales growth effectively.</p>
-                            <a href="contact.html" class="btn btn-outline-light mt-3"
+                            <p class="fontSizeBanDesc">Increase your customer relationships with our custom <br> <a href="./services/crm-solutions.html"><strong>CRM systems</strong></a>, enabling you to manage interactions,<br> track leads, and drive sales growth effectively.</p>
+                            <a href="contact.html" class="btn btn-outline-light mt-3 contactBtnBanner"
                             style="background-color: #f25a15; color: rgb(254, 254, 254); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); border-color: #f25a15; font-size: 18px; border-radius: 10px; cursor:pointer">
                             Contact Us
                             </a>
                         </div>
                         <div class="col-md-4 d-none d-md-flex justify-content-center align-items-center" style="z-index: 2;">
-                            <img src="../assets/images/img/Vichaarlab banner/CRM Solutions.png" class="img-fluid" style="object-fit: contain; max-height: 100%; width:88%" alt="Real Estate CRM Solution">
+                            <img src="../assets/images/img/Vichaarlab banner/CRM Solutions.png" class="img-fluid ImgWD" style="object-fit: contain; max-height: 100%; width:88%" alt="Real Estate CRM Solution">
                         </div>
                     </div>
                 </div>
@@ -753,14 +807,14 @@
                     <div class="row h-100 align-items-center justify-content-center">
                         <div class="col-12 col-md-7 text-center text-md-start p-5 bannerLeftA" style="color: white; z-index: 2;">
                             <h1 class="fontSizeBanTitle">E-Commerce Solution</h1>
-                            <p class="fontSizeBanDesc">Launch and grow your online store with a feature-rich <br> <strong>E-commerce platform</strong>  designed for seamless shopping experiences.</p>
-                            <a href="contact.html" class="btn btn-outline-light mt-3"
+                            <p class="fontSizeBanDesc">Launch and grow your online store with a feature-rich <br> <a href="./services/ecommerce-solutions.html"> <strong>E-commerce platform</strong></a> designed for seamless shopping experiences.</p>
+                            <a href="contact.html" class="btn btn-outline-light mt-3 contactBtnBanner"
                             style="background-color: #f25a15; color: rgb(254, 254, 254); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); border-color: #f25a15; font-size: 18px; border-radius: 10px; cursor:pointer">
                             Contact Us
                             </a>
                         </div>
                         <div class="col-md-4 d-none d-md-flex justify-content-center align-items-center" style="z-index: 2;">
-                            <img src="../assets/images/img/Vichaarlab banner/E-Commerce Website Development Solution.png" class="img-fluid" style="object-fit: contain; max-height: 100%;" alt="E-commerce Solution">
+                            <img src="../assets/images/img/Vichaarlab banner/E-Commerce Website Development Solution.png" class="img-fluid ImgWD" style="object-fit: contain; max-height: 100%;" alt="E-commerce Solution">
                         </div>
                     </div>
                 </div>
@@ -772,15 +826,15 @@
                     <div class="w-100 h-100 position-absolute" style="background-color: #2988bf; z-index: 1;"></div>
                     <div class="row h-100 align-items-center justify-content-center">
                         <div class="col-12 col-md-7 text-center text-md-start p-5 bannerLeftA" style="color: white; z-index: 2;">
-                            <h1 class="fontSizeBanTitle">IoT Solution</h1>
-                            <p class="fontSizeBanDesc">Connect and automate your devices with our innovative <strong>IoT solutions</strong> <br>for smarter, data-driven operations.</p>
-                            <a href="contact.html" class="btn btn-outline-light mt-3"
+                            <h1 class="fontSizeBanTitle">Internet of Things <br>Solutions</h1>
+                            <p class="fontSizeBanDesc">Connect and automate your devices with our innovative <br><a href="./services/iot-services.html"><strong>Internet of Things  Solutions</strong></a>for smarter, data-driven operations.</p>
+                            <a href="contact.html" class="btn btn-outline-light mt-3 contactBtnBanner"
                             style="background-color: #f25a15; color: rgb(254, 254, 254); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); border-color: #f25a15; font-size: 18px; border-radius: 10px; cursor:pointer">
                             Contact Us
                             </a>
                         </div>
                         <div class="col-md-4 d-none d-md-flex justify-content-center align-items-center" style="z-index: 2;">
-                            <img src="../assets/images/img/Vichaarlab banner/IoT Solutions.png" class="img-fluid" style="object-fit: contain; max-height: 100%;" alt="IoT Solution">
+                            <img src="../assets/images/img/Vichaarlab banner/IoT Solutions.png" class="img-fluid ImgWD" style="object-fit: contain; max-height: 100%;" alt="IoT Solution">
                         </div>
                     </div>
                 </div>
@@ -793,14 +847,14 @@
                     <div class="row h-100 align-items-center justify-content-center">
                         <div class="col-12 col-md-7 text-center text-md-start p-5 bannerLeftA" style="color: white; z-index: 2;">
                             <h1 class="fontSizeBanTitle">AI and ML Solutions</h1>
-                            <p class="fontSizeBanDesc">Make your business better with improved <strong>AI and machine learning</strong> <br>methods for smarter choices and automaticity.</p>
-                            <a href="contact.html" class="btn btn-outline-light mt-3"
+                            <p class="fontSizeBanDesc">Make your business better with improved <a href="./services/ai-ml-solutions.html"><strong>AI and machine learning</strong></a> <br>methods for smarter choices and automaticity.</p>
+                            <a href="contact.html" class="btn btn-outline-light mt-3 contactBtnBanner"
                             style="background-color: #f25a15; color: rgb(254, 254, 254); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); border-color: #f25a15; font-size: 18px; border-radius: 10px; cursor:pointer">
                             Contact Us
                             </a>
                         </div>
                         <div class="col-md-4 d-none d-md-flex justify-content-center align-items-center" style="z-index: 2;">
-                            <img src="../assets/images/img/Vichaarlab banner/AI and ML Solutions.png" class="img-fluid" style="object-fit: contain; max-height: 100%;" alt="AI & ML Solutions">
+                            <img src="../assets/images/img/Vichaarlab banner/AI and ML Solutions.png" class="img-fluid ImgWD" style="object-fit: contain; max-height: 100%;" alt="AI & ML Solutions">
                         </div>
                     </div>
                 </div>
@@ -814,14 +868,14 @@
                         <div class="col-12 col-md-7 text-center text-md-start p-5 bannerLeftA" style="color: white; z-index: 2;">
                             <h1 class="fontSizeBanTitle">Web Development Solutions
                             </h1>
-                            <p class="fontSizeBanDesc">Build a strong online presence with our bespoke <strong>web development services</strong> , <br>delivering responsive and user-friendly websites that align with your business goals.</p>
-                            <a href="contact.html" class="btn btn-outline-light mt-3"
+                            <p class="fontSizeBanDesc">Build a strong online presence with our  bespoke <a href="./services/web-development-services.html"> <strong> web development services</strong></a>,delivering responsive  and user-friendly websites that  align with your business goals.</p>
+                            <a href="contact.html" class="btn btn-outline-light mt-3 contactBtnBanner"
                             style="background-color: #f25a15; color: rgb(254, 254, 254); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); border-color: #f25a15; font-size: 18px; border-radius: 10px; cursor:pointer">
                             Contact Us
                             </a>
                         </div>
                         <div class="col-md-4 d-none d-md-flex justify-content-center align-items-center" style="z-index: 2;">
-                            <img src="../assets/images/img/Vichaarlab banner/Web Development Solutions.png" class="img-fluid" style="object-fit: contain; max-height: 100%;" alt="AI & ML Solutions">
+                            <img src="../assets/images/img/Vichaarlab banner/Web Development Solutions.png" class="img-fluid ImgWD" style="object-fit: contain; max-height: 100%;" alt="AI & ML Solutions">
                         </div>
                     </div>
                 </div>
@@ -836,31 +890,30 @@
                         <div class="col-12 col-md-7 text-center text-md-start p-5 bannerLeftA" style="color: white; z-index: 2;">
                             <h1 class="fontSizeBanTitle">Point of Sale (POS) System
                             </h1>
-                            <p class="fontSizeBanDesc">Store and Manage your retail operations with our advanced <strong>POS systems</strong>,<br> offering seamless sales processing, inventory management, and real-time analytics.</p>
-                            <a href="contact.html" class="btn btn-outline-light mt-3"
+                            <p class="fontSizeBanDesc">Store and Manage your retail operations  with our advanced <br><a href="#"> <strong>POS systems</strong></a>, offering seamless sales processing, inventory management, and real-time analytics.</p>
+                            <a href="contact.html" class="btn btn-outline-light mt-3 contactBtnBanner"
                             style="background-color: #f25a15; color: rgb(254, 254, 254); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); border-color: #f25a15; font-size: 17px; border-radius: 10px; cursor:pointer ">
                             Contact Us
                             </a>
                         </div>
                         <div class="col-md-4 d-none d-md-flex justify-content-center align-items-center" style="z-index: 2;">
-                            <img src="../assets/images/img/Vichaarlab banner/Point of Sale (POS) System.png" class="img-fluid" style="object-fit: contain; max-height: 100%;" alt="AI & ML Solutions">
+                            <img src="../assets/images/img/Vichaarlab banner/Point of Sale (POS) System.png" class="img-fluid ImgWE " style="object-fit: contain; max-height: 100%;" alt="AI & ML Solutions">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-    
-        <!-- Carousel Controls -->
-        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev" >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button> -->
-        <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next" style="z-index: 1000;">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+            <!-- Carousel Controls -->
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev" style="z-index: 2;" >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button> -->
+            <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next" style="z-index: 2;">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </div>
     </div>
     
 
@@ -882,7 +935,7 @@
                             as per their very own specific needs. VichaarLab is a dynamic startup working in Website
                             Development, Custom Software, Mobile App Development, and state-of-the-art solutions such as
                             ERP, CRM, AI & ML, and IoT. We provide complete products in the line of School ERP, HRMS,
-                            Construction Management, Real-Estate CRM, eCommerce Solutions, Telematic, and Camera
+                            Construction Management, Real-Estate Solution, eCommerce Solutions, Telematic, and Camera
                             Analytics Products.</p>
                         <!-- <ul class="about-list">
                             <li>Price of additional materials or parts (if needed)</li>
@@ -1210,10 +1263,10 @@
                         <div class="swiper-slide">
                             <div class="portfolio-item1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.8s">
                                 <div class="portfolio-img">
-                                    <img alt="Real-Estate CRM" src="../assets/images/img/our_products/4.png">
+                                    <img alt="Real-Estate Solution" src="../assets/images/img/our_products/4.png">
                                 </div>
                                 <div class="portfolio-content">
-                                    <span>Real-Estate CRM
+                                    <span>Real-Estate Solution
                                     </span>
                                     <h4><a href="products/real-estate-solution.html">Efficient, Comprehensive Real Estate Management.</a>
                                     </h4>
@@ -1718,10 +1771,10 @@
     </a>
   </div> 
   <!-- Pop-up Overlay -->
-  <div id="popupOverlay" class="popup-overlay"></div>
+  <div id="popupOverlay" class="popup-overlay" style="z-index: 999;"></div>
   
   <!-- Pop-up Content -->
-  <div id="popup" class="popup">
+  <div id="popup" class="popup" style="z-index: 999;">
     
     <div class="flex flex-col md:flex-row p-8 bg-background">
       <!-- Left Side (SVG and text) -->
@@ -1782,7 +1835,7 @@
       
               <select id="productsF" name="products" class="conditional-field hidden">
                 <option value="" disabled selected>Select Product</option>
-                <option value="realestate">Real-Estate CRM</option>
+                <option value="realestate">Real-Estate Solution</option>
                 <option value="construction">Construction Management</option>
                 <option value="school">School ERP</option>
                 <option value="ecommerce">E-Commerce</option>
@@ -1809,7 +1862,7 @@
     </div>
   
     <!-- Close Button -->
-    <button class="exitBtn text-gray-600 absolute top-4 right-4 text-2xl" id="exitBtn">×</button>
+    <button class="exitBtn text-gray-600 absolute top-4 right-4 text-2xl" id="exitBtn" style="z-index: 999;">×</button>
 </div>
 
     <!-- =============== Footer-action-section start =============== -->
@@ -1838,7 +1891,7 @@
                         <div class="footer-item">
                             <h5>Our Products</h5>
                             <ul class="footer-list">
-                                <li><a href="products/real-estate-solution.html">Real-Estate CRM</a></li>
+                                <li><a href="products/real-estate-solution.html">Real-Estate Solution</a></li>
                                 <li><a href="products/construction-management-erp.html">Construction Management</a></li>
                                 <li><a href="products/school-erp.html">School ERP</a></li>
                                 <li><a href="products/e-commerce.html">E-Commerce</a></li>
@@ -1955,17 +2008,22 @@ document.addEventListener('DOMContentLoaded', function() {
     const popup = document.getElementById('popup');
     const popupOverlay = document.getElementById('popupOverlay');
     const exitBtn = document.getElementById('exitBtn');
-
+    const prevBtn = document.querySelector('.carousel-control-prev');
+    const nextBtn = document.querySelector('.carousel-control-next');
     // Function to open the pop-up
     function openPopup() {
         popup.style.display = 'block';
         popupOverlay.style.display = 'block';
+        if (prevBtn) prevBtn.classList.add('carousel-controls-hidden');
+        if (nextBtn) nextBtn.classList.add('carousel-controls-hidden');
     }
 
     // Function to close the pop-up
     function closePopup() {
         popup.style.display = 'none';
         popupOverlay.style.display = 'none';
+        if (prevBtn) prevBtn.classList.remove('carousel-controls-hidden');
+        if (nextBtn) nextBtn.classList.remove('carousel-controls-hidden');
     }
 
     // Show the pop-up when "LET'S TALK" button is clicked (desktop)

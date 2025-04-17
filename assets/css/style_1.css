@@ -46,6 +46,13 @@
     }
   }
 
+  @media (min-width: 1000px) and (max-width: 1198px) {
+    header.style-1 .header-btn {
+        display: block;
+        visibility: visible;
+    }
+}
+
 /* Media queries for responsiveness */
 
 /* For large tablets and small laptops (1024px and below) */

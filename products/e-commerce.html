@@ -149,10 +149,14 @@
     <!-- ========== header============= -->
 
     <header class="header-area style-1">
-        <div class="header-logo">
-            <a href="/"><img alt="image" src="../assets/images/img/vichaarlab_logo.png"
-                    style="width: 200px; height: auto;"></a>
-        </div>
+         <div class="header-logo logoHead text-center d-md-none" style="margin: 0 auto; display: block;">
+        <a href="/"><img alt="image" src="../assets/images/img/vichaarlab_logo.png"
+                style="width: 200px; height: auto;"></a>
+    </div>
+    <div class="header-logo logoHead d-none d-md-block ">
+        <a href="/"><img alt="image" src="../assets/images/img/vichaarlab_logo.png"
+                style="width: 200px; height: auto;"></a>
+    </div>
         <div class="main-nav">
             <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
                 <div class="mobile-logo-wrap ">
@@ -212,7 +216,7 @@
                     <a href="../product.html" class="drop-down">Products</a><i
                         class='bi bi-chevron-down dropdown-icon'></i>
                     <ul class="sub-menu">
-                        <li><a href="real-estate-solution.html">Real-Estate CRM</a></li>
+                        <li><a href="real-estate-solution.html">Real-Estate Solution</a></li>
                         <li><a href="construction-management-erp.html">Construction Management</a></li>
                         <li><a href="school-erp.html">School ERP</a></li>
                         <li><a href="e-commerce.html">E-Commerce</a></li>
@@ -242,18 +246,18 @@
                 </form>
             </div>
         </div>
-        <div class="nav-right d-flex align-items-center gap-5">
+        <div class="nav-right d-flex align-items-center gap-0">
             <div class="mobile-menu-btn d-lg-none d-block">
-                <h5 class="text-white mb-0">MENU</h5>
+                <i class='bx bx-menu' style="color: white; font-size: 24px; cursor: pointer;"></i>
             </div>
-            <div class="header-icons d-flex align-items-center">
+             <!-- <div class="header-icons d-flex align-items-center">
                 <div class="search-btn">
                     <i class="bi bi-search"></i>
                 </div>
-                <div class="sidebar-btn">
+                <div class="sidebar-btn d-lg-block d-none">
                     <i class="bi bi-list"></i>
                 </div>
-            </div>
+            </div> -->
              <!-- <li><a href="#">Our Blog</a></li>
                    <!-- <div class="hotline d-xxl-flex d-none">
                 <div class="hotline-icon">
@@ -353,7 +357,7 @@
                           
                             <select id="productsF" name="products" class="conditional-field hidden">
                                 <option value="" disabled selected>Select Product</option>
-                                <option value="software">Real-Estate CRM</option>
+                                <option value="software">Real-Estate Solution</option>
                                 <option value="hardware">Construction Management</option>
                                 <option value="accessories">School ERP</option>
                                 <option value="accessories">E-Commerce</option>
@@ -699,7 +703,7 @@ style="background-image: url(../assets/images/img/Inner_Page_Banner/2.png);
                                     <img alt="image" src="../assets/images/img/our_products/4.png">
                                 </div>
                                 <div class="portfolio-content">
-                                    <span>Real-Estate CRM
+                                    <span>Real-Estate Solution
                                     </span>
                                     <h4><a href="real-estate-solution.html">Efficient, Comprehensive Real Estate Management.</a></h4>
                                     <a href="real-estate-solution.html" class="text-btn">Read More<svg width="18" height="10"
@@ -962,7 +966,7 @@ style="background-image: url(../assets/images/img/Inner_Page_Banner/2.png);
                 <!-- Products Dropdown (Initially hidden) -->
                 <select id="productsF" name="products" class="conditional-field hidden">
                     <option value="" disabled selected>Select Product</option>
-                    <option value="software">Real-Estate CRM</option>
+                    <option value="software">Real-Estate Solution</option>
                     <option value="hardware">Construction Management</option>
                     <option value="accessories">School ERP</option>
                     <option value="accessories">E-Commerce</option>
