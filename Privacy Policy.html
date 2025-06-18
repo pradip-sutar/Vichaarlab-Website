@@ -39,19 +39,20 @@
     <!-- style css -->
     <link rel="stylesheet" href="../assets/css/style.css">
 
-     <link rel="stylesheet" href="../assets/css/style_1.css">
+    <link rel="stylesheet" href="../assets/css/style_1.css">
 
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <link rel="canonical" href="https://www.vichaarlab.com/faq.html">
-    
+
     <style>
         body {
             background: linear-gradient(to right, #4A00E0, #8E2DE2);
             color: #fff;
             font-family: 'Arial', sans-serif;
         }
+
         .card {
             background: rgba(255, 255, 255, 0.9);
             border-radius: 12px;
@@ -59,11 +60,13 @@
             padding: 20px;
             color: #333;
         }
+
         h2 {
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
+
         .section-title {
             font-weight: 600;
             color: #4A00E0;
@@ -72,25 +75,28 @@
             padding-bottom: 5px;
             margin-bottom: 15px;
         }
+
         .icon {
             color: #4A00E0;
             margin-right: 10px;
         }
+
         .contact-info strong {
             color: #8E2DE2;
         }
     </style>
 </head>
+
 <body>
     <header class="header-area style-1">
-         <div class="header-logo logoHead text-center d-md-none" style="margin: 0 auto; display: block;">
-        <a href="/"><img alt="image" src="../assets/images/img/vichaarlab_logo.png"
-                style="width: 200px; height: auto;"></a>
-    </div>
-    <div class="header-logo logoHead d-none d-md-block ">
-        <a href="/"><img alt="image" src="../assets/images/img/vichaarlab_logo.png"
-                style="width: 200px; height: auto;"></a>
-    </div>
+        <div class="header-logo logoHead text-center d-md-none" style="margin: 0 auto; display: block;">
+            <a href="/"><img alt="image" src="../assets/images/img/vichaarlab_logo.png"
+                    style="width: 200px; height: auto;"></a>
+        </div>
+        <div class="header-logo logoHead d-none d-md-block ">
+            <a href="/"><img alt="image" src="../assets/images/img/vichaarlab_logo.png"
+                    style="width: 200px; height: auto;"></a>
+        </div>
         <div class="main-nav">
             <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
                 <div class="mobile-logo-wrap ">
@@ -102,14 +108,14 @@
                 </div>
             </div>
             <ul class="menu-list">
-               
+
                 <li class="menu-item-has-children">
                     <a href="/" class="drop-down">Company</a><i class='bi bi-chevron-down dropdown-icon'></i>
                     <ul class="sub-menu">
                         <li><a href="about.html">About</a></li>
-                       
+
                         <li><a href="faq.html">FAQ</a></li>
-                       
+
                     </ul>
                 </li>
                 <li class="menu-item-has-children">
@@ -131,6 +137,8 @@
                     <a href="product.html" class="drop-down">Products</a><i
                         class='bi bi-chevron-down dropdown-icon'></i>
                     <ul class="sub-menu">
+                        <li><a href="https://crm.vichaarlab.in/">Vichaar CRM</a></li>
+                        <li><a href="https://vichaarmart.vichaarlab.in">Vichaar Farma</a></li>
                         <li><a href="products/real-estate-solution.html">Real-Estate Solution</a></li>
                         <li><a href="products/construction-management-erp.html">Construction Management</a></li>
                         <li><a href="products/school-erp.html">School ERP</a></li>
@@ -149,7 +157,7 @@
                         <li><a href="blog-details.html">Blog details</a></li>
                     </ul>
                 </li> -->
-              
+
                 <li><a href="contact.html">Contact us</a></li>
             </ul>
             <!-- mobile-search-area -->
@@ -162,12 +170,12 @@
                 </form>
             </div>
         </div>
-        
+
         <div class="nav-right d-flex align-items-center gap-0">
             <div class="mobile-menu-btn d-lg-none d-block">
                 <i class='bx bx-menu' style="color: white; font-size: 24px; cursor: pointer;"></i>
             </div>
-             <!-- <div class="header-icons d-flex align-items-center">
+            <!-- <div class="header-icons d-flex align-items-center">
                 <div class="search-btn">
                     <i class="bi bi-search"></i>
                 </div>
@@ -175,135 +183,137 @@
                     <i class="bi bi-list"></i>
                 </div>
             </div> -->
-          
+
             <div class="eg-btn btn--primary header-btn">
                 <a id="openPopupBtn">
                     <span class="text">LET'S TALK</span>
                     <i class='bx bx-conversation'></i>
-                    
-                </a>
-              </div>
-              
-              <!-- Pop-up Overlay -->
-              <div id="popupOverlay" class="popup-overlay"></div>
-              
-              <!-- Pop-up Content -->
-              <div id="popup" class="popup">
-                
-                <div class="flex flex-col md:flex-row p-8 bg-background">
-                  <!-- Left Side (SVG and text) -->
-                  <div class="flex-1 mb-8 md:mb-0 pad-2">
-                    <h1 class="text-3xl font-bold text-foreground secLeft" style="margin-right: 200px;">Let’s have a Talk</h1>
-                   
-                    <img aria-hidden="true" alt="Illustration of a person working at a desk" 
-                         src="../assets/images/img/Vichaarlab banner/icon.svg" class="mt-9 w-[250px] mx-auto" />
-                  </div>
-              
-                  <!-- Right Side (Form) -->
-                  <form id="contactForm">
-                    <div>
-                    <!-- Name, Phone, Email, Address, Location fields -->
-                    <div class="input-row">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="input-row">
-                        <label for="phone">Phone</label>
-                        <input type="text" id="phone" name="phone" required>
-                    </div>
-                    <div class="input-row">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="input-row">
-                        <label for="address">Company Address</label>
-                        <input type="text" id="address" name="address" required>
-                    </div>
-                    <div class="input-row">
-                        <label for="location">Location</label>
-                        <input type="text" id="location" name="location" required>
-                    </div>
-                
-                    <!-- Services / Products Selection -->
-                    <div class="dropdown-row marginBt">
-                        <!-- Services / Products -->
-                        <label class= "serviceProduct" for="serviceProduct">Services / Products</label>
-                        <select id="serviceProduct" onchange="toggleDropdown(this)" name="serviceProduct" class="conditional-field" required>
-                            <option value="" disabled selected>Services / Products</option>
-                            <option value="services">Services</option>
-                            <option value="products">Products</option>
-                        </select>
 
-                        <div class="dropdown-row marginBt checke">
-                            
-                            <select id="servicesF" name="services" class="fieldSer conditional-field hidden">
-                                <option value="" disabled selected>Select Service</option>
-                                <option value="Web Developement">Web Developement</option>
-                                <option value="Custom Software Development">Custom Software Development</option>
-                                <option value="Mobile Application">Mobile Application</option>
-                                <option value="IoT">IoT</option>
-                                <option value="AI/ML">AI/ML</option>
-                                <option value="ERP Solutions">ERP Solutions</option>
-                                <option value="CRM Solutions">CRM Solutions</option>
-                                <option value="E-Commerce">E-Commerce</option>
-    
-                            </select>
-                    
-                          
-                            <select id="productsF" name="products" class="conditional-field hidden">
-                                <option value="" disabled selected>Select Product</option>
-                                <option value="Real-Estate Solution">Real-Estate Solution</option>
-                                <option value="Construction Management">Construction Management</option>
-                                <option value="School ERP">School ERP</option>
-                                <option value="E-Commerce">E-Commerce</option>
-                                <option value="HRMS">HRMS</option>
-                                <option value="Telematic Solutions">Telematic Solutions</option>
-                                <option value="Camera Analytics">Camera Analytics</option>
-    
-    
-    
-    
-                            </select>
+                </a>
+            </div>
+
+            <!-- Pop-up Overlay -->
+            <div id="popupOverlay" class="popup-overlay"></div>
+
+            <!-- Pop-up Content -->
+            <div id="popup" class="popup">
+
+                <div class="flex flex-col md:flex-row p-8 bg-background">
+                    <!-- Left Side (SVG and text) -->
+                    <div class="flex-1 mb-8 md:mb-0 pad-2">
+                        <h1 class="text-3xl font-bold text-foreground secLeft" style="margin-right: 200px;">Let’s have a
+                            Talk</h1>
+
+                        <img aria-hidden="true" alt="Illustration of a person working at a desk"
+                            src="../assets/images/img/Vichaarlab banner/icon.svg" class="mt-9 w-[250px] mx-auto" />
+                    </div>
+
+                    <!-- Right Side (Form) -->
+                    <form id="contactForm">
+                        <div>
+                            <!-- Name, Phone, Email, Address, Location fields -->
+                            <div class="input-row">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="input-row">
+                                <label for="phone">Phone</label>
+                                <input type="text" id="phone" name="phone" required>
+                            </div>
+                            <div class="input-row">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="input-row">
+                                <label for="address">Company Address</label>
+                                <input type="text" id="address" name="address" required>
+                            </div>
+                            <div class="input-row">
+                                <label for="location">Location</label>
+                                <input type="text" id="location" name="location" required>
+                            </div>
+
+                            <!-- Services / Products Selection -->
+                            <div class="dropdown-row marginBt">
+                                <!-- Services / Products -->
+                                <label class="serviceProduct" for="serviceProduct">Services / Products</label>
+                                <select id="serviceProduct" onchange="toggleDropdown(this)" name="serviceProduct"
+                                    class="conditional-field" required>
+                                    <option value="" disabled selected>Services / Products</option>
+                                    <option value="services">Services</option>
+                                    <option value="products">Products</option>
+                                </select>
+
+                                <div class="dropdown-row marginBt checke">
+
+                                    <select id="servicesF" name="services" class="fieldSer conditional-field hidden">
+                                        <option value="" disabled selected>Select Service</option>
+                                        <option value="Web Developement">Web Developement</option>
+                                        <option value="Custom Software Development">Custom Software Development</option>
+                                        <option value="Mobile Application">Mobile Application</option>
+                                        <option value="IoT">IoT</option>
+                                        <option value="AI/ML">AI/ML</option>
+                                        <option value="ERP Solutions">ERP Solutions</option>
+                                        <option value="CRM Solutions">CRM Solutions</option>
+                                        <option value="E-Commerce">E-Commerce</option>
+
+                                    </select>
+
+
+                                    <select id="productsF" name="products" class="conditional-field hidden">
+                                        <option value="" disabled selected>Select Product</option>
+                                        <option value="Real-Estate Solution">Real-Estate Solution</option>
+                                        <option value="Construction Management">Construction Management</option>
+                                        <option value="School ERP">School ERP</option>
+                                        <option value="E-Commerce">E-Commerce</option>
+                                        <option value="HRMS">HRMS</option>
+                                        <option value="Telematic Solutions">Telematic Solutions</option>
+                                        <option value="Camera Analytics">Camera Analytics</option>
+
+
+
+
+                                    </select>
+                                </div>
+                            </div>
+
+
+
+
+                            <!-- Message Box -->
+                            <div class="input-row messageBox">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4"></textarea>
+                            </div>
+
+
+                            <div class="input-row">
+                                <button type="submit">Submit</button>
+                            </div>
                         </div>
-                    </div>
-                
-                 
-                    
-                
-                    <!-- Message Box -->
-                    <div class="input-row messageBox">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="4"></textarea>
-                    </div>
-                
-                
-                    <div class="input-row">
-                        <button type="submit">Submit</button>
-                    </div>
+                    </form>
+
                 </div>
-                </form>
-                
-                </div>
-              
-             
+
+
                 <button class="exitBtn text-gray-600 absolute top-4 right-4 text-2xl" id="exitBtn">×</button>
             </div>
-             
+
         </div>
 
 
- 
-            <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-17JGTC7XK0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-17JGTC7XK0');
-</script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-17JGTC7XK0"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-<meta name="msvalidate.01" content="FADA3691A9ED0E55768CE93FFE3A3F5E" />
+            gtag('config', 'G-17JGTC7XK0');
+        </script>
+
+        <meta name="msvalidate.01" content="FADA3691A9ED0E55768CE93FFE3A3F5E" />
 
     </header>
 
@@ -312,46 +322,133 @@
         <div class="card">
             <div class="card-body">
                 <h4 class="section-title"><i class="fas fa-info-circle icon"></i> Introduction</h4>
-                <p>This Privacy Policy describes how VichaarLab  and its affiliates (collectively "VichaarLab , we, our, us") collect, use, share, protect or otherwise process your information/ personal data through our website https://vichaarlab.com (hereinafter referred to as Platform). Please note that you may be able to browse certain sections of the Platform without registering with us.We do not offer any product/service under this Platform outside India and your personal data will primarily be stored and processed in India. By visiting this Platform, providing your information or availing any product/service offered on the Platform, you expressly agree to be bound by the terms and conditions of this Privacy Policy, the Terms of Use and the applicable service/product terms and conditions, and agree to be governed by the laws of India including but not limited to the laws applicable to data protection and privacy. If you do not agree please do not use or access our Platform.</p>
-                
+                <p>This Privacy Policy describes how VichaarLab and its affiliates (collectively "VichaarLab , we, our,
+                    us") collect, use, share, protect or otherwise process your information/ personal data through our
+                    website https://vichaarlab.com (hereinafter referred to as Platform). Please note that you may be
+                    able to browse certain sections of the Platform without registering with us.We do not offer any
+                    product/service under this Platform outside India and your personal data will primarily be stored
+                    and processed in India. By visiting this Platform, providing your information or availing any
+                    product/service offered on the Platform, you expressly agree to be bound by the terms and conditions
+                    of this Privacy Policy, the Terms of Use and the applicable service/product terms and conditions,
+                    and agree to be governed by the laws of India including but not limited to the laws applicable to
+                    data protection and privacy. If you do not agree please do not use or access our Platform.</p>
+
                 <h4 class="section-title"><i class="fas fa-database icon"></i> Collection</h4>
-                <p>We collect your personal data when you use our Platform, services or otherwise interact with us during the course of our relationship.and related information provided from time to time. Some of the information that we may collect includes but is not limited to personal data / information provided to us during sign-up/registering or using our Platform such as name, date of birth, address, telephone/mobile number, email IDand/or any such information shared as proof of identity or address. Some of the sensitive personal data may be collected with your consent, such as your bank account or credit or debit card or other payment instrument information or biometric information such as your facial features or physiological information (in order to enable use of certain features when opted for, available on the Platform) etc all of the above being in accordance with applicable law(s) You always have the option to not provide information, by choosing not to use a particular service or feature on the Platform. We may track your behaviour, preferences, and other information that you choose to provide on our Platform. This information is compiled and analysed on an aggregated basis. We will also collect your information related to your transactions on Platform and such third-party business partner platforms. When such a third-party business partner collects your personal data directly from you, you will be governed by their privacy policies. We shall not be responsible for the third-party business partner’s privacy practices or the content of their privacy policies, and we request you to read their privacy policies prior to disclosing any information. If you receive an email, a call from a person/association claiming to be VichaarLab  seeking any personal data like debit/credit card PIN, net-banking or mobile banking password, we request you to never provide such information. If you have already revealed such information, report it immediately to an appropriate law enforcement agency.</p>
-                
+                <p>We collect your personal data when you use our Platform, services or otherwise interact with us
+                    during the course of our relationship.and related information provided from time to time. Some of
+                    the information that we may collect includes but is not limited to personal data / information
+                    provided to us during sign-up/registering or using our Platform such as name, date of birth,
+                    address, telephone/mobile number, email IDand/or any such information shared as proof of identity or
+                    address. Some of the sensitive personal data may be collected with your consent, such as your bank
+                    account or credit or debit card or other payment instrument information or biometric information
+                    such as your facial features or physiological information (in order to enable use of certain
+                    features when opted for, available on the Platform) etc all of the above being in accordance with
+                    applicable law(s) You always have the option to not provide information, by choosing not to use a
+                    particular service or feature on the Platform. We may track your behaviour, preferences, and other
+                    information that you choose to provide on our Platform. This information is compiled and analysed on
+                    an aggregated basis. We will also collect your information related to your transactions on Platform
+                    and such third-party business partner platforms. When such a third-party business partner collects
+                    your personal data directly from you, you will be governed by their privacy policies. We shall not
+                    be responsible for the third-party business partner’s privacy practices or the content of their
+                    privacy policies, and we request you to read their privacy policies prior to disclosing any
+                    information. If you receive an email, a call from a person/association claiming to be VichaarLab
+                    seeking any personal data like debit/credit card PIN, net-banking or mobile banking password, we
+                    request you to never provide such information. If you have already revealed such information, report
+                    it immediately to an appropriate law enforcement agency.</p>
+
                 <h4 class="section-title"><i class="fas fa-cogs icon"></i> Usage</h4>
-                <p>We use personal data to provide the services you request. To the extent we use your personal data to market to you, we will provide you the ability to opt-out of such uses. We use your personal data to assist sellers and business partners in handling and fulfilling orders; enhancing customer experience; to resolve disputes; troubleshoot problems; inform you about online and offline offers, products, services, and updates; customise your experience; detect and protect us against error, fraud and other criminal activity; enforce our terms and conditions; conduct marketing research, analysis and surveys; and as otherwise described to you at the time of collection of information. You understand that your access to these products/services may be affected in the event permission is not provided to us.</p>
-                
+                <p>We use personal data to provide the services you request. To the extent we use your personal data to
+                    market to you, we will provide you the ability to opt-out of such uses. We use your personal data to
+                    assist sellers and business partners in handling and fulfilling orders; enhancing customer
+                    experience; to resolve disputes; troubleshoot problems; inform you about online and offline offers,
+                    products, services, and updates; customise your experience; detect and protect us against error,
+                    fraud and other criminal activity; enforce our terms and conditions; conduct marketing research,
+                    analysis and surveys; and as otherwise described to you at the time of collection of information.
+                    You understand that your access to these products/services may be affected in the event permission
+                    is not provided to us.</p>
+
                 <h4 class="section-title"><i class="fas fa-share-alt icon"></i> Sharing</h4>
-                <p> We may share your personal data internally within our group entities, our other corporate entities, and affiliates to provide you access to the services and products offered by them. These entities and affiliates may market to you as a result of such sharing unless you explicitly opt-out. We may disclose personal data to third parties such as sellers, business partners, third party service providers including logistics partners, prepaid payment instrument issuers, third-party reward programs and other payment opted by you. These disclosure may be required for us to provide you access to our services and products offered to you, to comply with our legal obligations, to enforce our user agreement, to facilitate our marketing and advertising activities, to prevent, detect, mitigate, and investigate fraudulent or illegal activities related to our services. We may disclose personal and sensitive personal data to government agencies or other authorised law enforcement agencies if required to do so by law or in the good faith belief that such disclosure is reasonably necessary to respond to subpoenas, court orders, or other legal process. We may disclose personal data to law enforcement offices, third party rights owners, or others in the good faith belief that such disclosure is reasonably necessary to: enforce our Terms of Use or Privacy Policy; respond to claims that an advertisement, posting or other content violates the rights of a third party; or protect the rights, property or personal safety of our users or the general public.
-                    </p>
-                
+                <p> We may share your personal data internally within our group entities, our other corporate entities,
+                    and affiliates to provide you access to the services and products offered by them. These entities
+                    and affiliates may market to you as a result of such sharing unless you explicitly opt-out. We may
+                    disclose personal data to third parties such as sellers, business partners, third party service
+                    providers including logistics partners, prepaid payment instrument issuers, third-party reward
+                    programs and other payment opted by you. These disclosure may be required for us to provide you
+                    access to our services and products offered to you, to comply with our legal obligations, to enforce
+                    our user agreement, to facilitate our marketing and advertising activities, to prevent, detect,
+                    mitigate, and investigate fraudulent or illegal activities related to our services. We may disclose
+                    personal and sensitive personal data to government agencies or other authorised law enforcement
+                    agencies if required to do so by law or in the good faith belief that such disclosure is reasonably
+                    necessary to respond to subpoenas, court orders, or other legal process. We may disclose personal
+                    data to law enforcement offices, third party rights owners, or others in the good faith belief that
+                    such disclosure is reasonably necessary to: enforce our Terms of Use or Privacy Policy; respond to
+                    claims that an advertisement, posting or other content violates the rights of a third party; or
+                    protect the rights, property or personal safety of our users or the general public.
+                </p>
+
                 <h4 class="section-title"><i class="fas fa-shield-alt icon"></i> Security Precautions</h4>
-                <p>To protect your personal data from unauthorised access or disclosure, loss or misuse we adopt reasonable security practices and procedures. Once your information is in our possession or whenever you access your account information, we adhere to our security guidelines to protect it against unauthorised access and offer the use of a secure server. However, the transmission of information is not completely secure for reasons beyond our control. By using the Platform, the users accept the security implications of data transmission over the internet and the World Wide Web which cannot always be guaranteed as completely secure, and therefore, there would always remain certain inherent risks regarding use of the Platform. Users are responsible for ensuring the protection of login and password records for their account.
-                    </p>
-                
+                <p>To protect your personal data from unauthorised access or disclosure, loss or misuse we adopt
+                    reasonable security practices and procedures. Once your information is in our possession or whenever
+                    you access your account information, we adhere to our security guidelines to protect it against
+                    unauthorised access and offer the use of a secure server. However, the transmission of information
+                    is not completely secure for reasons beyond our control. By using the Platform, the users accept the
+                    security implications of data transmission over the internet and the World Wide Web which cannot
+                    always be guaranteed as completely secure, and therefore, there would always remain certain inherent
+                    risks regarding use of the Platform. Users are responsible for ensuring the protection of login and
+                    password records for their account.
+                </p>
+
                 <h4 class="section-title"><i class="fas fa-trash-alt icon"></i> Data Deletion & Retention</h4>
-                <p>You have an option to delete your account by visiting your profile and settings on our Platform , this action would result in you losing all information related to your account. You may also write to us at the contact information provided below to assist you with these requests. We may in event of any pending grievance, claims, pending shipments or any other services we may refuse or delay deletion of the account. Once the account is deleted, you will lose access to the account. We retain your personal data information for a period no longer than is required for the purpose for which it was collected or as required under any applicable law. However, we may retain data related to you if we believe it may be necessary to prevent fraud or future abuse or for other legitimate purposes. We may continue to retain your data in anonymised form for analytical and research purposes.
-                    </p>
-                
+                <p>You have an option to delete your account by visiting your profile and settings on our Platform ,
+                    this action would result in you losing all information related to your account. You may also write
+                    to us at the contact information provided below to assist you with these requests. We may in event
+                    of any pending grievance, claims, pending shipments or any other services we may refuse or delay
+                    deletion of the account. Once the account is deleted, you will lose access to the account. We retain
+                    your personal data information for a period no longer than is required for the purpose for which it
+                    was collected or as required under any applicable law. However, we may retain data related to you if
+                    we believe it may be necessary to prevent fraud or future abuse or for other legitimate purposes. We
+                    may continue to retain your data in anonymised form for analytical and research purposes.
+                </p>
+
                 <h4 class="section-title"><i class="fas fa-user-shield icon"></i> Your Rights</h4>
-                <p>You may access, rectify, and update your personal data directly through the functionalities provided on the Platform.
-                    </p>
-                
+                <p>You may access, rectify, and update your personal data directly through the functionalities provided
+                    on the Platform.
+                </p>
+
                 <h4 class="section-title"><i class="fas fa-check-circle icon"></i> Consent</h4>
-                <p>By visiting our Platform or by providing your information, you consent to the collection, use, storage, disclosure and otherwise processing of your information on the Platform in accordance with this Privacy Policy. If you disclose to us any personal data relating to other people, you represent that you have the authority to do so and permit us to use the information in accordance with this Privacy Policy. You, while providing your personal data over the Platform or any partner platforms or establishments, consent to us (including our other corporate entities, affiliates, lending partners, technology partners, marketing channels, business partners and other third parties) to contact you through SMS, instant messaging apps, call and/or e-mail for the purposes specified in this Privacy Policy. You have an option to withdraw your consent that you have already provided by writing to the Grievance Officer at the contact information provided below. Please mention “Withdrawal of consent for processing personal data” in your subject line of your communication. We may verify such requests before acting on our request. However, please note that your withdrawal of consent will not be retrospective and will be in accordance with the Terms of Use, this Privacy Policy, and applicable laws. In the event you withdraw consent given to us under this Privacy Policy, we reserve the right to restrict or deny the provision of our services for which we consider such information to be necessary</p>
-                
+                <p>By visiting our Platform or by providing your information, you consent to the collection, use,
+                    storage, disclosure and otherwise processing of your information on the Platform in accordance with
+                    this Privacy Policy. If you disclose to us any personal data relating to other people, you represent
+                    that you have the authority to do so and permit us to use the information in accordance with this
+                    Privacy Policy. You, while providing your personal data over the Platform or any partner platforms
+                    or establishments, consent to us (including our other corporate entities, affiliates, lending
+                    partners, technology partners, marketing channels, business partners and other third parties) to
+                    contact you through SMS, instant messaging apps, call and/or e-mail for the purposes specified in
+                    this Privacy Policy. You have an option to withdraw your consent that you have already provided by
+                    writing to the Grievance Officer at the contact information provided below. Please mention
+                    “Withdrawal of consent for processing personal data” in your subject line of your communication. We
+                    may verify such requests before acting on our request. However, please note that your withdrawal of
+                    consent will not be retrospective and will be in accordance with the Terms of Use, this Privacy
+                    Policy, and applicable laws. In the event you withdraw consent given to us under this Privacy
+                    Policy, we reserve the right to restrict or deny the provision of our services for which we consider
+                    such information to be necessary</p>
+
                 <h4 class="section-title"><i class="fas fa-sync-alt icon"></i> Changes to Privacy Policy</h4>
-                <p> Please check our Privacy Policy periodically for changes. We may update this Privacy Policy to reflect changes to our information practices. We may alert / notify you about the significant changes to the Privacy Policy, in the manner as may be required under applicable laws.</p>
-                
+                <p> Please check our Privacy Policy periodically for changes. We may update this Privacy Policy to
+                    reflect changes to our information practices. We may alert / notify you about the significant
+                    changes to the Privacy Policy, in the manner as may be required under applicable laws.</p>
+
                 <h4 class="section-title"><i class="fas fa-user-tie icon"></i> Grievance Officer</h4>
                 <p class="contact-info"><strong>Name:</strong> Aditya Pratap Nayak</p>
                 <p class="contact-info"><strong>Designation:</strong> CO-FOUNDER </p>
-                <p class="contact-info"><strong>Company Address:</strong> Plot no. 288/3842 (Sudha's), Nandan Vihar, Patia, Bhubaneswar, Odisha-751024
+                <p class="contact-info"><strong>Company Address:</strong> Plot no. 288/3842 (Sudha's), Nandan Vihar,
+                    Patia, Bhubaneswar, Odisha-751024
                 </p>
                 <p class="contact-info"><strong>Contact: </strong>+91 9090972227 (Monday - Friday, 9:00 - 18:00)</p>
             </div>
         </div>
     </div>
-     <footer>
+    <footer>
         <div class="footer-top"
             style="background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url(../assets/images/img/footer.jpg);">
             <div class="container">
@@ -427,17 +524,18 @@
                             </ul>
                             <ul class="footer-social gap-3">
                                 <li><a href="https://www.facebook.com/profile.php?id=61557903014355" target="_blank">
-                                    <i class='bx bxl-facebook'></i>
-                                </a></li>
+                                        <i class='bx bxl-facebook'></i>
+                                    </a></li>
                                 <li><a href="https://twitter.com/vichaarlab" target="_blank">
-                                    <i class='bx bxl-twitter'></i>
-                                </a></li>
-                                <li><a href="https://www.instagram.com/vichaarlab?igsh=MXR6cHA1dmpsNW5zdw==" target="_blank">
-                                    <i class='bx bxl-instagram'></i>
-                                </a></li>
+                                        <i class='bx bxl-twitter'></i>
+                                    </a></li>
+                                <li><a href="https://www.instagram.com/vichaarlab?igsh=MXR6cHA1dmpsNW5zdw=="
+                                        target="_blank">
+                                        <i class='bx bxl-instagram'></i>
+                                    </a></li>
                                 <li><a href="https://www.linkedin.com/company/vichaarlab/mycompany/" target="_blank">
-                                    <i class='bx bxl-linkedin-square'></i>
-                                </a></li>
+                                        <i class='bx bxl-linkedin-square'></i>
+                                    </a></li>
                             </ul>
                         </div>
                     </div>
